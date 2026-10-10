@@ -1,0 +1,767 @@
+[
+  {
+    "id": "c001",
+    "no": 1,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Corolla",
+    "year": 2025,
+    "country": "Japan",
+    "image": "./cards/c001.jpg",
+    "credit": {
+      "author": "Rachelhoots",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Toyota_Corolla_LE_ice_cap.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c002",
+    "no": 2,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Corolla",
+    "year": 2004,
+    "country": "Japan",
+    "image": "./cards/c002.jpg",
+    "credit": {
+      "author": "VKras",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Back_of_Toyota_Corolla;_Dnipro,_Ukraine;_09.11.19.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c003",
+    "no": 3,
+    "rarity": "C",
+    "maker": "SUZUKI",
+    "model": "Wagon R",
+    "year": 2007,
+    "country": "Japan",
+    "image": "./cards/c003.jpg",
+    "credit": {
+      "author": "先従隗始",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suzuki_DBA-MH22S_Wagon_R_FX-S_Limited_(22101310510).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c004",
+    "no": 4,
+    "rarity": "C",
+    "maker": "SUZUKI",
+    "model": "Wagon R",
+    "year": 2015,
+    "country": "India",
+    "image": "./cards/c004.jpg",
+    "credit": {
+      "author": "Ominae",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_Wagon_R_Paro_Taxi_Front.JPG",
+      "modified": true
+    }
+  },
+  {
+    "id": "c005",
+    "no": 5,
+    "rarity": "C",
+    "maker": "VOLKSWAGEN",
+    "model": "Golf GL",
+    "year": 1980,
+    "country": "Germany",
+    "image": "./cards/c005.jpg",
+    "credit": {
+      "author": "先従隗始",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GL_Diesel_(23052110480).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c006",
+    "no": 6,
+    "rarity": "C",
+    "maker": "VOLKSWAGEN",
+    "model": "Golf IV",
+    "year": 2000,
+    "country": "Germany",
+    "image": "./cards/c006.jpg",
+    "credit": {
+      "author": "IFCAR",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_IV_4-door.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c007",
+    "no": 7,
+    "rarity": "C",
+    "maker": "MAZDA",
+    "model": "Familia",
+    "year": 1982,
+    "country": "Japan",
+    "image": "./cards/c007.jpg",
+    "credit": {
+      "author": "先従隗始",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_E-BD1051_Familia_1500XL_(22100713206).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c008",
+    "no": 8,
+    "rarity": "C",
+    "maker": "HONDA",
+    "model": "Fit",
+    "year": 2010,
+    "country": "Japan",
+    "image": "./cards/c008.jpg",
+    "credit": {
+      "author": "Artaxerxes",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Fit_Main_Street_downtown_Montpelier_VT_July_2016.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c009",
+    "no": 9,
+    "rarity": "C",
+    "maker": "SUZUKI",
+    "model": "Carry",
+    "year": 2010,
+    "country": "Japan",
+    "image": "./cards/c009.jpg",
+    "credit": {
+      "author": "TTTNIS",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009-2012_Suzuki_Carry_DA63T.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c010",
+    "no": 10,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Prius",
+    "year": 2006,
+    "country": "Japan",
+    "image": "./cards/c010.jpg",
+    "credit": {
+      "author": "Herry Lawford from Stockbridge, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_Spencer_Park.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c011",
+    "no": 11,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Prius",
+    "year": 2023,
+    "country": "Japan",
+    "image": "./cards/c011.jpg",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_1.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c012",
+    "no": 12,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "HiAce Regius",
+    "year": 1998,
+    "country": "Japan",
+    "image": "./cards/c012.jpg",
+    "credit": {
+      "author": "Lokseng01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Toyota_HiAce_Solemio_at_Taichung_02.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c013",
+    "no": 13,
+    "rarity": "C",
+    "maker": "DAIHATSU",
+    "model": "Hijet Truck",
+    "year": 2015,
+    "country": "Japan",
+    "image": "./cards/c013.jpg",
+    "credit": {
+      "author": "Mr.choppers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daihatsu_Hijet_Truck_Standard_(S500P)_in_Bright_Silver_Metallic,_front_left.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c014",
+    "no": 14,
+    "rarity": "C",
+    "maker": "FIAT",
+    "model": "Panda 4x4",
+    "year": 1991,
+    "country": "Italy",
+    "image": "./cards/c014.jpg",
+    "credit": {
+      "author": "Spanish Coches",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Fiat_Panda_4x4_(3773438080).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c015",
+    "no": 15,
+    "rarity": "C",
+    "maker": "VOLKSWAGEN",
+    "model": "Golf GTI",
+    "year": 2016,
+    "country": "Germany",
+    "image": "./cards/c015.jpg",
+    "credit": {
+      "author": "Artaxerxes",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_parked_downtown_Montpelier_VT_October_2016.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c016",
+    "no": 16,
+    "rarity": "UC",
+    "maker": "DAIHATSU",
+    "model": "Hijet",
+    "year": 1999,
+    "country": "Japan",
+    "image": "./cards/c016.jpg",
+    "credit": {
+      "author": "OiMax",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E7%84%BC%E3%81%84%E3%82%82_(443194413).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c017",
+    "no": 17,
+    "rarity": "UC",
+    "maker": "MAZDA",
+    "model": "Roadster",
+    "year": 2016,
+    "country": "Japan",
+    "image": "./cards/c017.jpg",
+    "credit": {
+      "author": "Benlisquare",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_beside_Mount_I%C5%8D,_Akan_Mashu_National_Park.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c018",
+    "no": 18,
+    "rarity": "UC",
+    "maker": "SUZUKI",
+    "model": "Jimny",
+    "year": 2019,
+    "country": "Japan",
+    "image": "./cards/c018.jpg",
+    "credit": {
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Suzuki_Jimny_XC_(3BA-JB64W-JXCR-J)_front.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c019",
+    "no": 19,
+    "rarity": "UC",
+    "maker": "CITROËN",
+    "model": "2CV Charleston",
+    "year": 1982,
+    "country": "France",
+    "image": "./cards/c019.jpg",
+    "credit": {
+      "author": "Lothar Spurzem",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_2_CV_Charleston_(2015-08-29_3174_b).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c020",
+    "no": 20,
+    "rarity": "UC",
+    "maker": "CITROËN",
+    "model": "2CV",
+    "year": 1975,
+    "country": "France",
+    "image": "./cards/c020.jpg",
+    "credit": {
+      "author": "Frank Schuengel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_in_red.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c021",
+    "no": 21,
+    "rarity": "UC",
+    "maker": "FIAT",
+    "model": "500 F",
+    "year": 1968,
+    "country": "Italy",
+    "image": "./cards/c021.jpg",
+    "credit": {
+      "author": "Ermell",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fiat_500_F_Sachs_Franken_Classic_2018_P5201110.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c022",
+    "no": 22,
+    "rarity": "UC",
+    "maker": "VOLKSWAGEN",
+    "model": "Golf GTI",
+    "year": 1982,
+    "country": "Germany",
+    "image": "./cards/c022.jpg",
+    "credit": {
+      "author": "Riley from Christchurch, New Zealand",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1982_Volkswagen_Golf_GTi_(Mk1)_(14072934454).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c023",
+    "no": 23,
+    "rarity": "UC",
+    "maker": "VOLVO",
+    "model": "240 Estate",
+    "year": 1986,
+    "country": "Sweden",
+    "image": "./cards/c023.jpg",
+    "credit": {
+      "author": "Niels de Wit from Lunteren, The Netherlands",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Volvo_240_DL_Estate_(14341053013).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c024",
+    "no": 24,
+    "rarity": "UC",
+    "maker": "ROVER",
+    "model": "Mini Cooper",
+    "year": 2000,
+    "country": "United Kingdom",
+    "image": "./cards/c024.jpg",
+    "credit": {
+      "author": "DeFacto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rover_Mini_Cooper_2000_(X411JOP).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c025",
+    "no": 25,
+    "rarity": "UC",
+    "maker": "HONDA",
+    "model": "S660",
+    "year": 2015,
+    "country": "Japan",
+    "image": "./cards/c025.jpg",
+    "credit": {
+      "author": "TTTNIS",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015-2020_Honda_S660.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c026",
+    "no": 26,
+    "rarity": "UC",
+    "maker": "VOLKSWAGEN",
+    "model": "New Beetle",
+    "year": 2009,
+    "country": "Germany",
+    "image": "./cards/c026.jpg",
+    "credit": {
+      "author": "Екатерина Борисова",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Volkswagen_New_Beetle_%D0%B2_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B5_01.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c027",
+    "no": 27,
+    "rarity": "UC",
+    "maker": "MINI",
+    "model": "Cooper",
+    "year": 2018,
+    "country": "United Kingdom",
+    "image": "./cards/c027.jpg",
+    "credit": {
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Dernekamp,_Mini_Hatch_Cooper_--_2018_--_1545-51.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c028",
+    "no": 28,
+    "rarity": "R",
+    "maker": "TOYOTA",
+    "model": "Corolla Rally",
+    "year": 1980,
+    "country": "Japan",
+    "image": "./cards/c028.jpg",
+    "credit": {
+      "author": "Lewis Collard",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_rally_car_at_the_Historic_Rally_Festival.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c029",
+    "no": 29,
+    "rarity": "R",
+    "maker": "LANCIA",
+    "model": "Stratos HF",
+    "year": 1975,
+    "country": "Italy",
+    "image": "./cards/c029.jpg",
+    "credit": {
+      "author": "35mmMan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lancia_Stratos_HF_Rally.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c030",
+    "no": 30,
+    "rarity": "R",
+    "maker": "SUBARU",
+    "model": "Impreza WRC",
+    "year": 1997,
+    "country": "Japan",
+    "image": "./cards/c030.jpg",
+    "credit": {
+      "author": "Neil",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Impreza_WRC_(51330224598).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c031",
+    "no": 31,
+    "rarity": "R",
+    "maker": "SUBARU",
+    "model": "Impreza WRC",
+    "year": 2002,
+    "country": "Japan",
+    "image": "./cards/c031.jpg",
+    "credit": {
+      "author": "Neil",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Impreza_WRC_(43944203362).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c032",
+    "no": 32,
+    "rarity": "R",
+    "maker": "FORD",
+    "model": "GT40 Mk II",
+    "year": 1966,
+    "country": "United States",
+    "image": "./cards/c032.jpg",
+    "credit": {
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966_Ford_GT40_Mk_II_Goodwood,_2019_(01).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c033",
+    "no": 33,
+    "rarity": "R",
+    "maker": "FORD",
+    "model": "GT40",
+    "year": 1968,
+    "country": "United States",
+    "image": "./cards/c033.jpg",
+    "credit": {
+      "author": "Brian Snelson from Hockley, Essex, England",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gulf_Ford_GT40_Goodwood.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c034",
+    "no": 34,
+    "rarity": "R",
+    "maker": "BMC",
+    "model": "Mini Cooper S",
+    "year": 1966,
+    "country": "United Kingdom",
+    "image": "./cards/c034.jpg",
+    "credit": {
+      "author": "DeFacto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mini_Cooper_S_1966.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c035",
+    "no": 35,
+    "rarity": "R",
+    "maker": "MAZDA",
+    "model": "RX-7",
+    "year": 1993,
+    "country": "Japan",
+    "image": "./cards/c035.jpg",
+    "credit": {
+      "author": "Andrew Basterfield",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:-i---i-_(35888385533).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c036",
+    "no": 36,
+    "rarity": "R",
+    "maker": "PORSCHE",
+    "model": "911 3.0 RS",
+    "year": 1974,
+    "country": "Germany",
+    "image": "./cards/c036.jpg",
+    "credit": {
+      "author": "Neil",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_3.0_RS_(52344031338).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c037",
+    "no": 37,
+    "rarity": "UR",
+    "maker": "MAZDA",
+    "model": "787B",
+    "year": 1991,
+    "country": "Japan",
+    "image": "./cards/c037.jpg",
+    "credit": {
+      "author": "Akino601",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_787B_3.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c038",
+    "no": 38,
+    "rarity": "UR",
+    "maker": "FERRARI",
+    "model": "F40",
+    "year": 1987,
+    "country": "Italy",
+    "image": "./cards/c038.jpg",
+    "credit": {
+      "author": "Will ainsworth",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:F40_Ferrari_20090509.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c039",
+    "no": 39,
+    "rarity": "UR",
+    "maker": "LAMBORGHINI",
+    "model": "Countach",
+    "year": 1983,
+    "country": "Italy",
+    "image": "./cards/c039.jpg",
+    "credit": {
+      "author": "Palauenc05",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_5000S_1983.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c040",
+    "no": 40,
+    "rarity": "UR",
+    "maker": "MINI",
+    "model": "Cooper",
+    "year": 2019,
+    "country": "United Kingdom",
+    "image": "./cards/c040.jpg",
+    "credit": {
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Kirchspiel,_B%C3%B6rnste,_BMW_Mini_--_2019_--_7207-13.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c041",
+    "no": 41,
+    "rarity": "UR",
+    "maker": "PORSCHE",
+    "model": "911 Carrera RS 2.7",
+    "year": 1973,
+    "country": "Germany",
+    "image": "./cards/c041.jpg",
+    "credit": {
+      "author": "filedump from Austria",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jumping_911_Carrera_RS_2.7_in_Pinggau_(Bosch_Rallye_2010).jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c042",
+    "no": 42,
+    "rarity": "UR",
+    "maker": "PORSCHE",
+    "model": "917K",
+    "year": 1970,
+    "country": "Germany",
+    "image": "./cards/c042.jpg",
+    "credit": {
+      "author": "Felix König",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_917_IAA_2013.JPG",
+      "modified": true
+    }
+  },
+  {
+    "id": "c043",
+    "no": 43,
+    "rarity": "SEC",
+    "maker": "FERRARI",
+    "model": "250 GTO",
+    "year": 1964,
+    "country": "Italy",
+    "image": "./cards/c043.jpg",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1964_Ferrari_250_GTO_1.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c044",
+    "no": 44,
+    "rarity": "SEC",
+    "maker": "BUGATTI",
+    "model": "Type 57S Atlantic",
+    "year": 1936,
+    "country": "France",
+    "image": "./cards/c044.jpg",
+    "credit": {
+      "author": "Y.Leclercq",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_57_S_Atlantic_Best_Of_Show_Chantily.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "c045",
+    "no": 45,
+    "rarity": "SEC",
+    "maker": "MERCEDES-BENZ",
+    "model": "300 SLR",
+    "year": 1955,
+    "country": "Germany",
+    "image": "./cards/c045.jpg",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1955_Mercedes-Benz_300_SLR_FOS19.jpg",
+      "modified": true
+    }
+  }
+]

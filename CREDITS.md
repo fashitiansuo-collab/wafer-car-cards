@@ -1,0 +1,49 @@
+# Credits
+
+All photos are from Wikimedia Commons and were cropped and colour-graded (modified) for use as card art.
+
+- No.001 — Rachelhoots — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2025_Toyota_Corolla_LE_ice_cap.jpg) — modified
+- No.002 — VKras — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Back_of_Toyota_Corolla;_Dnipro,_Ukraine;_09.11.19.jpg) — modified
+- No.003 — 先従隗始 — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Suzuki_DBA-MH22S_Wagon_R_FX-S_Limited_(22101310510).jpg) — modified
+- No.004 — Ominae — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_Wagon_R_Paro_Taxi_Front.JPG) — modified
+- No.005 — 先従隗始 — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GL_Diesel_(23052110480).jpg) — modified
+- No.006 — IFCAR — [Public domain]() — [source](https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_IV_4-door.jpg) — modified
+- No.007 — 先従隗始 — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Mazda_E-BD1051_Familia_1500XL_(22100713206).jpg) — modified
+- No.008 — Artaxerxes — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:Honda_Fit_Main_Street_downtown_Montpelier_VT_July_2016.jpg) — modified
+- No.009 — TTTNIS — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:2009-2012_Suzuki_Carry_DA63T.jpg) — modified
+- No.010 — Herry Lawford from Stockbridge, UK — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Toyota_Prius_Spencer_Park.jpg) — modified
+- No.011 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Toyota_Prius_1.jpg) — modified
+- No.012 — Lokseng01 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:A_Toyota_HiAce_Solemio_at_Taichung_02.jpg) — modified
+- No.013 — Mr.choppers — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:Daihatsu_Hijet_Truck_Standard_(S500P)_in_Bright_Silver_Metallic,_front_left.jpg) — modified
+- No.014 — Spanish Coches — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1991_Fiat_Panda_4x4_(3773438080).jpg) — modified
+- No.015 — Artaxerxes — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_parked_downtown_Montpelier_VT_October_2016.jpg) — modified
+- No.016 — OiMax — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E7%84%BC%E3%81%84%E3%82%82_(443194413).jpg) — modified
+- No.017 — Benlisquare — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Mazda_MX-5_beside_Mount_I%C5%8D,_Akan_Mashu_National_Park.jpg) — modified
+- No.018 — Tokumeigakarinoaoshima — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Blue_Suzuki_Jimny_XC_(3BA-JB64W-JXCR-J)_front.jpg) — modified
+- No.019 — Lothar Spurzem — [CC BY-SA 2.0 de](https://creativecommons.org/licenses/by-sa/2.0/de/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_2_CV_Charleston_(2015-08-29_3174_b).jpg) — modified
+- No.020 — Frank Schuengel — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Citroen_2CV_in_red.jpg) — modified
+- No.021 — Ermell — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Fiat_500_F_Sachs_Franken_Classic_2018_P5201110.jpg) — modified
+- No.022 — Riley from Christchurch, New Zealand — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1982_Volkswagen_Golf_GTi_(Mk1)_(14072934454).jpg) — modified
+- No.023 — Niels de Wit from Lunteren, The Netherlands — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1986_Volvo_240_DL_Estate_(14341053013).jpg) — modified
+- No.024 — DeFacto — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Rover_Mini_Cooper_2000_(X411JOP).jpg) — modified
+- No.025 — TTTNIS — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:2015-2020_Honda_S660.jpg) — modified
+- No.026 — Екатерина Борисова — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2009_Volkswagen_New_Beetle_%D0%B2_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B5_01.jpg) — modified
+- No.027 — Dietmar Rabich — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Dernekamp,_Mini_Hatch_Cooper_--_2018_--_1545-51.jpg) — modified
+- No.028 — Lewis Collard — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Toyota_Corolla_rally_car_at_the_Historic_Rally_Festival.jpg) — modified
+- No.029 — 35mmMan — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Lancia_Stratos_HF_Rally.jpg) — modified
+- No.030 — Neil — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Subaru_Impreza_WRC_(51330224598).jpg) — modified
+- No.031 — Neil — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Subaru_Impreza_WRC_(43944203362).jpg) — modified
+- No.032 — Bahnfrend — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1966_Ford_GT40_Mk_II_Goodwood,_2019_(01).jpg) — modified
+- No.033 — Brian Snelson from Hockley, Essex, England — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Gulf_Ford_GT40_Goodwood.jpg) — modified
+- No.034 — DeFacto — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Mini_Cooper_S_1966.jpg) — modified
+- No.035 — Andrew Basterfield — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:-i---i-_(35888385533).jpg) — modified
+- No.036 — Neil — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Porsche_911_3.0_RS_(52344031338).jpg) — modified
+- No.037 — Akino601 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Mazda_787B_3.jpg) — modified
+- No.038 — Will ainsworth — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:F40_Ferrari_20090509.jpg) — modified
+- No.039 — Palauenc05 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_5000S_1983.jpg) — modified
+- No.040 — Dietmar Rabich — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Kirchspiel,_B%C3%B6rnste,_BMW_Mini_--_2019_--_7207-13.jpg) — modified
+- No.041 — filedump from Austria — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:Jumping_911_Carrera_RS_2.7_in_Pinggau_(Bosch_Rallye_2010).jpg) — modified
+- No.042 — Felix König — [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) — [source](https://commons.wikimedia.org/wiki/File:Porsche_917_IAA_2013.JPG) — modified
+- No.043 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1964_Ferrari_250_GTO_1.jpg) — modified
+- No.044 — Y.Leclercq — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Bugatti_57_S_Atlantic_Best_Of_Show_Chantily.jpg) — modified
+- No.045 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1955_Mercedes-Benz_300_SLR_FOS19.jpg) — modified
