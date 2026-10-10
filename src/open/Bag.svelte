@@ -17,14 +17,20 @@
   let dragging = $state(false);
   let off = $state(false);
   let auto = 0;
+  let fallTimer: ReturnType<typeof setTimeout> | undefined;
 
   $effect(() => (el ? tilt.attach(el) : undefined));
+  // Leaving the screen mid-tear must not open a bag later from another screen.
+  $effect(() => () => {
+    if (auto) cancelAnimationFrame(auto);
+    clearTimeout(fallTimer);
+  });
 
   function finish() {
     if (off) return;
     progress = 1;
     off = true;
-    setTimeout(onTorn, 480);
+    fallTimer = setTimeout(onTorn, 480);
   }
 
   function advance(p: number) {

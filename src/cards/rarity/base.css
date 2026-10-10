@@ -45,6 +45,8 @@
 }
 .card__back {
   transform: rotateY(180deg);
+  /* Fixed, not var(--face): the back must look the same for every rarity before the reveal. */
+  background: #17181b;
 }
 
 /* Photo: a window in framed cards, the whole card in full-art ones. */

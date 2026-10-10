@@ -13,6 +13,8 @@ export interface Game {
   readonly current: Card | null;
   readonly isNew: boolean;
   tick(): void;
+  /** Re-read the save (another tab may have changed it). */
+  reload(): void;
   startOpening(): boolean;
   finishOpening(): void;
   ownedCount(): number;
@@ -55,12 +57,25 @@ export function createGame(opts: CreateGameOpts): Game {
 
   function tick(): void {
     const r = refill(save.stock, save.lastRefillAt, now());
-    save.stock = r.stock;
-    save.lastRefillAt = r.lastRefillAt;
+    // Write only when a bag is actually added, and on top of the latest save, so an idle tab
+    // does not overwrite another tab's progress every second.
+    if (r.stock === save.stock) {
+      save.lastRefillAt = r.lastRefillAt;
+      return;
+    }
+    reload();
+    const fresh = refill(save.stock, save.lastRefillAt, now());
+    save.stock = fresh.stock;
+    save.lastRefillAt = fresh.lastRefillAt;
     persist();
   }
 
+  function reload(): void {
+    if (storage) save = loadSave(storage, now());
+  }
+
   function startOpening(): boolean {
+    reload();
     tick();
     if (save.stock <= 0) return false;
     if (save.stock >= STOCK_MAX) save.lastRefillAt = now();
@@ -107,6 +122,7 @@ export function createGame(opts: CreateGameOpts): Game {
     get current() { return current; },
     get isNew() { return isNew; },
     tick,
+    reload,
     startOpening,
     finishOpening,
     ownedCount,

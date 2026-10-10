@@ -2,6 +2,7 @@
   import cardsJson from './data/cards.json';
   import type { Card } from './lib/types';
   import { createGame } from './state/game.svelte';
+  import { SAVE_KEY } from './lib/save';
   import Header from './ui/Header.svelte';
   import Home from './screens/Home.svelte';
   import Result from './screens/Result.svelte';
@@ -38,9 +39,16 @@
     return () => clearInterval(id);
   });
 
+  // Another tab saved: take its progress instead of overwriting it later.
+  function onStorage(e: StorageEvent) {
+    if (e.key === SAVE_KEY && game.screen !== 'opening') game.reload();
+  }
+
   // Shown once the card has turned, never before: the header must not give the draw away.
   const secret = $derived(game.screen === 'result' && game.current?.rarity === 'SEC');
 </script>
+
+<svelte:window onstorage={onStorage} />
 
 <div class="device">
   {#if debug}

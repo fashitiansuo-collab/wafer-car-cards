@@ -103,4 +103,28 @@ describe('game', () => {
     expect(game.current).toBeNull();
     expect(game.save.pending).toBeNull();
   });
+
+  it('does not overwrite another tab with an unchanged tick', () => {
+    let t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const a = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    const b = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    b.startOpening();
+    t += 1000;
+    a.tick();
+    const again = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    expect(Object.keys(again.save.owned)).toHaveLength(1);
+  });
+
+  it('picks up progress made in another tab on reload()', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const a = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    const b = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    b.startOpening();
+    b.finishOpening();
+    a.reload();
+    expect(a.save.eaten).toBe(1);
+    expect(a.ownedCount()).toBe(1);
+  });
 });

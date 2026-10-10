@@ -92,6 +92,12 @@ export function createTilt(): Tilt {
       // Phone held upright at ~45°; ±25° of travel covers the card.
       set(0.5 + e.gamma / 50, 0.5 + (e.beta - 45) / 50, 0.8);
     };
+    // iOS only grants motion access from a tap; ask once, on the first one.
+    const onFirstClick = () => {
+      el.removeEventListener('click', onFirstClick);
+      void askGyro();
+    };
+    el.addEventListener('click', onFirstClick);
     el.addEventListener('pointermove', onMove);
     el.addEventListener('pointerdown', onMove);
     el.addEventListener('pointerleave', release);
@@ -103,7 +109,9 @@ export function createTilt(): Tilt {
       el.removeEventListener('pointerleave', release);
       el.removeEventListener('pointercancel', release);
       window.removeEventListener('deviceorientation', onOrient);
+      el.removeEventListener('click', onFirstClick);
       if (raf) cancelAnimationFrame(raf);
+      raf = 0;
     };
   }
 

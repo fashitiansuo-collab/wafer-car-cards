@@ -4,6 +4,7 @@
   import CardView from '../cards/Card.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import TitleLockup from '../ui/TitleLockup.svelte';
+  import { isGlobalKey } from '../lib/keys';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
 
@@ -21,7 +22,9 @@
   ]);
 
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Escape' || e.key === 'Backspace') game.screen = 'garage';
+    if (e.key === 'Escape') game.screen = 'garage';
+    if (!isGlobalKey(e)) return;
+    if (e.key === 'Backspace') game.screen = 'garage';
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       flipped = !flipped;

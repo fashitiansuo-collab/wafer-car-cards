@@ -37,7 +37,7 @@
       ? [{ keys: '⏎', label: '開く', onclick: () => open(focused) }]
       : focused
         ? [{ keys: '·', label: `No.${String(focused.no).padStart(3, '0')} はまだ出ていません` }]
-        : [{ keys: '◁▷', label: 'カードを選ぶ' }],
+        : [{ keys: '⇥', label: 'カードを選ぶ' }],
   );
 </script>
 
@@ -52,7 +52,9 @@
 <div class="grid-wrap">
   <div class="grid">
     {#each shown as c (c.id)}
-      <button class="tile" class:locked={!has(c)} data-rarity={c.rarity} onclick={() => pick(c)}>
+      <button class="tile" class:locked={!has(c)} data-rarity={c.rarity} onclick={() => pick(c)} onfocus={(e) => {
+          if (e.currentTarget.matches(':focus-visible')) focus = c.id;
+        }}>
         {#if has(c)}
           <img src={c.image} alt="" style="object-position:{c.focus ?? '50% 50%'}" loading="lazy" />
           <span class="name">{c.model}</span>

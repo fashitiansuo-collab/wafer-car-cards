@@ -5,6 +5,7 @@
   import BottomStrip from '../ui/BottomStrip.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import Bag from '../open/Bag.svelte';
+  import { isGlobalKey } from '../lib/keys';
 
   let { game, cards, now }: { game: Game; cards: Card[]; now: number } = $props();
 
@@ -26,7 +27,7 @@
   );
 
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Enter' && !empty) bag?.autoTear();
+    if (e.key === 'Enter' && !empty && isGlobalKey(e)) bag?.autoTear();
   }
 </script>
 

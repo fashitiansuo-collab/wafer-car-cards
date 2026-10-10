@@ -7,6 +7,7 @@
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import Wafer from './Wafer.svelte';
   import { omen } from './bite';
+  import { isGlobalKey } from '../lib/keys';
 
   let { game, total }: { game: Game; total: number } = $props();
 
@@ -60,7 +61,7 @@
   }
 
   function onkey(e: KeyboardEvent) {
-    if (stage !== 'wafer') return;
+    if (stage !== 'wafer' || !isGlobalKey(e)) return;
     if (e.key === ' ' || e.key === 'Enter') {
       e.preventDefault();
       wafer?.bite();

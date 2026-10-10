@@ -5,6 +5,7 @@
   import BottomStrip from '../ui/BottomStrip.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import TitleLockup from '../ui/TitleLockup.svelte';
+  import { isGlobalKey } from '../lib/keys';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
 
@@ -18,8 +19,13 @@
     { keys: '▦', label: 'ガレージへ', onclick: () => (game.screen = 'garage') },
   ]);
 
+  // Presses meant for the last bite must not dismiss the card before it has been seen.
+  const shownAt = performance.now();
+
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Enter' && !empty) game.screen = 'home';
+    if (e.key !== 'Enter' || empty || !isGlobalKey(e)) return;
+    if (performance.now() - shownAt < 600) return;
+    game.screen = 'home';
   }
 </script>
 
