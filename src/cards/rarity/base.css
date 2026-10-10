@@ -1,0 +1,220 @@
+/* Card skeleton shared by every rarity. Sizes are in cqw so the card scales with its width. */
+
+.card {
+  --card-w: 100%;
+  --rarity: var(--paper-2);
+  --face: #17181b;
+  --face-line: rgba(255, 255, 255, .12);
+  --pad: 4.5cqw;
+  /* Photo window of the framed layout (C–R), as insets of the card. */
+  --win-top: 20cqw;
+  --win-h: 92cqw;
+
+  position: relative;
+  width: var(--card-w);
+  aspect-ratio: 63 / 88;
+  container-type: inline-size;
+  perspective: 600px;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.card__rotator {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform: rotateY(var(--rotate-y, 0deg)) rotateX(var(--rotate-x, 0deg));
+  will-change: transform;
+}
+.card--flipped .card__rotator {
+  transform: rotateY(calc(180deg + var(--rotate-y, 0deg))) rotateX(var(--rotate-x, 0deg));
+  transition: transform 500ms var(--ease-standard);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 2.4cqw;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background: var(--face);
+  box-shadow: 0 0 0 1px var(--face-line) inset;
+}
+.card__back {
+  transform: rotateY(180deg);
+}
+
+/* Photo: a window in framed cards, the whole card in full-art ones. */
+.card__photo {
+  position: absolute;
+  top: var(--win-top);
+  left: var(--pad);
+  right: var(--pad);
+  height: var(--win-h);
+  overflow: hidden;
+  background: #000;
+}
+.card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--focus);
+  display: block;
+}
+.card--full .card__photo {
+  inset: 0;
+  height: auto;
+}
+
+/* Type */
+.card__face {
+  position: absolute;
+  inset: 0;
+  padding: var(--pad);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.card__head {
+  display: flex;
+  flex-direction: column;
+  gap: .6cqw;
+  height: calc(var(--win-top) - var(--pad) - 2cqw);
+  justify-content: flex-end;
+}
+.card__maker {
+  font: 500 3.1cqw/1 var(--latin);
+  letter-spacing: .14em;
+  color: var(--paper-2);
+}
+.card__model {
+  font: 700 7.6cqw/.95 var(--latin-condensed), var(--jp);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--paper);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__foot {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  row-gap: 3cqw;
+  align-items: end;
+  padding-top: 3cqw;
+  border-top: 1px solid var(--face-line);
+}
+.card__meta {
+  grid-column: 1 / -1;
+  font: 500 3.6cqw/1 var(--latin), var(--jp);
+  color: var(--paper);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.card__no {
+  font: 400 3cqw/1 var(--latin);
+  font-variant-numeric: tabular-nums;
+  color: var(--paper-2);
+  letter-spacing: .08em;
+}
+.card__rarity {
+  font: 600 3.6cqw/1 var(--latin-condensed);
+  letter-spacing: .1em;
+  color: var(--paper);
+  padding-left: 2cqw;
+  border-left: .9cqw solid var(--rarity);
+}
+
+/* Full-art: text sits on a black band at the bottom. */
+.card--full .card__face {
+  justify-content: flex-end;
+}
+.card--full .card__head {
+  height: auto;
+  padding: 4cqw var(--pad) 0;
+  margin: 0 calc(var(--pad) * -1);
+  background: rgba(8, 8, 10, .86);
+}
+.card--full .card__foot {
+  padding: 3cqw var(--pad) var(--pad);
+  margin: 0 calc(var(--pad) * -1) calc(var(--pad) * -1);
+  background: rgba(8, 8, 10, .86);
+  border-top: 0;
+}
+
+/* Effect layers */
+.card__shine,
+.card__glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.card__shine {
+  display: none;
+}
+
+.card__glare {
+  background: radial-gradient(
+    farthest-corner circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+    hsla(0, 0%, 100%, .75) 10%,
+    hsla(0, 0%, 100%, .6) 22%,
+    hsla(0, 0%, 0%, .5) 90%
+  );
+  mix-blend-mode: overlay;
+  opacity: calc(var(--card-opacity, 0) * .7);
+}
+
+/* Back */
+.back {
+  position: absolute;
+  inset: 0;
+  padding: 7cqw;
+  display: flex;
+  flex-direction: column;
+  gap: 6cqw;
+  font: 400 3.4cqw/1.5 var(--latin), var(--jp);
+  color: var(--paper);
+}
+.back__mark {
+  display: flex;
+  align-items: center;
+  gap: 3cqw;
+  color: var(--paper-2);
+  font: 700 4.2cqw/1 var(--latin-condensed);
+  letter-spacing: .08em;
+  padding-bottom: 5cqw;
+  border-bottom: 1px solid var(--face-line);
+}
+.back__mark svg {
+  width: 11cqw;
+  height: 11cqw;
+}
+.back dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.6cqw 4cqw;
+  margin: 0;
+}
+.back dt {
+  color: var(--paper-2);
+  font-size: 3cqw;
+}
+.back dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.back a {
+  color: var(--paper);
+  text-decoration: underline;
+  text-decoration-color: var(--paper-3);
+  text-underline-offset: .3em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card--flipped .card__rotator { transition: none; }
+}

@@ -1,0 +1,20 @@
+/* C — matte paper, no holo. Only a faint white glare moves. */
+.card[data-rarity='C'] {
+  --face: #1c1c1e;
+}
+.card[data-rarity='C'] .card__front::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/fx/noise.png');
+  background-size: 128px;
+  mix-blend-mode: soft-light;
+  opacity: .22;
+  pointer-events: none;
+}
+.card[data-rarity='C'] .card__photo img {
+  filter: saturate(.85);
+}
+.card[data-rarity='C'] .card__glare {
+  opacity: calc(var(--card-opacity, 0) * .35);
+}
