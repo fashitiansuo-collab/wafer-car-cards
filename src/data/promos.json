@@ -54,6 +54,22 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%88%9D%E4%BB%A3%E3%83%A6%E3%83%BC%E3%83%8E%E3%82%B9%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B9%E3%82%BF%E3%83%BC01.jpg",
       "modified": true
-    }
+    },
+    "assets": [
+      {
+        "author": "Jacek Halicki",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Knoppers_(2).jpg",
+        "modified": true
+      },
+      {
+        "author": "Jacek Halicki",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Wafel_Grze%C5%9Bki_w_czekoladzie.jpg",
+        "modified": true
+      }
+    ]
   }
 ]

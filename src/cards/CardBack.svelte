@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Card } from '../lib/types';
 
-  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'>;
+  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'> & { assets?: Card['credit'][] };
   let { card, firstPulledAt = null }: { card: BackInfo | null; firstPulledAt?: number | null } = $props();
 
   const fmt = (ms: number) => {
@@ -29,6 +29,10 @@
       <dt>出典</dt>
       <dd><a href={card.credit.sourceUrl} target="_blank" rel="noopener">Wikimedia Commons</a></dd>
       {#if card.credit.modified}<dt>加工</dt><dd>改変あり(切り抜き・色調整)</dd>{/if}
+      {#each card.assets ?? [] as a (a.sourceUrl)}
+        <dt>素材</dt>
+        <dd>{a.author} · <a href={a.licenseUrl} target="_blank" rel="noopener">{a.license}</a> · <a href={a.sourceUrl} target="_blank" rel="noopener">出典</a>(改変あり)</dd>
+      {/each}
     </dl>
   {/if}
 </div>

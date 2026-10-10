@@ -16,4 +16,4 @@ export const specials: Record<string, Component<any>> = {
 };
 
 /** SEC cards may be landscape (88:63) or portrait (63:88). */
-export const landscape = new Set(['pr01b']);
+export const landscape = new Set<string>();

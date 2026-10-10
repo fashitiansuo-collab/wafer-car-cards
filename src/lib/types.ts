@@ -63,4 +63,6 @@ export interface Promo {
   exif: Exif;
   codeHash: string;
   credit: CardCredit;
+  /** Other photographs composited into the design (e.g. wafer pieces), credited on the back too. */
+  assets?: CardCredit[];
 }
