@@ -17,9 +17,12 @@
     /** Pass a tilt to drive the card from outside (reveal sweeps). */
     tilt?: Tilt;
     firstPulledAt?: number | null;
+    /** A plain back with no details, for a card that has not been revealed yet. */
+    plainBack?: boolean;
   }
 
-  let { card, total = 45, interactive = true, flipped = false, tilt, firstPulledAt = null }: Props = $props();
+  let { card, total = 45, interactive = true, flipped = false, tilt, firstPulledAt = null, plainBack = false }: Props =
+    $props();
 
   const own = createTilt();
   const t = $derived(tilt ?? own);
@@ -66,7 +69,7 @@
       <div class="card__glare"></div>
     </div>
     <div class="card__back">
-      <CardBack {card} {firstPulledAt} />
+      <CardBack card={plainBack ? null : card} {firstPulledAt} />
     </div>
   </div>
 </div>

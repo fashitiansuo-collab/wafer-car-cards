@@ -4,6 +4,8 @@
   import { createGame } from './state/game.svelte';
   import Header from './ui/Header.svelte';
   import Home from './screens/Home.svelte';
+  import Result from './screens/Result.svelte';
+  import OpenSequence from './open/OpenSequence.svelte';
   import DebugGallery from './screens/DebugGallery.svelte';
 
   const cards = cardsJson as Card[];
@@ -21,6 +23,9 @@
 
   const game = createGame({ cards, storage: storage(), now: () => Date.now(), rng: Math.random });
   let now = $state(Date.now());
+  // ?force=SEC fixes the rarity of the next draws (same switch as on the records screen).
+  const force = new URLSearchParams(location.search).get('force');
+  if (force && ['C', 'UC', 'R', 'UR', 'SEC'].includes(force)) game.forced = force as Card['rarity'];
 
   $effect(() => {
     const id = setInterval(() => {
@@ -30,9 +35,8 @@
     return () => clearInterval(id);
   });
 
-  const secret = $derived(
-    (game.screen === 'opening' || game.screen === 'result') && game.current?.rarity === 'SEC',
-  );
+  // Shown once the card has turned, never before: the header must not give the draw away.
+  const secret = $derived(game.screen === 'result' && game.current?.rarity === 'SEC');
 </script>
 
 <div class="device">
@@ -43,6 +47,12 @@
     <main class="main">
       {#if game.screen === 'home'}
         <Home {game} {cards} {now} />
+      {:else if game.screen === 'opening' && game.current}
+        {#key game.save.eaten}
+          <OpenSequence {game} total={cards.length} />
+        {/key}
+      {:else if game.screen === 'result' && game.current}
+        <Result {game} {cards} />
       {/if}
     </main>
   {/if}
