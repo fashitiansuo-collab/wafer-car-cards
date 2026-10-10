@@ -2,6 +2,8 @@
   import type { Card } from '../lib/types';
   import { createTilt, type Tilt } from '../lib/tilt.svelte';
   import CardBack from './CardBack.svelte';
+  import Frame from './Frame.svelte';
+  import './frames.css';
   import './rarity/base.css';
   import './rarity/c.css';
   import './rarity/uc.css';
@@ -33,8 +35,8 @@
     return t.attach(el);
   });
 
-  const full = $derived(card.rarity === 'UR' || card.rarity === 'SEC');
-  const no = $derived(String(card.no).padStart(3, '0'));
+  // C–R sit in dark frames; UR turns them white, SEC patterned.
+  const tone = $derived(card.rarity === 'SEC' ? 'pattern' : card.rarity === 'UR' ? 'light' : 'dark');
   const vars = $derived(
     `${t.style};--photo:url("${card.image}");--focus:${card.focus ?? '50% 50%'}` +
       (card.rarity === 'SEC' ? `;--photo-dark:url("${card.image.replace(/\.jpg$/, '-dark.jpg')}")` : ''),
@@ -43,27 +45,18 @@
 
 <div
   class="card"
-  class:card--full={full}
   class:card--active={t.active}
   class:card--flipped={flipped}
   data-rarity={card.rarity}
+  data-frame={card.frame ?? 'gallery'}
+  data-tone={tone}
   style={vars}
   bind:this={el}
 >
   <div class="card__rotator">
     <div class="card__front">
+      <Frame {card} {total} />
       <div class="card__photo"><img src={card.image} alt="" draggable="false" /></div>
-      <div class="card__face">
-        <header class="card__head">
-          <span class="card__maker">{card.maker}</span>
-          <span class="card__model">{card.model}</span>
-        </header>
-        <footer class="card__foot">
-          <span class="card__meta">{card.year} · {card.country}</span>
-          <span class="card__no">No.{no} / {String(total).padStart(3, '0')}</span>
-          <span class="card__rarity">{card.rarity}</span>
-        </footer>
-      </div>
       <div class="card__shine"></div>
       <div class="card__shine card__shine--2"></div>
       <div class="card__glare"></div>

@@ -2,7 +2,7 @@
 .card[data-rarity='C'] {
   --face: #1c1c1e;
 }
-.card[data-rarity='C'] .card__front::before {
+.card[data-rarity='C'] .frame::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -10,7 +10,6 @@
   background-size: 128px;
   mix-blend-mode: soft-light;
   opacity: .22;
-  pointer-events: none;
 }
 .card[data-rarity='C'] .card__photo img {
   filter: saturate(.85);

@@ -17,7 +17,7 @@
 `src/data/cards.json`、`scripts/lineup.json`、`public/cards/` を開くとラインナップが分かる。
 
 ## 写真の差し替え
-`scripts/lineup.json` を編集 → `node scripts/fetch-commons.mjs` → `python scripts/make-dark-masks.py`（SEC用マスク）。受け付けるライセンスは CC0 / パブリックドメイン / CC BY / CC BY-SA のみ。
+`scripts/lineup.json` を編集 → `node scripts/fetch-commons.mjs` → `python scripts/make-dark-masks.py`（SEC用マスク）→ `python scripts/make-palettes.py`（5色の見本）。額縁は `lineup.json` の `frame`（gallery / watermark / litt / palette / window）で写真ごとに選ぶ。撮影データ（EXIF）は取得時にコモンズから読む。受け付けるライセンスは CC0 / パブリックドメイン / CC BY / CC BY-SA のみ。
 
 ## クレジット
 写真の作者とライセンスは `CREDITS.md`、カード裏面、記録画面にある。写真は切り抜きと色調整をしている（改変あり）。

@@ -1,0 +1,434 @@
+/* Frames: what surrounds the photo, chosen per photo. Tones: C–R dark, UR light, SEC patterned.
+   Each frame sets the photo window (--win-*) so the holo layers line up with it. All sizes in cqw. */
+
+.frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--f-bg);
+  color: var(--f-ink);
+  pointer-events: none;
+}
+.frame > * {
+  position: absolute;
+}
+
+/* ── Tones ─────────────────────────────────────────── */
+.card[data-tone='dark'] {
+  --f-bg: #141518;
+  --f-panel: #1d1e22;
+  --f-ink: rgba(255, 255, 255, .94);
+  --f-ink-2: rgba(255, 255, 255, .58);
+  --f-line: rgba(255, 255, 255, .16);
+  --f-shadow: #000;
+}
+.card[data-tone='light'] {
+  --f-bg: #f6f6f3;
+  --f-panel: #ffffff;
+  --f-ink: #121214;
+  --f-ink-2: rgba(18, 18, 20, .55);
+  --f-line: rgba(18, 18, 20, .2);
+  --f-shadow: #121214;
+  --rainbow: linear-gradient(90deg, #ff5f6d, #ffc371, #7cf29b, #4fc3ff, #a77bff, #ff5fb6);
+}
+.card[data-tone='pattern'] {
+  --f-ink: #3b2a07;
+  --f-ink-2: rgba(59, 42, 7, .62);
+  --f-line: rgba(140, 104, 24, .55);
+  --f-shadow: #7a5a12;
+  --f-panel: #f7efdb;
+  /* Guilloche: three families of fine rings that interfere into a banknote pattern, drifting with the tilt. */
+  --f-bg:
+    repeating-radial-gradient(circle at calc(var(--background-x, 50%) * .6) 0, transparent 0 1.9cqw, rgba(176, 132, 36, .32) 1.9cqw 2.05cqw),
+    repeating-radial-gradient(circle at 100% calc(100% - var(--background-y, 50%) * .5), transparent 0 2.3cqw, rgba(176, 132, 36, .28) 2.3cqw 2.42cqw),
+    repeating-conic-gradient(from 0deg at 50% 50%, rgba(176, 132, 36, .08) 0 1.5deg, transparent 1.5deg 4deg),
+    linear-gradient(160deg, #fbf4e2, #efe2c2 55%, #f8eed6);
+}
+
+/* Shared type */
+.f-maker {
+  font: 600 3cqw/1 var(--latin);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--f-ink-2);
+}
+.f-model {
+  font: 700 7.4cqw/.95 var(--latin-condensed), var(--jp);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--f-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.f-small {
+  font: 400 2.7cqw/1.25 var(--latin);
+  font-variant-numeric: tabular-nums;
+  color: var(--f-ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.w-camera {
+  font: 600 3.4cqw/1.1 var(--latin);
+  color: var(--f-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.f-no {
+  font: 400 2.5cqw/1 var(--latin);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .08em;
+  color: var(--f-ink-2);
+}
+.f-rarity {
+  font: 600 3.2cqw/1 var(--latin-condensed);
+  letter-spacing: .1em;
+  color: var(--f-ink);
+  padding-left: 1.6cqw;
+  border-left: .8cqw solid var(--rarity);
+}
+.card[data-tone='light'] .f-rarity {
+  border-image: var(--rainbow) 1;
+}
+.card[data-tone='pattern'] .f-model {
+  color: #6b4c0c;
+  text-shadow: -1px -1px 0 hsla(45, 80%, 96%, .9), 1px 1px 0 hsla(35, 60%, 30%, .55);
+}
+
+/* ── gallery: the SPORT card ───────────────────────── */
+.card[data-frame='gallery'] {
+  --win-top: 20cqw;
+  --win-left: 4.5cqw;
+  --win-w: 91cqw;
+  --win-h: 92cqw;
+  --win-r: 0cqw;
+}
+.g-head {
+  left: 4.5cqw;
+  right: 4.5cqw;
+  top: 4.5cqw;
+  height: 13.5cqw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: .8cqw;
+}
+.g-foot {
+  left: 4.5cqw;
+  right: 4.5cqw;
+  bottom: 4.5cqw;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 3cqw;
+  padding-top: 3cqw;
+  border-top: 1px solid var(--f-line);
+}
+.g-meta {
+  grid-column: 1 / -1;
+  font: 500 3.6cqw/1 var(--latin), var(--jp);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* ── watermark: phone-camera strip under the photo ─── */
+.card[data-frame='watermark'] {
+  --win-top: 0cqw;
+  --win-left: 0cqw;
+  --win-w: 100cqw;
+  --win-h: 104cqw;
+  --win-r: 0cqw;
+}
+.w-bar {
+  left: 0;
+  right: 0;
+  top: 104cqw;
+  bottom: 0;
+  background: var(--f-panel);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.15fr);
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  column-gap: 3.6cqw;
+  padding: 4.2cqw 5cqw 3.4cqw;
+}
+.w-left,
+.w-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4cqw;
+  min-width: 0;
+}
+.w-left .f-model {
+  font-size: 6.4cqw;
+}
+.w-rule {
+  position: static;
+  width: 1px;
+  height: 9cqw;
+  background: var(--f-line);
+}
+.w-under {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 3cqw;
+  padding-top: 2.6cqw;
+}
+.w-under .f-rarity {
+  margin-left: auto;
+}
+.card[data-tone='light'] .w-bar {
+  background: var(--rainbow) top / 100% .5cqw no-repeat, #fff;
+}
+.card[data-tone='pattern'] .w-bar {
+  background: var(--f-bg);
+  border-top: .6cqw solid #c9a44a;
+}
+
+/* ── litt: blurred backdrop, floating rounded photo ── */
+.card[data-frame='litt'] {
+  --win-top: 15cqw;
+  --win-left: 8cqw;
+  --win-w: 84cqw;
+  --win-h: 84cqw;
+  --win-r: 3cqw;
+}
+.l-blur {
+  inset: -12%;
+  background: var(--photo) var(--focus) / cover no-repeat;
+  filter: blur(5cqw) saturate(1.2);
+}
+.l-blur::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--l-wash, rgba(8, 8, 10, .45));
+}
+.card[data-tone='light'] { --l-wash: rgba(255, 255, 255, .62); }
+.card[data-tone='pattern'] .l-blur::after { background: rgba(247, 238, 214, .62); }
+.card[data-tone='pattern'] .l-blur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--f-bg);
+  opacity: .55;
+}
+.l-maker {
+  left: 0;
+  right: 0;
+  top: 6.4cqw;
+  text-align: center;
+}
+.l-foot {
+  left: 6cqw;
+  right: 6cqw;
+  top: 105cqw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4cqw;
+  text-align: center;
+}
+.l-foot .f-model {
+  font-size: 6cqw;
+  margin-bottom: .8cqw;
+}
+.l-no {
+  left: 5cqw;
+  bottom: 4cqw;
+}
+.l-rarity {
+  right: 5cqw;
+  bottom: 3.6cqw;
+}
+
+/* ── palette: matte card with colour swatches ──────── */
+.card[data-frame='palette'] {
+  --win-top: 25cqw;
+  --win-left: 7cqw;
+  --win-w: 86cqw;
+  --win-h: 78cqw;
+  --win-r: 2.4cqw;
+}
+.card[data-frame='palette'][data-tone='dark'] { --f-bg: #1a1b1e; }
+.p-head {
+  left: 7cqw;
+  right: 7cqw;
+  top: 8cqw;
+  display: flex;
+  flex-direction: column;
+  gap: 2cqw;
+}
+.p-head .f-model {
+  font: 600 7cqw/1 var(--latin), var(--jp);
+  text-transform: none;
+  letter-spacing: -.01em;
+}
+.p-head .f-small {
+  font-size: 2.4cqw;
+  letter-spacing: .04em;
+}
+.p-foot {
+  left: 7cqw;
+  right: 7cqw;
+  top: 108cqw;
+  bottom: 4cqw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  column-gap: 4cqw;
+}
+.p-swatches {
+  position: static;
+  display: flex;
+}
+.p-swatches span {
+  width: 6.4cqw;
+  height: 3cqw;
+}
+.p-exif {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1cqw;
+  min-width: 0;
+  text-align: right;
+}
+.p-exif .w-camera {
+  font-size: 3.6cqw;
+}
+.p-foot .f-no {
+  align-self: end;
+}
+.p-foot .f-rarity {
+  justify-self: end;
+  align-self: end;
+}
+
+/* ── window: old desktop window (after the Picture Frames set) ── */
+.card[data-frame='window'] {
+  --win-top: 14.6cqw;
+  --win-left: 5.6cqw;
+  --win-w: 84.8cqw;
+  --win-h: 76cqw;
+  --win-r: 0cqw;
+}
+.card[data-frame='window'][data-tone='dark'] {
+  --f-bg: radial-gradient(circle, rgba(255, 255, 255, .07) .25cqw, transparent .3cqw) 0 0 / 2.4cqw 2.4cqw, #111214;
+  --f-panel: #26272b;
+}
+.card[data-frame='window'][data-tone='light'] {
+  --f-bg: radial-gradient(circle, rgba(0, 0, 0, .12) .25cqw, transparent .3cqw) 0 0 / 2.4cqw 2.4cqw, #eceae4;
+}
+.x-window {
+  left: 5cqw;
+  top: 7cqw;
+  width: 86cqw;
+  height: 92cqw;
+  background: var(--f-panel);
+  border: .45cqw solid var(--f-ink);
+  box-shadow: 1.8cqw 1.8cqw 0 0 var(--f-shadow);
+}
+.card[data-tone='dark'] .x-window {
+  border-color: rgba(255, 255, 255, .55);
+}
+.card[data-tone='pattern'] .x-window {
+  background: var(--f-panel);
+  border-color: #a77d1c;
+}
+.x-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 7cqw;
+  display: flex;
+  align-items: center;
+  gap: 2cqw;
+  padding: 0 1.6cqw;
+  border-bottom: .45cqw solid currentColor;
+  color: var(--f-ink);
+  font: 500 2.8cqw/1 var(--mono);
+}
+.card[data-tone='dark'] .x-title {
+  color: rgba(255, 255, 255, .55);
+}
+.card[data-tone='dark'] .x-name { color: var(--f-ink); }
+.x-dots {
+  display: flex;
+  gap: .9cqw;
+}
+.x-dots i {
+  width: 1.3cqw;
+  height: 1.3cqw;
+  border: .3cqw solid currentColor;
+  border-radius: 50%;
+}
+.x-name {
+  flex: 1;
+  text-align: center;
+}
+.x-close {
+  font: 400 4cqw/1 var(--latin);
+}
+.x-media {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7.4cqw;
+  display: flex;
+  align-items: center;
+  gap: 2.4cqw;
+  padding: 0 2.4cqw;
+  border-top: .45cqw solid currentColor;
+  color: var(--f-ink);
+}
+.card[data-tone='dark'] .x-media {
+  color: rgba(255, 255, 255, .55);
+}
+.x-media svg {
+  width: 3.6cqw;
+  height: 3.6cqw;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.x-track {
+  flex: 1;
+  height: .5cqw;
+  background: currentColor;
+  opacity: .5;
+  position: relative;
+}
+.x-track i {
+  position: absolute;
+  left: 34%;
+  top: 50%;
+  width: 2cqw;
+  height: 2cqw;
+  translate: -50% -50%;
+  background: var(--f-panel);
+  border: .4cqw solid currentColor;
+  border-radius: 50%;
+}
+.x-foot {
+  left: 5cqw;
+  right: 5cqw;
+  top: 105cqw;
+  bottom: 4cqw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2cqw;
+}
+.x-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -10,6 +10,15 @@ export interface CardCredit {
   modified: boolean;
 }
 
+export type Frame = 'gallery' | 'watermark' | 'litt' | 'palette' | 'window';
+export const FRAMES: Frame[] = ['gallery', 'watermark', 'litt', 'palette', 'window'];
+
+export interface Exif {
+  camera: string | null;
+  settings: string | null;
+  date: string | null;
+}
+
 export interface Card {
   id: string;
   no: number;
@@ -20,6 +29,11 @@ export interface Card {
   country: string;
   image: string;
   focus?: string;
+  /** The frame picked for this photo's mood; defaults to 'gallery'. */
+  frame?: Frame;
+  exif?: Exif;
+  /** Five colours of the photo, most common first. */
+  palette?: string[];
   credit: CardCredit;
 }
 

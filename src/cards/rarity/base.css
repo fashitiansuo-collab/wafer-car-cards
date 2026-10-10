@@ -5,10 +5,6 @@
   --rarity: var(--paper-2);
   --face: #17181b;
   --face-line: rgba(255, 255, 255, .12);
-  --pad: 4.5cqw;
-  /* Photo window of the framed layout (C–R), as insets of the card. */
-  --win-top: 20cqw;
-  --win-h: 92cqw;
 
   position: relative;
   width: var(--card-w);
@@ -49,13 +45,14 @@
   background: #17181b;
 }
 
-/* Photo: a window in framed cards, the whole card in full-art ones. */
+/* Photo: the window each frame defines (frames.css). */
 .card__photo {
   position: absolute;
   top: var(--win-top);
-  left: var(--pad);
-  right: var(--pad);
+  left: var(--win-left);
+  width: var(--win-w);
   height: var(--win-h);
+  border-radius: var(--win-r, 0);
   overflow: hidden;
   background: #000;
 }
@@ -65,88 +62,6 @@
   object-fit: cover;
   object-position: var(--focus);
   display: block;
-}
-.card--full .card__photo {
-  inset: 0;
-  height: auto;
-}
-
-/* Type */
-.card__face {
-  position: absolute;
-  inset: 0;
-  padding: var(--pad);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  pointer-events: none;
-}
-.card__head {
-  display: flex;
-  flex-direction: column;
-  gap: .6cqw;
-  height: calc(var(--win-top) - var(--pad) - 2cqw);
-  justify-content: flex-end;
-}
-.card__maker {
-  font: 500 3.1cqw/1 var(--latin);
-  letter-spacing: .14em;
-  color: var(--paper-2);
-}
-.card__model {
-  font: 700 7.6cqw/.95 var(--latin-condensed), var(--jp);
-  text-transform: uppercase;
-  letter-spacing: .02em;
-  color: var(--paper);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card__foot {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  row-gap: 3cqw;
-  align-items: end;
-  padding-top: 3cqw;
-  border-top: 1px solid var(--face-line);
-}
-.card__meta {
-  grid-column: 1 / -1;
-  font: 500 3.6cqw/1 var(--latin), var(--jp);
-  color: var(--paper);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-}
-.card__no {
-  font: 400 3cqw/1 var(--latin);
-  font-variant-numeric: tabular-nums;
-  color: var(--paper-2);
-  letter-spacing: .08em;
-}
-.card__rarity {
-  font: 600 3.6cqw/1 var(--latin-condensed);
-  letter-spacing: .1em;
-  color: var(--paper);
-  padding-left: 2cqw;
-  border-left: .9cqw solid var(--rarity);
-}
-
-/* Full-art: text sits on a black band at the bottom. */
-.card--full .card__face {
-  justify-content: flex-end;
-}
-.card--full .card__head {
-  height: auto;
-  padding: 4cqw var(--pad) 0;
-  margin: 0 calc(var(--pad) * -1);
-  background: rgba(8, 8, 10, .86);
-}
-.card--full .card__foot {
-  padding: 3cqw var(--pad) var(--pad);
-  margin: 0 calc(var(--pad) * -1) calc(var(--pad) * -1);
-  background: rgba(8, 8, 10, .86);
-  border-top: 0;
 }
 
 /* Effect layers */

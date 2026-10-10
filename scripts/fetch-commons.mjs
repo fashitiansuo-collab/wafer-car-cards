@@ -2,11 +2,12 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { formatExif } from './exif.mjs';
 
 const UA = 'TCGcar/0.1 (personal art project; local script)';
 const ORDER = ['C', 'UC', 'R', 'UR', 'SEC'];
 const BATCH = 50;
-const API = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=900&titles=';
+const API = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url|extmetadata|commonmetadata&iiurlwidth=900&titles=';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -75,6 +76,7 @@ async function main() {
       licenseUrl: meta.LicenseUrl?.value ?? '',
       sourceUrl: ii.descriptionurl ?? '',
       thumburl: src,
+      exif: formatExif(ii.commonmetadata ?? []),
     });
   }
   await mkdir(join(root, 'public', 'cards'), { recursive: true });
@@ -95,6 +97,8 @@ async function main() {
       image: `./cards/${id}.jpg`,
     };
     if (a.entry.focus) card.focus = a.entry.focus;
+    card.exif = a.exif;
+    if (a.entry.frame) card.frame = a.entry.frame;
     card.credit = { author: a.author, license: a.license, licenseUrl: a.licenseUrl, sourceUrl: a.sourceUrl, modified: true };
     cards.push(card);
     if (n < accepted.length) await sleep(300);

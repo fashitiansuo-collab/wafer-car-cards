@@ -1,4 +1,4 @@
-/* UR — rainbow full art: diagonal rainbow and glitter, strongest where the photo is bright. */
+/* UR — rainbow: diagonal rainbow and glitter over the photo, strongest where it is bright. The frame is white. */
 .card[data-rarity='UR'] {
   --rarity: var(--magenta);
 }
@@ -7,6 +7,12 @@
 }
 .card[data-rarity='UR'] .card__shine {
   display: block;
+  inset: auto;
+  top: var(--win-top);
+  left: var(--win-left);
+  width: var(--win-w);
+  height: var(--win-h);
+  border-radius: var(--win-r, 0);
   background:
     url('/fx/glitter.png'),
     repeating-linear-gradient(

@@ -5,7 +5,8 @@
     "maker": "TOYOTA",
     "model": "Corolla",
     "year": 2025,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "watermark"
   },
   {
     "file": "File:Back of Toyota Corolla; Dnipro, Ukraine; 09.11.19.jpg",
@@ -13,7 +14,8 @@
     "maker": "TOYOTA",
     "model": "Corolla",
     "year": 2004,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "window"
   },
   {
     "file": "File:Suzuki DBA-MH22S Wagon R FX-S Limited (22101310510).jpg",
@@ -21,7 +23,8 @@
     "maker": "SUZUKI",
     "model": "Wagon R",
     "year": 2007,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "window"
   },
   {
     "file": "File:Maruti Suzuki Wagon R Paro Taxi Front.JPG",
@@ -29,7 +32,8 @@
     "maker": "SUZUKI",
     "model": "Wagon R",
     "year": 2015,
-    "country": "India"
+    "country": "India",
+    "frame": "watermark"
   },
   {
     "file": "File:Volkswagen Golf GL Diesel (23052110480).jpg",
@@ -37,7 +41,8 @@
     "maker": "VOLKSWAGEN",
     "model": "Golf GL",
     "year": 1980,
-    "country": "Germany"
+    "country": "Germany",
+    "frame": "litt"
   },
   {
     "file": "File:Volkswagen Golf IV 4-door.jpg",
@@ -45,7 +50,8 @@
     "maker": "VOLKSWAGEN",
     "model": "Golf IV",
     "year": 2000,
-    "country": "Germany"
+    "country": "Germany",
+    "frame": "watermark"
   },
   {
     "file": "File:Mazda E-BD1051 Familia 1500XL (22100713206).jpg",
@@ -53,7 +59,8 @@
     "maker": "MAZDA",
     "model": "Familia",
     "year": 1982,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "window"
   },
   {
     "file": "File:Honda Fit Main Street downtown Montpelier VT July 2016.jpg",
@@ -61,7 +68,8 @@
     "maker": "HONDA",
     "model": "Fit",
     "year": 2010,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "palette"
   },
   {
     "file": "File:2009-2012 Suzuki Carry DA63T.jpg",
@@ -69,7 +77,8 @@
     "maker": "SUZUKI",
     "model": "Carry",
     "year": 2010,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "window"
   },
   {
     "file": "File:Toyota Prius Spencer Park.jpg",
@@ -77,7 +86,8 @@
     "maker": "TOYOTA",
     "model": "Prius",
     "year": 2006,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "gallery"
   },
   {
     "file": "File:Toyota Prius 1.jpg",
@@ -85,7 +95,8 @@
     "maker": "TOYOTA",
     "model": "Prius",
     "year": 2023,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "window"
   },
   {
     "file": "File:A Toyota HiAce Solemio at Taichung 02.jpg",
@@ -93,7 +104,8 @@
     "maker": "TOYOTA",
     "model": "HiAce Regius",
     "year": 1998,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "palette"
   },
   {
     "file": "File:Daihatsu Hijet Truck Standard (S500P) in Bright Silver Metallic, front left.jpg",
@@ -101,7 +113,8 @@
     "maker": "DAIHATSU",
     "model": "Hijet Truck",
     "year": 2015,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "window"
   },
   {
     "file": "File:1991 Fiat Panda 4x4 (3773438080).jpg",
@@ -109,7 +122,8 @@
     "maker": "FIAT",
     "model": "Panda 4x4",
     "year": 1991,
-    "country": "Italy"
+    "country": "Italy",
+    "frame": "watermark"
   },
   {
     "file": "File:Volkswagen Golf GTI parked downtown Montpelier VT October 2016.jpg",
@@ -117,7 +131,8 @@
     "maker": "VOLKSWAGEN",
     "model": "Golf GTI",
     "year": 2016,
-    "country": "Germany"
+    "country": "Germany",
+    "frame": "gallery"
   },
   {
     "file": "File:石焼いも (443194413).jpg",
@@ -125,7 +140,8 @@
     "maker": "DAIHATSU",
     "model": "Hijet",
     "year": 1999,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "litt"
   },
   {
     "file": "File:Mazda MX-5 beside Mount Iō, Akan Mashu National Park.jpg",
@@ -133,7 +149,8 @@
     "maker": "MAZDA",
     "model": "Roadster",
     "year": 2016,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "litt"
   },
   {
     "file": "File:Blue Suzuki Jimny XC (3BA-JB64W-JXCR-J) front.jpg",
@@ -141,7 +158,8 @@
     "maker": "SUZUKI",
     "model": "Jimny",
     "year": 2019,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "palette"
   },
   {
     "file": "File:Citroën 2 CV Charleston (2015-08-29 3174 b).jpg",
@@ -149,7 +167,8 @@
     "maker": "CITROËN",
     "model": "2CV Charleston",
     "year": 1982,
-    "country": "France"
+    "country": "France",
+    "frame": "litt"
   },
   {
     "file": "File:Citroen 2CV in red.jpg",
@@ -157,7 +176,8 @@
     "maker": "CITROËN",
     "model": "2CV",
     "year": 1975,
-    "country": "France"
+    "country": "France",
+    "frame": "palette"
   },
   {
     "file": "File:Fiat 500 F Sachs Franken Classic 2018 P5201110.jpg",
@@ -165,7 +185,8 @@
     "maker": "FIAT",
     "model": "500 F",
     "year": 1968,
-    "country": "Italy"
+    "country": "Italy",
+    "frame": "watermark"
   },
   {
     "file": "File:1982 Volkswagen Golf GTi (Mk1) (14072934454).jpg",
@@ -173,7 +194,8 @@
     "maker": "VOLKSWAGEN",
     "model": "Golf GTI",
     "year": 1982,
-    "country": "Germany"
+    "country": "Germany",
+    "frame": "gallery"
   },
   {
     "file": "File:1986 Volvo 240 DL Estate (14341053013).jpg",
@@ -181,7 +203,8 @@
     "maker": "VOLVO",
     "model": "240 Estate",
     "year": 1986,
-    "country": "Sweden"
+    "country": "Sweden",
+    "frame": "litt"
   },
   {
     "file": "File:Rover Mini Cooper 2000 (X411JOP).jpg",
@@ -189,7 +212,8 @@
     "maker": "ROVER",
     "model": "Mini Cooper",
     "year": 2000,
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "frame": "palette"
   },
   {
     "file": "File:2015-2020 Honda S660.jpg",
@@ -197,7 +221,8 @@
     "maker": "HONDA",
     "model": "S660",
     "year": 2015,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "watermark"
   },
   {
     "file": "File:2009 Volkswagen New Beetle в Санкт-Петербурге 01.jpg",
@@ -205,7 +230,8 @@
     "maker": "VOLKSWAGEN",
     "model": "New Beetle",
     "year": 2009,
-    "country": "Germany"
+    "country": "Germany",
+    "frame": "palette"
   },
   {
     "file": "File:Dülmen, Dernekamp, Mini Hatch Cooper -- 2018 -- 1545-51.jpg",
@@ -213,7 +239,8 @@
     "maker": "MINI",
     "model": "Cooper",
     "year": 2018,
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "frame": "litt"
   },
   {
     "file": "File:Toyota Corolla rally car at the Historic Rally Festival.jpg",
@@ -221,7 +248,8 @@
     "maker": "TOYOTA",
     "model": "Corolla Rally",
     "year": 1980,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "palette"
   },
   {
     "file": "File:Lancia Stratos HF Rally.jpg",
@@ -229,7 +257,8 @@
     "maker": "LANCIA",
     "model": "Stratos HF",
     "year": 1975,
-    "country": "Italy"
+    "country": "Italy",
+    "frame": "gallery"
   },
   {
     "file": "File:Subaru Impreza WRC (51330224598).jpg",
@@ -237,7 +266,8 @@
     "maker": "SUBARU",
     "model": "Impreza WRC",
     "year": 1997,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "litt"
   },
   {
     "file": "File:Subaru Impreza WRC (43944203362).jpg",
@@ -245,7 +275,8 @@
     "maker": "SUBARU",
     "model": "Impreza WRC",
     "year": 2002,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "gallery"
   },
   {
     "file": "File:1966 Ford GT40 Mk II Goodwood, 2019 (01).jpg",
@@ -253,7 +284,8 @@
     "maker": "FORD",
     "model": "GT40 Mk II",
     "year": 1966,
-    "country": "United States"
+    "country": "United States",
+    "frame": "watermark"
   },
   {
     "file": "File:Gulf Ford GT40 Goodwood.jpg",
@@ -261,7 +293,8 @@
     "maker": "FORD",
     "model": "GT40",
     "year": 1968,
-    "country": "United States"
+    "country": "United States",
+    "frame": "gallery"
   },
   {
     "file": "File:Mini Cooper S 1966.jpg",
@@ -269,7 +302,8 @@
     "maker": "BMC",
     "model": "Mini Cooper S",
     "year": 1966,
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "frame": "window"
   },
   {
     "file": "File:-i---i- (35888385533).jpg",
@@ -277,7 +311,8 @@
     "maker": "MAZDA",
     "model": "RX-7",
     "year": 1993,
-    "country": "Japan"
+    "country": "Japan",
+    "frame": "gallery"
   },
   {
     "file": "File:Porsche 911 3.0 RS (52344031338).jpg",
@@ -285,7 +320,8 @@
     "maker": "PORSCHE",
     "model": "911 3.0 RS",
     "year": 1974,
-    "country": "Germany"
+    "country": "Germany",
+    "frame": "watermark"
   },
   {
     "file": "File:Mazda 787B 3.jpg",
@@ -294,7 +330,8 @@
     "model": "787B",
     "year": 1991,
     "country": "Japan",
-    "focus": "28% 50%"
+    "focus": "28% 50%",
+    "frame": "gallery"
   },
   {
     "file": "File:F40 Ferrari 20090509.jpg",
@@ -303,7 +340,8 @@
     "model": "F40",
     "year": 1987,
     "country": "Italy",
-    "focus": "50% 50%"
+    "focus": "50% 50%",
+    "frame": "watermark"
   },
   {
     "file": "File:Lamborghini Countach LP 5000S 1983.jpg",
@@ -312,7 +350,8 @@
     "model": "Countach",
     "year": 1983,
     "country": "Italy",
-    "focus": "42% 50%"
+    "focus": "42% 50%",
+    "frame": "palette"
   },
   {
     "file": "File:Dülmen, Kirchspiel, Börnste, BMW Mini -- 2019 -- 7207-13.jpg",
@@ -321,7 +360,8 @@
     "model": "Cooper",
     "year": 2019,
     "country": "United Kingdom",
-    "focus": "40% 55%"
+    "focus": "40% 55%",
+    "frame": "litt"
   },
   {
     "file": "File:Jumping 911 Carrera RS 2.7 in Pinggau (Bosch Rallye 2010).jpg",
@@ -330,7 +370,8 @@
     "model": "911 Carrera RS 2.7",
     "year": 1973,
     "country": "Germany",
-    "focus": "52% 60%"
+    "focus": "52% 60%",
+    "frame": "window"
   },
   {
     "file": "File:Porsche 917 IAA 2013.JPG",
@@ -339,7 +380,8 @@
     "model": "917K",
     "year": 1970,
     "country": "Germany",
-    "focus": "38% 50%"
+    "focus": "38% 50%",
+    "frame": "gallery"
   },
   {
     "file": "File:1964 Ferrari 250 GTO 1.jpg",
@@ -348,7 +390,8 @@
     "model": "250 GTO",
     "year": 1964,
     "country": "Italy",
-    "focus": "38% 55%"
+    "focus": "38% 55%",
+    "frame": "palette"
   },
   {
     "file": "File:Bugatti 57 S Atlantic Best Of Show Chantily.jpg",
@@ -357,7 +400,8 @@
     "model": "Type 57S Atlantic",
     "year": 1936,
     "country": "France",
-    "focus": "30% 50%"
+    "focus": "30% 50%",
+    "frame": "litt"
   },
   {
     "file": "File:1955 Mercedes-Benz 300 SLR FOS19.jpg",
@@ -366,6 +410,7 @@
     "model": "300 SLR",
     "year": 1955,
     "country": "Germany",
-    "focus": "45% 50%"
+    "focus": "45% 50%",
+    "frame": "watermark"
   }
 ]

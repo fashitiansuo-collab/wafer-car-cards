@@ -1,23 +1,15 @@
-/* R — regular holo: rainbow bands run through the photo window; the frame is brushed silver. */
+/* R — regular holo: rainbow bands run through the photo window. */
 .card[data-rarity='R'] {
   --rarity: var(--blue);
-}
-.card[data-rarity='R'] .card__front {
-  background:
-    linear-gradient(
-      180deg,
-      #24262a calc(var(--pointer-y, 50%) - 40%),
-      #6b7078 var(--pointer-y, 50%),
-      #24262a calc(var(--pointer-y, 50%) + 40%)
-    );
 }
 .card[data-rarity='R'] .card__shine {
   display: block;
   inset: auto;
   top: var(--win-top);
-  left: var(--pad);
-  right: var(--pad);
+  left: var(--win-left);
+  width: var(--win-w);
   height: var(--win-h);
+  border-radius: var(--win-r, 0);
   background:
     repeating-linear-gradient(
       110deg,

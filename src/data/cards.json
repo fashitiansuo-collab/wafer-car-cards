@@ -8,13 +8,26 @@
     "year": 2025,
     "country": "Japan",
     "image": "./cards/c001.jpg",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Rachelhoots",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Toyota_Corolla_LE_ice_cap.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#42474f",
+      "#535960",
+      "#212521",
+      "#dadfe0",
+      "#aab0b3"
+    ]
   },
   {
     "id": "c002",
@@ -25,13 +38,26 @@
     "year": 2004,
     "country": "Japan",
     "image": "./cards/c002.jpg",
+    "exif": {
+      "camera": "NIKON COOLPIX B500",
+      "settings": "52mm F5.7 1/50s ISO125",
+      "date": "2019/11/09"
+    },
+    "frame": "window",
     "credit": {
       "author": "VKras",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Back_of_Toyota_Corolla;_Dnipro,_Ukraine;_09.11.19.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#868683",
+      "#374c2a",
+      "#72726d",
+      "#959692",
+      "#adb7bb"
+    ]
   },
   {
     "id": "c003",
@@ -42,13 +68,26 @@
     "year": 2007,
     "country": "Japan",
     "image": "./cards/c003.jpg",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": "2023/03/16"
+    },
+    "frame": "window",
     "credit": {
       "author": "先従隗始",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suzuki_DBA-MH22S_Wagon_R_FX-S_Limited_(22101310510).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#1f2227",
+      "#58595b",
+      "#828688",
+      "#9fa5a5",
+      "#c7ced2"
+    ]
   },
   {
     "id": "c004",
@@ -59,13 +98,26 @@
     "year": 2015,
     "country": "India",
     "image": "./cards/c004.jpg",
+    "exif": {
+      "camera": "Apple iPhone 6",
+      "settings": "4.2mm F2.2 1/1130s ISO32",
+      "date": "2016/03/22"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Ominae",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_Wagon_R_Paro_Taxi_Front.JPG",
       "modified": true
-    }
+    },
+    "palette": [
+      "#6f6566",
+      "#b9b2a6",
+      "#1b1415",
+      "#4d4042",
+      "#34191b"
+    ]
   },
   {
     "id": "c005",
@@ -76,13 +128,26 @@
     "year": 1980,
     "country": "Germany",
     "image": "./cards/c005.jpg",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "litt",
     "credit": {
       "author": "先従隗始",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GL_Diesel_(23052110480).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#667150",
+      "#2e3a2f",
+      "#959d87",
+      "#8f9683",
+      "#adb7a1"
+    ]
   },
   {
     "id": "c006",
@@ -93,13 +158,26 @@
     "year": 2000,
     "country": "Germany",
     "image": "./cards/c006.jpg",
+    "exif": {
+      "camera": "Canon PowerShot A540",
+      "settings": "5.8mm F4 1/80s",
+      "date": "2008/04/13"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "IFCAR",
       "license": "Public domain",
       "licenseUrl": "",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_IV_4-door.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#818483",
+      "#646563",
+      "#30302d",
+      "#a8acaf",
+      "#c5cbd0"
+    ]
   },
   {
     "id": "c007",
@@ -110,13 +188,26 @@
     "year": 1982,
     "country": "Japan",
     "image": "./cards/c007.jpg",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "window",
     "credit": {
       "author": "先従隗始",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_E-BD1051_Familia_1500XL_(22100713206).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#697273",
+      "#252521",
+      "#505350",
+      "#cbd1d4",
+      "#939da2"
+    ]
   },
   {
     "id": "c008",
@@ -127,13 +218,26 @@
     "year": 2010,
     "country": "Japan",
     "image": "./cards/c008.jpg",
+    "exif": {
+      "camera": "SAMSUNG-SM-J120AZ",
+      "settings": "3.3mm F2.2 1/367s ISO50",
+      "date": "2016/07/02"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Artaxerxes",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Fit_Main_Street_downtown_Montpelier_VT_July_2016.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#6c6463",
+      "#4d2a2c",
+      "#9a9693",
+      "#b8b6b6",
+      "#d8d7d7"
+    ]
   },
   {
     "id": "c009",
@@ -144,13 +248,26 @@
     "year": 2010,
     "country": "Japan",
     "image": "./cards/c009.jpg",
+    "exif": {
+      "camera": "NIKON Z5_2",
+      "settings": "120mm F6.3 1/320s ISO100",
+      "date": "2025/05/31"
+    },
+    "frame": "window",
     "credit": {
       "author": "TTTNIS",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009-2012_Suzuki_Carry_DA63T.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#1a1c13",
+      "#3c442a",
+      "#7b7d75",
+      "#dae0e4",
+      "#b5b9ba"
+    ]
   },
   {
     "id": "c010",
@@ -161,13 +278,26 @@
     "year": 2006,
     "country": "Japan",
     "image": "./cards/c010.jpg",
+    "exif": {
+      "camera": "Panasonic DMC-FX30",
+      "settings": "9.5mm F4.1 1/50s ISO100",
+      "date": "2008/05/05"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Herry Lawford from Stockbridge, UK",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_Spencer_Park.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#768160",
+      "#abbf8e",
+      "#212614",
+      "#5d5635",
+      "#364d2e"
+    ]
   },
   {
     "id": "c011",
@@ -178,13 +308,26 @@
     "year": 2023,
     "country": "Japan",
     "image": "./cards/c011.jpg",
+    "exif": {
+      "camera": "samsung Galaxy S24 Ultra",
+      "settings": "6.3mm F1.7 1/556s ISO12",
+      "date": "2024/09/08"
+    },
+    "frame": "window",
     "credit": {
       "author": "Calreyn88",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_1.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#5b6154",
+      "#2f363e",
+      "#929ca2",
+      "#788075",
+      "#bac4cc"
+    ]
   },
   {
     "id": "c012",
@@ -195,13 +338,26 @@
     "year": 1998,
     "country": "Japan",
     "image": "./cards/c012.jpg",
+    "exif": {
+      "camera": "NIKON D750",
+      "settings": "46mm F8 1/250s ISO250",
+      "date": "2021/03/21"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Lokseng01",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Toyota_HiAce_Solemio_at_Taichung_02.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#c1ccdb",
+      "#202328",
+      "#a2a5ab",
+      "#434a54",
+      "#5e6065"
+    ]
   },
   {
     "id": "c013",
@@ -212,13 +368,26 @@
     "year": 2015,
     "country": "Japan",
     "image": "./cards/c013.jpg",
+    "exif": {
+      "camera": "Canon EOS 6D",
+      "settings": "70mm F5 1/250s ISO100",
+      "date": "2024/11/26"
+    },
+    "frame": "window",
     "credit": {
       "author": "Mr.choppers",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daihatsu_Hijet_Truck_Standard_(S500P)_in_Bright_Silver_Metallic,_front_left.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#7c7a7e",
+      "#9ea0a3",
+      "#414146",
+      "#bfc1bd",
+      "#eae9e3"
+    ]
   },
   {
     "id": "c014",
@@ -229,13 +398,26 @@
     "year": 1991,
     "country": "Italy",
     "image": "./cards/c014.jpg",
+    "exif": {
+      "camera": "Canon DIGITAL IXUS 80 IS",
+      "settings": "19mm F4.9 1/250s ISO400",
+      "date": "2009/07/27"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Spanish Coches",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Fiat_Panda_4x4_(3773438080).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#161917",
+      "#61605c",
+      "#443532",
+      "#7b7976",
+      "#b5b2b4"
+    ]
   },
   {
     "id": "c015",
@@ -246,13 +428,26 @@
     "year": 2016,
     "country": "Germany",
     "image": "./cards/c015.jpg",
+    "exif": {
+      "camera": "SAMSUNG-SM-J120AZ",
+      "settings": "3.3mm F2.2 1/143s ISO50",
+      "date": "2016/10/25"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Artaxerxes",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_GTI_parked_downtown_Montpelier_VT_October_2016.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#5c5b59",
+      "#73796b",
+      "#2a2a2c",
+      "#f0f4f6",
+      "#aaafb4"
+    ]
   },
   {
     "id": "c016",
@@ -263,13 +458,26 @@
     "year": 1999,
     "country": "Japan",
     "image": "./cards/c016.jpg",
+    "exif": {
+      "camera": "Canon EOS 20D",
+      "settings": "141mm F8 1/250s ISO100",
+      "date": "2007/04/01"
+    },
+    "frame": "litt",
     "credit": {
       "author": "OiMax",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E7%84%BC%E3%81%84%E3%82%82_(443194413).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#6f726f",
+      "#999490",
+      "#4f4c49",
+      "#c2bbb8",
+      "#eae9e7"
+    ]
   },
   {
     "id": "c017",
@@ -280,13 +488,26 @@
     "year": 2016,
     "country": "Japan",
     "image": "./cards/c017.jpg",
+    "exif": {
+      "camera": "SONY ILCE-7M3",
+      "settings": "43mm F5.6 1/2000s ISO2500",
+      "date": "2025/08/06"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Benlisquare",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_MX-5_beside_Mount_I%C5%8D,_Akan_Mashu_National_Park.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#eff0f1",
+      "#575844",
+      "#b4ac9f",
+      "#79725f",
+      "#3e4033"
+    ]
   },
   {
     "id": "c018",
@@ -297,13 +518,26 @@
     "year": 2019,
     "country": "Japan",
     "image": "./cards/c018.jpg",
+    "exif": {
+      "camera": "Panasonic DMC-TZ60",
+      "settings": "58mm F5.9 1/125s ISO100",
+      "date": "2018/07/23"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Tokumeigakarinoaoshima",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Suzuki_Jimny_XC_(3BA-JB64W-JXCR-J)_front.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#4f6260",
+      "#778980",
+      "#182328",
+      "#9eb4a8",
+      "#cacfb6"
+    ]
   },
   {
     "id": "c019",
@@ -314,13 +548,26 @@
     "year": 1982,
     "country": "France",
     "image": "./cards/c019.jpg",
+    "exif": {
+      "camera": "Canon EOS 550D",
+      "settings": "130mm F10 1/250s ISO100",
+      "date": "2015/08/29"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Lothar Spurzem",
       "license": "CC BY-SA 2.0 de",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_2_CV_Charleston_(2015-08-29_3174_b).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#5f6155",
+      "#3c262d",
+      "#cdb897",
+      "#9d956a",
+      "#ccd5e0"
+    ]
   },
   {
     "id": "c020",
@@ -331,13 +578,26 @@
     "year": 1975,
     "country": "France",
     "image": "./cards/c020.jpg",
+    "exif": {
+      "camera": "Canon EOS 4000D",
+      "settings": "27mm F4 1/60s ISO100",
+      "date": "2020/11/29"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Frank Schuengel",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_in_red.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#847a76",
+      "#44423d",
+      "#d4d7d8",
+      "#a84e52",
+      "#bfbebd"
+    ]
   },
   {
     "id": "c021",
@@ -348,13 +608,26 @@
     "year": 1968,
     "country": "Italy",
     "image": "./cards/c021.jpg",
+    "exif": {
+      "camera": "OLYMPUS CORPORATION E-M1MarkII",
+      "settings": "40mm F5 1/2500s ISO400",
+      "date": "2018/05/20"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Ermell",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fiat_500_F_Sachs_Franken_Classic_2018_P5201110.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#9e9a97",
+      "#40542a",
+      "#182b19",
+      "#4f9ba6",
+      "#618074"
+    ]
   },
   {
     "id": "c022",
@@ -365,13 +638,26 @@
     "year": 1982,
     "country": "Germany",
     "image": "./cards/c022.jpg",
+    "exif": {
+      "camera": "Canon PowerShot SX150 IS",
+      "settings": "27mm F5 1/100s ISO400",
+      "date": "2014/04/01"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Riley from Christchurch, New Zealand",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1982_Volkswagen_Golf_GTi_(Mk1)_(14072934454).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#5b5246",
+      "#3a342e",
+      "#a0a29a",
+      "#7a7964",
+      "#bcbeb7"
+    ]
   },
   {
     "id": "c023",
@@ -382,13 +668,26 @@
     "year": 1986,
     "country": "Sweden",
     "image": "./cards/c023.jpg",
+    "exif": {
+      "camera": "SONY DSLR-A300",
+      "settings": "120mm F4 1/125s ISO400",
+      "date": "2014/05/28"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Niels de Wit from Lunteren, The Netherlands",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Volvo_240_DL_Estate_(14341053013).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#494b24",
+      "#212210",
+      "#64682b",
+      "#798035",
+      "#999e53"
+    ]
   },
   {
     "id": "c024",
@@ -399,13 +698,26 @@
     "year": 2000,
     "country": "United Kingdom",
     "image": "./cards/c024.jpg",
+    "exif": {
+      "camera": null,
+      "settings": "24mm F3.2 1/30s ISO400",
+      "date": "2016/11/04"
+    },
+    "frame": "palette",
     "credit": {
       "author": "DeFacto",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rover_Mini_Cooper_2000_(X411JOP).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#8d8575",
+      "#43403b",
+      "#b3b5ab",
+      "#ab2223",
+      "#a35851"
+    ]
   },
   {
     "id": "c025",
@@ -416,13 +728,26 @@
     "year": 2015,
     "country": "Japan",
     "image": "./cards/c025.jpg",
+    "exif": {
+      "camera": "NIKON Z5_2",
+      "settings": "115mm F6.3 1/160s ISO100",
+      "date": "2025/10/12"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "TTTNIS",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015-2020_Honda_S660.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#b3aba6",
+      "#48362c",
+      "#6c6451",
+      "#24251c",
+      "#b41318"
+    ]
   },
   {
     "id": "c026",
@@ -433,13 +758,26 @@
     "year": 2009,
     "country": "Germany",
     "image": "./cards/c026.jpg",
+    "exif": {
+      "camera": "Panasonic DMC-TZ80",
+      "settings": "4.3mm F3.3 1/200s ISO80",
+      "date": "2026/05/03"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Екатерина Борисова",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Volkswagen_New_Beetle_%D0%B2_%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B5_01.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#88888e",
+      "#2e302b",
+      "#656461",
+      "#aea885",
+      "#d4d197"
+    ]
   },
   {
     "id": "c027",
@@ -450,13 +788,26 @@
     "year": 2018,
     "country": "United Kingdom",
     "image": "./cards/c027.jpg",
+    "exif": {
+      "camera": "Canon EOS 5D Mark IV",
+      "settings": "20mm F10 1/20s ISO50",
+      "date": "2018/03/09"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Dietmar Rabich",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Dernekamp,_Mini_Hatch_Cooper_--_2018_--_1545-51.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#726c5f",
+      "#b4b7b5",
+      "#3e3737",
+      "#959a83",
+      "#ded8cf"
+    ]
   },
   {
     "id": "c028",
@@ -467,13 +818,26 @@
     "year": 1980,
     "country": "Japan",
     "image": "./cards/c028.jpg",
+    "exif": {
+      "camera": "FUJIFILM FinePix X100",
+      "settings": "23mm F2 1/4000s ISO2000",
+      "date": "2021/08/21"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Lewis Collard",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_rally_car_at_the_Historic_Rally_Festival.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#407133",
+      "#4d833a",
+      "#2c422a",
+      "#cacc85",
+      "#63934a"
+    ]
   },
   {
     "id": "c029",
@@ -484,13 +848,26 @@
     "year": 1975,
     "country": "Italy",
     "image": "./cards/c029.jpg",
+    "exif": {
+      "camera": "NIKON D5300",
+      "settings": "52mm F5.6 1/350s ISO400",
+      "date": "2016/10/09"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "35mmMan",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lancia_Stratos_HF_Rally.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#504128",
+      "#1d1e13",
+      "#6f6143",
+      "#8b7b64",
+      "#b8aa9a"
+    ]
   },
   {
     "id": "c030",
@@ -501,13 +878,26 @@
     "year": 1997,
     "country": "Japan",
     "image": "./cards/c030.jpg",
+    "exif": {
+      "camera": "NIKON D5100",
+      "settings": "18mm F9 1/80s ISO200",
+      "date": "2021/07/09"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Neil",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Impreza_WRC_(51330224598).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#414933",
+      "#2a2e20",
+      "#54623e",
+      "#6a774f",
+      "#a2a69a"
+    ]
   },
   {
     "id": "c031",
@@ -518,13 +908,26 @@
     "year": 2002,
     "country": "Japan",
     "image": "./cards/c031.jpg",
+    "exif": {
+      "camera": "NIKON D5100",
+      "settings": "86mm F16 1/100s ISO200",
+      "date": "2018/07/13"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Neil",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Impreza_WRC_(43944203362).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#584842",
+      "#7a7375",
+      "#22242f",
+      "#dbcdc7",
+      "#b4a9a1"
+    ]
   },
   {
     "id": "c032",
@@ -535,13 +938,26 @@
     "year": 1966,
     "country": "United States",
     "image": "./cards/c032.jpg",
+    "exif": {
+      "camera": "NIKON D50",
+      "settings": "70mm F4 1/500s",
+      "date": "2009/07/03"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Bahnfrend",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966_Ford_GT40_Mk_II_Goodwood,_2019_(01).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#1f3a40",
+      "#778082",
+      "#63676a",
+      "#969a96",
+      "#b1b6b4"
+    ]
   },
   {
     "id": "c033",
@@ -552,13 +968,26 @@
     "year": 1968,
     "country": "United States",
     "image": "./cards/c033.jpg",
+    "exif": {
+      "camera": "Canon EOS 40D",
+      "settings": "73mm F10 1/250s ISO200",
+      "date": "2008/07/11"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Brian Snelson from Hockley, Essex, England",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gulf_Ford_GT40_Goodwood.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#8a987e",
+      "#2f2923",
+      "#5f6765",
+      "#d4d5d5",
+      "#a2b08b"
+    ]
   },
   {
     "id": "c034",
@@ -569,13 +998,26 @@
     "year": 1966,
     "country": "United Kingdom",
     "image": "./cards/c034.jpg",
+    "exif": {
+      "camera": null,
+      "settings": "27mm F8 1/4s ISO400",
+      "date": "2016/11/04"
+    },
+    "frame": "window",
     "credit": {
       "author": "DeFacto",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mini_Cooper_S_1966.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#292628",
+      "#b5aca3",
+      "#7a6860",
+      "#644440",
+      "#722c29"
+    ]
   },
   {
     "id": "c035",
@@ -586,13 +1028,26 @@
     "year": 1993,
     "country": "Japan",
     "image": "./cards/c035.jpg",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Andrew Basterfield",
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:-i---i-_(35888385533).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#191f1c",
+      "#3f4d45",
+      "#798979",
+      "#8cab98",
+      "#cdc6a3"
+    ]
   },
   {
     "id": "c036",
@@ -603,13 +1058,26 @@
     "year": 1974,
     "country": "Germany",
     "image": "./cards/c036.jpg",
+    "exif": {
+      "camera": "NIKON D5100",
+      "settings": "32mm F10 1/100s ISO320",
+      "date": "2022/06/24"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Neil",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_3.0_RS_(52344031338).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#0e1808",
+      "#30451d",
+      "#607840",
+      "#889a68",
+      "#c6c5ba"
+    ]
   },
   {
     "id": "c037",
@@ -621,13 +1089,26 @@
     "country": "Japan",
     "image": "./cards/c037.jpg",
     "focus": "28% 50%",
+    "exif": {
+      "camera": "SAMSUNG SCL23",
+      "settings": "4.8mm F2.2 1/197s ISO40",
+      "date": "2015/06/27"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Akino601",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_787B_3.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#040604",
+      "#5f372a",
+      "#34100c",
+      "#6c7b5e",
+      "#9eb56a"
+    ]
   },
   {
     "id": "c038",
@@ -639,13 +1120,26 @@
     "country": "Italy",
     "image": "./cards/c038.jpg",
     "focus": "50% 50%",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": "2011/02/02"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "Will ainsworth",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:F40_Ferrari_20090509.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#494a3a",
+      "#b0a095",
+      "#d0d2d7",
+      "#a54c46",
+      "#e3e4e5"
+    ]
   },
   {
     "id": "c039",
@@ -657,13 +1151,26 @@
     "country": "Italy",
     "image": "./cards/c039.jpg",
     "focus": "42% 50%",
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "palette",
     "credit": {
       "author": "Palauenc05",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_5000S_1983.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#5e7931",
+      "#1b1f10",
+      "#8ea966",
+      "#8f0308",
+      "#884235"
+    ]
   },
   {
     "id": "c040",
@@ -675,13 +1182,26 @@
     "country": "United Kingdom",
     "image": "./cards/c040.jpg",
     "focus": "40% 55%",
+    "exif": {
+      "camera": "Canon EOS 5D Mark IV",
+      "settings": "35mm F9 1/6s ISO800",
+      "date": "2019/07/05"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Dietmar Rabich",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Kirchspiel,_B%C3%B6rnste,_BMW_Mini_--_2019_--_7207-13.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#1c1e12",
+      "#363c2e",
+      "#4b5c49",
+      "#a88f70",
+      "#737661"
+    ]
   },
   {
     "id": "c041",
@@ -693,13 +1213,26 @@
     "country": "Germany",
     "image": "./cards/c041.jpg",
     "focus": "52% 60%",
+    "exif": {
+      "camera": "NIKON D300S",
+      "settings": "55mm F2.8 1/2500s ISO200",
+      "date": "2010/05/01"
+    },
+    "frame": "window",
     "credit": {
       "author": "filedump from Austria",
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jumping_911_Carrera_RS_2.7_in_Pinggau_(Bosch_Rallye_2010).jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#252525",
+      "#0f0f0f",
+      "#505050",
+      "#9d9d9d",
+      "#c4c4c4"
+    ]
   },
   {
     "id": "c042",
@@ -711,13 +1244,26 @@
     "country": "Germany",
     "image": "./cards/c042.jpg",
     "focus": "38% 50%",
+    "exif": {
+      "camera": "NIKON D60",
+      "settings": "26mm F5.6 1/125s ISO100",
+      "date": "2013/09/17"
+    },
+    "frame": "gallery",
     "credit": {
       "author": "Felix König",
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_917_IAA_2013.JPG",
       "modified": true
-    }
+    },
+    "palette": [
+      "#09090a",
+      "#33343b",
+      "#19191d",
+      "#aebcc1",
+      "#5e6a74"
+    ]
   },
   {
     "id": "c043",
@@ -729,13 +1275,26 @@
     "country": "Italy",
     "image": "./cards/c043.jpg",
     "focus": "38% 55%",
+    "exif": {
+      "camera": "Canon EOS 1300D",
+      "settings": "25mm F5 1/125s ISO100",
+      "date": "2025/08/30"
+    },
+    "frame": "palette",
     "credit": {
       "author": "Calreyn88",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1964_Ferrari_250_GTO_1.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#25221d",
+      "#83573d",
+      "#b6a3a4",
+      "#9e2b27",
+      "#9f6d5c"
+    ]
   },
   {
     "id": "c044",
@@ -747,13 +1306,26 @@
     "country": "France",
     "image": "./cards/c044.jpg",
     "focus": "30% 50%",
+    "exif": {
+      "camera": "ASUS_Z012D",
+      "settings": "4mm F2 1/279s ISO50",
+      "date": "2017/09/10"
+    },
+    "frame": "litt",
     "credit": {
       "author": "Y.Leclercq",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_57_S_Atlantic_Best_Of_Show_Chantily.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#50583a",
+      "#626f59",
+      "#a7b2a8",
+      "#242c2b",
+      "#3b4c45"
+    ]
   },
   {
     "id": "c045",
@@ -765,12 +1337,25 @@
     "country": "Germany",
     "image": "./cards/c045.jpg",
     "focus": "45% 50%",
+    "exif": {
+      "camera": "samsung SM-A600FN",
+      "settings": "3.9mm F1.7 1/727s ISO40",
+      "date": "2019/07/07"
+    },
+    "frame": "watermark",
     "credit": {
       "author": "MrWalkr",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1955_Mercedes-Benz_300_SLR_FOS19.jpg",
       "modified": true
-    }
+    },
+    "palette": [
+      "#0a0708",
+      "#2b211c",
+      "#715749",
+      "#998e83",
+      "#cfd2d7"
+    ]
   }
 ]
