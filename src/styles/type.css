@@ -1,0 +1,46 @@
+/* From gt-showroom-ui assets/type.css (SPORT scale). */
+.t-body {
+  font: 500 1.35rem/1.55 var(--latin), var(--jp);
+}
+.t-label {
+  font: 500 1.15rem/1 var(--latin), var(--jp);
+  color: var(--paper-2);
+}
+.t-caption {
+  font: 400 1.1rem/1.4 var(--latin), var(--jp);
+  color: var(--paper-2);
+}
+
+/* SPORT scale (DESIGN §4.4). Capitals are real capitals here; SPORT has no small caps. */
+.t-display {
+  font: 700 6.4rem/.95 var(--latin-condensed), var(--jp);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--paper);
+}
+.t-display-sub {
+  font: 600 2.2rem/1.1 var(--latin-condensed), var(--jp);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: var(--paper);
+}
+.t-num-xl {
+  font: 400 3.4rem/1 var(--latin);
+  font-variant-numeric: tabular-nums;
+  color: var(--paper);
+}
+.t-num {
+  font: 500 2.1rem/1 var(--latin);
+  font-variant-numeric: tabular-nums;
+  color: var(--paper);
+}
+.t-tile {
+  font: 500 1.6rem/1 var(--latin), var(--jp);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--paper);
+}
+.t-mono {
+  font: 400 1.1rem/1.4 var(--mono);
+  color: var(--paper);
+}

@@ -1,0 +1,98 @@
+/* From gt-showroom-ui assets/tokens.css (SPORT :root only). */
+/* Registered so the one colour of light can transition when the photo changes (DESIGN_PROLOGUE §3.4 Home). */
+@property --glow {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #478e66;
+}
+
+:root {
+  /* 地と面 */
+  --ink-0: #0e0e0e;
+  --ink-1: #141414;
+  --ink-2: #1d1d1d;
+  --ink-3: #1e1e1e;
+  --bar: rgba(14, 14, 16, .84);
+  --panel: rgba(20, 20, 20, .90);
+  --scrim: rgba(0, 0, 0, .55);
+
+  /* 文字 */
+  --paper: rgba(255, 255, 255, .92);
+  --paper-2: rgba(255, 255, 255, .60);
+  --paper-3: rgba(255, 255, 255, .35);
+  --line: rgba(255, 255, 255, .10);
+  --line-2: rgba(255, 255, 255, .18);
+
+  /* 選択 */
+  --sel-fill: #c8ccd2;
+  --sel-frame: rgba(255, 255, 255, .92);
+  --sel-frame-photo: rgba(255, 255, 255, .60);
+
+  /* 意味のある色 */
+  --magenta: #d01e94;
+  --red: #db0b12;
+  --blue: #2e5dd3;
+  --yellow: #e0b400;
+  --green: #6fbf1a;
+  --cyan: #2fb4e0;
+
+  /* 書体 */
+  --latin: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --latin-condensed: "Barlow Condensed", "Barlow", sans-serif;
+  --jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* 寸法 */
+  --module: 8.8rem;
+  --strip-h: 12rem;
+  --panel-w: 25%;
+  --sidebar-w: 17%;
+  --drawer-w: 26rem;
+  --gap: .4rem;
+  --inset: 1.8rem;
+  --radius: 0;
+
+  /* モーション(DESIGN §3.3) */
+  --ease-standard: cubic-bezier(.2, 0, 0, 1);
+  --ease-dissolve: ease;
+  --t-focus: 100ms;
+  --t-fast: 160ms;
+  --t-page: 240ms;
+  --t-slide: 320ms;
+  --t-dissolve: 1.8s;
+  --t-dwell: 9s;
+  --t-drift: 11s;
+  --stagger: 40ms;
+  --shift: 12px;
+  --t-dim: 600ms;
+  --dim: .4;
+
+  /* Parts shared by both looks read these; in SPORT they fall back to the frame's flat values, and the
+     PROLOGUE-only effects (light, spot, reflection) are switched off (DESIGN §4.8). */
+  --glass: var(--ink-3);
+  --glass-line: var(--line);
+  --glass-hover: rgba(255, 255, 255, .06);
+  --lcd: var(--paper);
+  --lcd-font: var(--latin);
+  --serif: var(--latin);
+  --clock-font: var(--latin);
+  --smallcaps: 1em;
+  --spot: none;
+  --vignette: none;
+  --glow-alpha: 0;
+  --reflect-h: 0%;
+  --reflect-alpha: 0;
+  --stage-h: 62%;
+  --ease-expo: var(--ease-standard);
+  --ease-material: var(--ease-standard);
+  --t-cut: 100ms;
+  --t-appear: 900ms;
+  --t-fade: var(--t-page);
+  --t-hover: var(--t-focus);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-dissolve: 600ms;
+    --t-drift: 0ms;
+  }
+}
