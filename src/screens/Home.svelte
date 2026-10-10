@@ -4,6 +4,7 @@
   import { msToNext } from '../lib/refill';
   import BottomStrip from '../ui/BottomStrip.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
+  import Bag from '../open/Bag.svelte';
 
   let { game, cards, now }: { game: Game; cards: Card[]; now: number } = $props();
 
@@ -13,23 +14,26 @@
   const left = $derived(msToNext(game.save.stock, game.save.lastRefillAt, now) ?? 0);
   const leftText = $derived(`${Math.floor(Math.ceil(left / 1000) / 60)}:${String(Math.ceil(left / 1000) % 60).padStart(2, '0')}`);
 
+  let bag: Bag | undefined = $state();
+
   const hints: Hint[] = $derived(
     empty
       ? [{ keys: '◷', label: `次の袋まで ${leftText}` }]
-      : [{ keys: '⏎', label: '袋を開ける', onclick: () => game.startOpening() }],
+      : [
+          { keys: '⇆', label: '上端をなぞって破る' },
+          { keys: '⏎', label: '破る', onclick: () => bag?.autoTear() },
+        ],
   );
 
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Enter' && !empty) game.startOpening();
+    if (e.key === 'Enter' && !empty) bag?.autoTear();
   }
 </script>
 
 <svelte:window onkeydown={onkey} />
 
 <div class="stage">
-  <button class="bag" class:empty disabled={empty} onclick={() => game.startOpening()} aria-label="袋を開ける">
-    <span class="bag__ph">WAFER</span>
-  </button>
+  <Bag bind:this={bag} disabled={empty} onTorn={() => game.startOpening()} />
 </div>
 
 <BottomStrip
@@ -46,17 +50,5 @@
     min-height: 0;
     display: grid;
     place-items: center;
-  }
-  .bag {
-    width: 58%;
-    aspect-ratio: 5 / 8;
-    background: #9aa0a8;
-  }
-  .bag.empty {
-    filter: brightness(.35);
-  }
-  .bag__ph {
-    font: 700 3rem/1 var(--latin-condensed);
-    color: #0e0e0e;
   }
 </style>
