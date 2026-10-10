@@ -18,3 +18,4 @@
 .card[data-rarity='C'] .card__glare {
   opacity: calc(var(--card-opacity, 0) * .35);
 }
+

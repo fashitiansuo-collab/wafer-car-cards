@@ -1,1 +1,24 @@
-/* filled in later */
+/* UC — reverse holo: the frame sparkles in fine vertical lines, the photo window stays clean. */
+.card[data-rarity='UC'] {
+  --rarity: var(--green);
+}
+.card[data-rarity='UC'] .card__shine {
+  display: block;
+  background:
+    url('/fx/glitter.png'),
+    repeating-linear-gradient(90deg, transparent 0 1.1cqw, hsla(0, 0%, 100%, .32) 1.1cqw 1.45cqw),
+    linear-gradient(115deg, hsl(195, 100%, 58%), hsl(290, 90%, 62%), hsl(48, 100%, 60%), hsl(160, 90%, 52%), hsl(195, 100%, 58%));
+  background-size: 96px, 220% 100%, 320% 320%;
+  background-position:
+    var(--background-x) var(--background-y),
+    calc(var(--background-x) * 2.5) 0,
+    var(--background-x) var(--background-y);
+  background-blend-mode: overlay, overlay, normal;
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--card-opacity, 0) * (.25 + var(--pointer-from-center, 0) * .35));
+  mask:
+    linear-gradient(#000 0 0),
+    linear-gradient(#000 0 0) var(--pad) var(--win-top) / calc(100% - var(--pad) * 2) var(--win-h) no-repeat;
+  mask-composite: exclude;
+}
+

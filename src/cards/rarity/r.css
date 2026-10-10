@@ -1,1 +1,57 @@
-/* filled in later */
+/* R — regular holo: rainbow bands run through the photo window; the frame is brushed silver. */
+.card[data-rarity='R'] {
+  --rarity: var(--blue);
+}
+.card[data-rarity='R'] .card__front {
+  background:
+    linear-gradient(
+      180deg,
+      #24262a calc(var(--pointer-y, 50%) - 40%),
+      #6b7078 var(--pointer-y, 50%),
+      #24262a calc(var(--pointer-y, 50%) + 40%)
+    );
+}
+.card[data-rarity='R'] .card__shine {
+  display: block;
+  inset: auto;
+  top: var(--win-top);
+  left: var(--pad);
+  right: var(--pad);
+  height: var(--win-h);
+  background:
+    repeating-linear-gradient(
+      110deg,
+      hsl(283, 49%, 60%) 0%,
+      hsl(2, 74%, 59%) 5%,
+      hsl(53, 67%, 53%) 10%,
+      hsl(93, 56%, 52%) 15%,
+      hsl(176, 38%, 50%) 20%,
+      hsl(228, 100%, 77%) 25%,
+      hsl(283, 49%, 61%) 30%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #0e152e 0%,
+      hsl(180, 10%, 60%) 3.8%,
+      hsl(180, 29%, 66%) 4.5%,
+      hsl(180, 10%, 60%) 5.2%,
+      #0e152e 10%,
+      #0e152e 12%
+    ),
+    radial-gradient(
+      farthest-corner circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+      hsla(0, 0%, 0%, .1) 12%,
+      hsla(0, 0%, 0%, .15) 20%,
+      hsla(0, 0%, 0%, .25) 120%
+    );
+  background-blend-mode: screen, hue, hard-light;
+  background-size: 500% 500%, 300% 100%, 200% 200%;
+  background-position:
+    0% var(--background-y, 50%),
+    var(--background-x, 50%) var(--background-y, 50%),
+    var(--background-x, 50%) var(--background-y, 50%);
+  filter: brightness(.8) contrast(1.6) saturate(1.4);
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--card-opacity, 0) * (.28 + var(--pointer-from-center, 0) * .4));
+}
+

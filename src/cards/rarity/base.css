@@ -218,3 +218,4 @@
 @media (prefers-reduced-motion: reduce) {
   .card--flipped .card__rotator { transition: none; }
 }
+
