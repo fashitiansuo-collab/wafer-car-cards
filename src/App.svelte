@@ -5,6 +5,9 @@
   import Header from './ui/Header.svelte';
   import Home from './screens/Home.svelte';
   import Result from './screens/Result.svelte';
+  import Garage from './screens/Garage.svelte';
+  import Detail from './screens/Detail.svelte';
+  import Records from './screens/Records.svelte';
   import OpenSequence from './open/OpenSequence.svelte';
   import DebugGallery from './screens/DebugGallery.svelte';
 
@@ -53,6 +56,14 @@
         {/key}
       {:else if game.screen === 'result' && game.current}
         <Result {game} {cards} />
+      {:else if game.screen === 'garage'}
+        <Garage {game} {cards} />
+      {:else if game.screen === 'detail'}
+        <Detail {game} {cards} />
+      {:else if game.screen === 'records'}
+        <Records {game} {cards} />
+      {:else}
+        <Home {game} {cards} {now} />
       {/if}
     </main>
   {/if}
