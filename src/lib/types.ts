@@ -46,3 +46,21 @@ export interface Save {
   firstPulledAt: Record<string, number>;
   pending: string | null;
 }
+
+/** A promo card: given by code, outside the numbered set, with a design of its own. */
+export interface Promo {
+  id: string;
+  code: string;
+  maker: string;
+  model: string;
+  generation: string;
+  year: number;
+  country: string;
+  /** Cut-out of the car (transparent background). */
+  image: string;
+  /** Centres of the headlights on the cut-out, % of its width and height. */
+  lights: [number, number][];
+  exif: Exif;
+  codeHash: string;
+  credit: CardCredit;
+}

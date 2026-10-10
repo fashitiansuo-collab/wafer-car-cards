@@ -5,7 +5,15 @@
   import GuideBar from '../ui/GuideBar.svelte';
   import RarityTag from '../ui/RarityTag.svelte';
 
-  let { game, cards }: { game: Game; cards: Card[] } = $props();
+  let { game, cards, claim }: { game: Game; cards: Card[]; claim: (code: string) => Promise<boolean> } = $props();
+
+  let code = $state('');
+  let wrong = $state(false);
+  async function submit(e: SubmitEvent) {
+    e.preventDefault();
+    wrong = !(await claim(code));
+    if (!wrong) code = '';
+  }
 
   const byR = $derived(game.countByRarity());
   const totalOf = (r: Rarity) => cards.filter((c) => c.rarity === r).length;
@@ -24,6 +32,16 @@
         <dd>{byR[r]} / {totalOf(r)}</dd>
       {/each}
     </dl>
+  </section>
+
+  <section class="block">
+    <h2>合言葉</h2>
+    <p class="note">プロモーションカードの合言葉を入れると、カードを受け取れます。</p>
+    <form class="code" onsubmit={submit}>
+      <input bind:value={code} autocomplete="off" autocapitalize="characters" spellcheck="false" aria-label="合言葉" />
+      <button type="submit" disabled={!code.trim()}>受け取る</button>
+    </form>
+    {#if wrong}<p class="note err" role="status">合言葉が違います。大文字・小文字やハイフンは区別しません。</p>{/if}
   </section>
 
   <section class="block">
@@ -115,6 +133,39 @@
     margin: 0;
     font: 500 1.3rem/1 var(--latin);
     font-variant-numeric: tabular-nums;
+  }
+.code {
+    display: flex;
+    border: 1px solid var(--line-2);
+  }
+  .code input {
+    flex: 1;
+    min-width: 0;
+    background: var(--ink-0);
+    border: 0;
+    color: var(--paper);
+    font: 500 1.6rem/1 var(--latin);
+    letter-spacing: .12em;
+    padding: 1rem 1.2rem;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  .code input:focus-visible {
+    outline: 1px solid var(--sel-frame);
+    outline-offset: -1px;
+  }
+  .code button {
+    padding: 0 1.6rem;
+    font: 600 1.3rem/1 var(--latin), var(--jp);
+    background: var(--sel-fill);
+    color: #0e0e0e;
+  }
+  .code button:disabled {
+    opacity: .4;
+  }
+  .err {
+    margin: .9rem 0 0;
+    color: var(--red);
   }
   .seg {
     display: flex;

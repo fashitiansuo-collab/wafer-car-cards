@@ -17,6 +17,8 @@ export interface Game {
   reload(): void;
   startOpening(): boolean;
   finishOpening(): void;
+  /** Add a promo card (no bag spent, not part of the collection count). False if already owned. */
+  grantPromo(id: string): boolean;
   ownedCount(): number;
   countByRarity(): Record<Rarity, number>;
 }
@@ -99,6 +101,15 @@ export function createGame(opts: CreateGameOpts): Game {
     screen = 'result';
   }
 
+  function grantPromo(id: string): boolean {
+    reload();
+    if ((save.owned[id] ?? 0) > 0) return false;
+    save.owned[id] = 1;
+    save.firstPulledAt[id] = now();
+    persist();
+    return true;
+  }
+
   function ownedCount(): number {
     let n = 0;
     for (const c of cards) if ((save.owned[c.id] ?? 0) > 0) n += 1;
@@ -125,6 +136,7 @@ export function createGame(opts: CreateGameOpts): Game {
     reload,
     startOpening,
     finishOpening,
+    grantPromo,
     ownedCount,
     countByRarity,
   };

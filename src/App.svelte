@@ -11,6 +11,9 @@
   import Records from './screens/Records.svelte';
   import OpenSequence from './open/OpenSequence.svelte';
   import DebugGallery from './screens/DebugGallery.svelte';
+  import PromoReveal from './screens/PromoReveal.svelte';
+  import { promos } from './cards/special';
+  import { redeem } from './lib/promo';
 
   const cards = cardsJson as Card[];
   const debug = new URLSearchParams(location.search).has('debug');
@@ -39,6 +42,25 @@
     return () => clearInterval(id);
   });
 
+  // Promo cards: ?promo=<code> or the code box on the records screen.
+  let reveal = $state<{ id: string; isNew: boolean } | null>(null);
+
+  async function claim(code: string): Promise<boolean> {
+    const id = await redeem(code, promos);
+    if (!id) return false;
+    reveal = { id, isNew: game.grantPromo(id) };
+    return true;
+  }
+
+  const urlCode = new URLSearchParams(location.search).get('promo');
+  if (urlCode && !debug) {
+    // Drop the code from the address bar so a reload or a shared screenshot does not carry it.
+    const u = new URL(location.href);
+    u.searchParams.delete('promo');
+    history.replaceState(null, '', u);
+    if (game.screen !== 'opening') void claim(urlCode);
+  }
+
   // Another tab saved: take its progress instead of overwriting it later.
   function onStorage(e: StorageEvent) {
     if (e.key === SAVE_KEY && game.screen !== 'opening') game.reload();
@@ -56,7 +78,16 @@
   {:else}
     <Header {game} {now} {secret} />
     <main class="main">
-      {#if game.screen === 'home'}
+      {#if reveal}
+        <PromoReveal
+          id={reveal.id}
+          isNew={reveal.isNew}
+          onDone={() => {
+            reveal = null;
+            game.screen = 'garage';
+          }}
+        />
+      {:else if game.screen === 'home'}
         <Home {game} {cards} {now} />
       {:else if game.screen === 'opening' && game.current}
         {#key game.save.eaten}
@@ -69,7 +100,7 @@
       {:else if game.screen === 'detail'}
         <Detail {game} {cards} />
       {:else if game.screen === 'records'}
-        <Records {game} {cards} />
+        <Records {game} {cards} {claim} />
       {:else}
         <Home {game} {cards} {now} />
       {/if}

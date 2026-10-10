@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { Card } from '../lib/types';
 
-  let { card, firstPulledAt = null }: { card: Card | null; firstPulledAt?: number | null } = $props();
+  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'>;
+  let { card, firstPulledAt = null }: { card: BackInfo | null; firstPulledAt?: number | null } = $props();
 
   const fmt = (ms: number) => {
     const d = new Date(ms);

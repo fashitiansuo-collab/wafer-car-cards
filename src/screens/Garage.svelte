@@ -5,6 +5,7 @@
   import BottomStrip from '../ui/BottomStrip.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import Brackets from '../ui/Brackets.svelte';
+  import { promos } from '../cards/special';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
 
@@ -39,6 +40,7 @@
         ? [{ keys: '·', label: `No.${String(focused.no).padStart(3, '0')} はまだ出ていません` }]
         : [{ keys: '⇥', label: 'カードを選ぶ' }],
   );
+  const ownedPromos = $derived(promos.filter((p) => (game.save.owned[p.id] ?? 0) > 0));
 </script>
 
 <nav class="filters">
@@ -50,6 +52,25 @@
 </nav>
 
 <div class="grid-wrap">
+  {#if ownedPromos.length && filter === 'ALL'}
+    <p class="row-label">PROMO</p>
+    <div class="grid promo-row">
+      {#each ownedPromos as p (p.id)}
+        <button
+          class="tile promo"
+          onclick={() => {
+            game.detailId = p.id;
+            game.screen = 'detail';
+          }}
+        >
+          <img src={p.image} alt="" />
+          <span class="name">{p.model}</span>
+          <span class="no">{p.code}</span>
+        </button>
+      {/each}
+    </div>
+    <p class="row-label">SERIES 1</p>
+  {/if}
   <div class="grid">
     {#each shown as c (c.id)}
       <button class="tile" class:locked={!has(c)} data-rarity={c.rarity} onclick={() => pick(c)} onfocus={(e) => {
@@ -121,6 +142,30 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.2rem;
+  }
+  .row-label {
+    margin: 0 0 .8rem;
+    font: 600 1.2rem/1 var(--latin-condensed);
+    letter-spacing: .14em;
+    color: var(--paper-2);
+  }
+  .promo-row {
+    margin-bottom: 1.8rem;
+  }
+  .tile.promo {
+    background: #f1ebdf;
+    border-left-color: var(--yellow);
+  }
+  .tile.promo img {
+    object-fit: contain;
+    object-position: 30% 60%;
+    transform: scale(1.5) translateX(-8%);
+  }
+  .tile.promo .name {
+    color: #151515;
+  }
+  .tile.promo .no {
+    color: rgba(21, 21, 21, .6);
   }
   .tile {
     position: relative;
