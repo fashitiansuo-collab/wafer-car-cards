@@ -44,4 +44,8 @@ button {
   overflow: hidden;
   background: var(--ink-1);
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  /* Portrait SPORT: the module (header height = logo width) is smaller than the landscape 8.8rem. */
+  --module: 5.6rem;
 }
