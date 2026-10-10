@@ -16,6 +16,10 @@
   -webkit-user-select: none;
 }
 
+.card--landscape {
+  aspect-ratio: 88 / 63;
+}
+
 .card__rotator {
   position: absolute;
   inset: 0;

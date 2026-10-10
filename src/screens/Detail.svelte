@@ -5,7 +5,7 @@
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import TitleLockup from '../ui/TitleLockup.svelte';
   import { isGlobalKey } from '../lib/keys';
-  import { promos, specials } from '../cards/special';
+  import { landscape, promos, specials } from '../cards/special';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
 
@@ -39,7 +39,7 @@
 
 {#if promo && Special}
   <div class="stage">
-    <button class="slot" onclick={() => (flipped = !flipped)} aria-label={flipped ? '表を見る' : '裏を見る'}>
+    <button class="slot" class:wide={landscape.has(promo.id)} onclick={() => (flipped = !flipped)} aria-label={flipped ? '表を見る' : '裏を見る'}>
       <Special {promo} {flipped} firstPulledAt={game.save.firstPulledAt[promo.id]} />
     </button>
     <div class="lockup">
@@ -92,6 +92,9 @@
   .slot {
     width: 78%;
     display: block;
+  }
+  .slot.wide {
+    width: 94%;
   }
   .slot:focus-visible {
     outline: 1px solid var(--sel-frame);

@@ -8,14 +8,51 @@
     "year": 1991,
     "country": "Japan",
     "image": "./promo/pr01-car.webp",
-    "lights": [[53.7, 46.2], [90.8, 43.0]],
-    "exif": { "camera": "Canon PowerShot G10", "settings": "16mm F3.5 1/200s ISO200", "date": "2022/07/15" },
+    "lights": [
+      [
+        53.7,
+        46.2
+      ],
+      [
+        90.8,
+        43.0
+      ]
+    ],
+    "exif": {
+      "camera": "Canon PowerShot G10",
+      "settings": "16mm F3.5 1/200s ISO200",
+      "date": "2022/07/15"
+    },
     "codeHash": "317108ad07ac83d75456e7f55f4ac242ace74f98100d4ef7a4ddd7a072b75190",
     "credit": {
       "author": "Elise240SX",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Mazda_MX-5_Miata_in_Classic_Red,_Front_Right,_07-15-2022.jpg",
+      "modified": true
+    }
+  },
+  {
+    "id": "pr01b",
+    "code": "PR-01",
+    "maker": "MAZDA",
+    "model": "Eunos Roadster",
+    "generation": "NA",
+    "year": 1989,
+    "country": "Japan",
+    "image": "./promo/pr01b-car.webp",
+    "lights": [],
+    "exif": {
+      "camera": "SONY CYBERSHOT",
+      "settings": "8mm F2.8 1/30s ISO200",
+      "date": "2005/02/05"
+    },
+    "codeHash": "",
+    "credit": {
+      "author": "Taisyo",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%88%9D%E4%BB%A3%E3%83%A6%E3%83%BC%E3%83%8E%E3%82%B9%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B9%E3%82%BF%E3%83%BC01.jpg",
       "modified": true
     }
   }

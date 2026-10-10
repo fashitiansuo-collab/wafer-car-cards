@@ -3,12 +3,13 @@
   import type { Card as CardT, Frame, Rarity } from '../lib/types';
   import { RARITIES } from '../lib/types';
   import { createTilt } from '../lib/tilt.svelte';
-  import promosJson from '../data/promos.json';
-  import type { Promo } from '../lib/types';
-  import PromoPR01 from '../cards/special/PromoPR01.svelte';
+  import { promos, specials } from '../cards/special';
 
-  const promos = promosJson as unknown as Promo[];
-  const showPromo = new URLSearchParams(location.search).get('promo') === 'pr01';
+  // ?promo=pr01 / pr01b shows one bespoke card large (&moment plays its intro).
+  const promoId = new URLSearchParams(location.search).get('promo');
+  const promo = promos.find((p) => p.id === promoId);
+  const showPromo = !!promo;
+  const Special = promo ? specials[promo.id] : null;
 
   let { cards }: { cards: CardT[] } = $props();
 
@@ -28,7 +29,7 @@
 
 <div class="gallery" class:single={showPromo}>
   {#if showPromo}
-    <div class="cell"><PromoPR01 promo={promos[0]} tilt={fixed} interactive={!fixed} wink={params.has('wink')} /></div>
+    <div class="cell"><Special {promo} tilt={fixed} interactive={!fixed} moment={params.has('moment')} /></div>
   {:else}
   {#each shown as card (card.id)}
     <div class="cell"><Card card={frame ? { ...card, frame } : card} tilt={fixed} interactive={!fixed} /></div>

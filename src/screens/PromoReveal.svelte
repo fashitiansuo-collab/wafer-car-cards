@@ -1,6 +1,6 @@
 <script lang="ts">
   import { untrack } from 'svelte';
-  import { promos, specials } from '../cards/special';
+  import { landscape, promos, specials } from '../cards/special';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import { isGlobalKey } from '../lib/keys';
 
@@ -10,7 +10,7 @@
   const promo = untrack(() => promos.find((p) => p.id === id)!);
   const Special = specials[promo.id];
 
-  // Shared SEC entrance (black → gold rim → turn), then this card's own moment (the wink).
+  // Shared SEC entrance (black → gold rim → turn), then this card's own moment .
   type Stage = 'black' | 'rim' | 'flip' | 'done';
   let stage = $state<Stage>('black');
   const timers: ReturnType<typeof setTimeout>[] = [];
@@ -32,8 +32,8 @@
 <svelte:window onkeydown={onkey} />
 
 <div class="stage" class:black={stage !== 'done'}>
-  <div class="slot" class:rim={stage === 'rim'} class:turning={stage === 'flip'}>
-    <Special {promo} flipped={stage === 'black' || stage === 'rim'} wink={stage === 'done'} interactive={stage === 'done'} />
+  <div class="slot" class:wide={landscape.has(promo.id)} class:rim={stage === 'rim'} class:turning={stage === 'flip'}>
+    <Special {promo} flipped={stage === 'black' || stage === 'rim'} moment={stage === 'done'} interactive={stage === 'done'} />
   </div>
   <div class="lockup" class:show={stage === 'done'}>
     <p class="kicker">PROMOTION CARD · {promo.code}</p>
@@ -70,6 +70,9 @@
     position: relative;
     width: 72%;
     z-index: 2;
+  }
+  .slot.wide {
+    width: 94%;
   }
   .slot :global(.card__rotator) {
     transition: none;

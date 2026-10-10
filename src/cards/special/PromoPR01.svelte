@@ -11,11 +11,11 @@
     interactive?: boolean;
     flipped?: boolean;
     tilt?: Tilt;
-    /** Play the one-off wink (on reveal). */
-    wink?: boolean;
+    /** Play this card's one-off moment (on reveal): here, the wink. */
+    moment?: boolean;
     firstPulledAt?: number | null;
   }
-  let { promo, interactive = true, flipped = false, tilt, wink = false, firstPulledAt = null }: Props = $props();
+  let { promo, interactive = true, flipped = false, tilt, moment = false, firstPulledAt = null }: Props = $props();
 
   const own = createTilt();
   const t = $derived(tilt ?? own);
@@ -26,7 +26,7 @@
   const CAR = { left: -30, top: 39, w: 128, h: 71.4 };
 </script>
 
-<div class="card pr01" class:card--flipped={flipped} class:wink style={t.style} bind:this={el}>
+<div class="card pr01" class:card--flipped={flipped} class:wink={moment} style={t.style} bind:this={el}>
   <div class="card__rotator">
     <div class="card__front">
       <div class="paper"></div>
