@@ -620,6 +620,7 @@
     "year": 1991,
     "country": "Japan",
     "image": "./cards/c037.jpg",
+    "focus": "28% 50%",
     "credit": {
       "author": "Akino601",
       "license": "CC BY-SA 4.0",
@@ -637,6 +638,7 @@
     "year": 1987,
     "country": "Italy",
     "image": "./cards/c038.jpg",
+    "focus": "50% 50%",
     "credit": {
       "author": "Will ainsworth",
       "license": "CC BY-SA 3.0",
@@ -654,6 +656,7 @@
     "year": 1983,
     "country": "Italy",
     "image": "./cards/c039.jpg",
+    "focus": "42% 50%",
     "credit": {
       "author": "Palauenc05",
       "license": "CC BY-SA 4.0",
@@ -671,6 +674,7 @@
     "year": 2019,
     "country": "United Kingdom",
     "image": "./cards/c040.jpg",
+    "focus": "40% 55%",
     "credit": {
       "author": "Dietmar Rabich",
       "license": "CC BY-SA 4.0",
@@ -688,6 +692,7 @@
     "year": 1973,
     "country": "Germany",
     "image": "./cards/c041.jpg",
+    "focus": "52% 60%",
     "credit": {
       "author": "filedump from Austria",
       "license": "CC BY-SA 2.0",
@@ -705,6 +710,7 @@
     "year": 1970,
     "country": "Germany",
     "image": "./cards/c042.jpg",
+    "focus": "38% 50%",
     "credit": {
       "author": "Felix König",
       "license": "CC BY 3.0",
@@ -722,6 +728,7 @@
     "year": 1964,
     "country": "Italy",
     "image": "./cards/c043.jpg",
+    "focus": "38% 55%",
     "credit": {
       "author": "Calreyn88",
       "license": "CC BY-SA 4.0",
@@ -739,6 +746,7 @@
     "year": 1936,
     "country": "France",
     "image": "./cards/c044.jpg",
+    "focus": "30% 50%",
     "credit": {
       "author": "Y.Leclercq",
       "license": "CC BY-SA 4.0",
@@ -756,6 +764,7 @@
     "year": 1955,
     "country": "Germany",
     "image": "./cards/c045.jpg",
+    "focus": "45% 50%",
     "credit": {
       "author": "MrWalkr",
       "license": "CC BY-SA 4.0",

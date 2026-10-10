@@ -33,7 +33,8 @@
   const full = $derived(card.rarity === 'UR' || card.rarity === 'SEC');
   const no = $derived(String(card.no).padStart(3, '0'));
   const vars = $derived(
-    `${t.style};--photo:url("${card.image}");--focus:${card.focus ?? '50% 50%'}`,
+    `${t.style};--photo:url("${card.image}");--focus:${card.focus ?? '50% 50%'}` +
+      (card.rarity === 'SEC' ? `;--photo-dark:url("${card.image.replace(/\.jpg$/, '-dark.jpg')}")` : ''),
   );
 </script>
 

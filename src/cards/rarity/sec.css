@@ -1,2 +1,75 @@
-/* filled in later */
+/* SEC — secret gold + cosmos: gold foil over the bright parts, a nebula in the dark parts.
+   Near the centre the gold leads; towards the edges the cosmos takes over. */
+.card[data-rarity='SEC'] {
+  --rarity: var(--yellow);
+  --gold: linear-gradient(115deg, #6f5210 0%, #f6dc86 22%, #9c7418 40%, #fff1bf 58%, #86620f 78%, #e9c766 100%);
+}
+.card[data-rarity='SEC'] .card__photo img {
+  filter: contrast(1.1) saturate(1.05) sepia(.08);
+}
+/* Gold edge */
+.card[data-rarity='SEC'] .card__front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.6cqw;
+  background: var(--gold);
+  background-size: 300% 300%;
+  background-position: var(--background-x, 50%) var(--background-y, 50%);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.card[data-rarity='SEC'] .card__head,
+.card[data-rarity='SEC'] .card__foot {
+  background: rgba(10, 8, 4, .88);
+}
+.card[data-rarity='SEC'] .card__head {
+  box-shadow: 0 -1px 0 #c9a44a;
+}
+.card[data-rarity='SEC'] .card__model {
+  color: #f3e2b0;
+  /* Embossed: light edge up-left, dark edge down-right. */
+  text-shadow: -1px -1px 0 hsla(45, 80%, 92%, .55), 1px 1px 0 hsla(30, 60%, 10%, .9);
+}
+.card[data-rarity='SEC'] .card__maker {
+  color: #c9a44a;
+}
 
+/* Gold foil, masked to the bright parts of the photo. */
+.card[data-rarity='SEC'] .card__shine {
+  display: block;
+  background: url('/fx/glitter.png'), var(--gold);
+  background-size: 72px, 300% 300%;
+  background-position:
+    var(--background-x, 50%) var(--background-y, 50%),
+    var(--background-x, 50%) var(--background-y, 50%);
+  background-blend-mode: color-dodge, normal;
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--card-opacity, 0) * (.7 - var(--pointer-from-center, 0) * .45));
+  mask-image: var(--photo);
+  mask-size: cover;
+  mask-position: var(--focus);
+  mask-mode: luminance;
+}
+/* Cosmos in the dark parts, masked by a pre-inverted copy of the photo (scripts/make-dark-masks.py). */
+.card[data-rarity='SEC'] .card__shine--2 {
+  display: block;
+  background:
+    url('/fx/glitter.png'),
+    radial-gradient(ellipse 40% 30% at 30% 35%, hsla(280, 90%, 60%, .9), transparent 70%),
+    radial-gradient(ellipse 35% 40% at 70% 60%, hsla(190, 100%, 55%, .85), transparent 70%),
+    radial-gradient(ellipse 30% 25% at 55% 20%, hsla(330, 100%, 65%, .8), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 25% 80%, hsla(230, 90%, 55%, .8), transparent 70%);
+  background-size: 60px, 180% 180%, 180% 180%, 180% 180%, 180% 180%;
+  background-position:
+    calc(var(--background-x, 50%) * -1) var(--background-y, 50%),
+    var(--background-x, 50%) var(--background-y, 50%),
+    calc(100% - var(--background-x, 50%)) var(--background-y, 50%),
+    var(--background-y, 50%) var(--background-x, 50%),
+    var(--background-x, 50%) calc(100% - var(--background-y, 50%));
+  mix-blend-mode: screen;
+  opacity: calc(var(--card-opacity, 0) * (.35 + var(--pointer-from-center, 0) * .65));
+  mask-image: var(--photo-dark);
+}

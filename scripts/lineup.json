@@ -293,7 +293,8 @@
     "maker": "MAZDA",
     "model": "787B",
     "year": 1991,
-    "country": "Japan"
+    "country": "Japan",
+    "focus": "28% 50%"
   },
   {
     "file": "File:F40 Ferrari 20090509.jpg",
@@ -301,7 +302,8 @@
     "maker": "FERRARI",
     "model": "F40",
     "year": 1987,
-    "country": "Italy"
+    "country": "Italy",
+    "focus": "50% 50%"
   },
   {
     "file": "File:Lamborghini Countach LP 5000S 1983.jpg",
@@ -309,7 +311,8 @@
     "maker": "LAMBORGHINI",
     "model": "Countach",
     "year": 1983,
-    "country": "Italy"
+    "country": "Italy",
+    "focus": "42% 50%"
   },
   {
     "file": "File:Dülmen, Kirchspiel, Börnste, BMW Mini -- 2019 -- 7207-13.jpg",
@@ -317,7 +320,8 @@
     "maker": "MINI",
     "model": "Cooper",
     "year": 2019,
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "focus": "40% 55%"
   },
   {
     "file": "File:Jumping 911 Carrera RS 2.7 in Pinggau (Bosch Rallye 2010).jpg",
@@ -325,7 +329,8 @@
     "maker": "PORSCHE",
     "model": "911 Carrera RS 2.7",
     "year": 1973,
-    "country": "Germany"
+    "country": "Germany",
+    "focus": "52% 60%"
   },
   {
     "file": "File:Porsche 917 IAA 2013.JPG",
@@ -333,7 +338,8 @@
     "maker": "PORSCHE",
     "model": "917K",
     "year": 1970,
-    "country": "Germany"
+    "country": "Germany",
+    "focus": "38% 50%"
   },
   {
     "file": "File:1964 Ferrari 250 GTO 1.jpg",
@@ -341,7 +347,8 @@
     "maker": "FERRARI",
     "model": "250 GTO",
     "year": 1964,
-    "country": "Italy"
+    "country": "Italy",
+    "focus": "38% 55%"
   },
   {
     "file": "File:Bugatti 57 S Atlantic Best Of Show Chantily.jpg",
@@ -349,7 +356,8 @@
     "maker": "BUGATTI",
     "model": "Type 57S Atlantic",
     "year": 1936,
-    "country": "France"
+    "country": "France",
+    "focus": "30% 50%"
   },
   {
     "file": "File:1955 Mercedes-Benz 300 SLR FOS19.jpg",
@@ -357,6 +365,7 @@
     "maker": "MERCEDES-BENZ",
     "model": "300 SLR",
     "year": 1955,
-    "country": "Germany"
+    "country": "Germany",
+    "focus": "45% 50%"
   }
 ]

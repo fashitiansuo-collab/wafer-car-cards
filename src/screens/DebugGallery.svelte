@@ -12,8 +12,9 @@
   const fixed = params.has('px') ? createTilt() : undefined;
   if (fixed) fixed.set(Number(params.get('px')), Number(params.get('py') ?? 0.5), 1);
   const pick = (r: Rarity) => cards.filter((c) => c.rarity === r);
+  const id = params.get('id');
   const shown = $derived(
-    only ? pick(only) : RARITIES.map((r) => pick(r)[Number(params.get('i') ?? 0) % pick(r).length]),
+    id ? cards.filter((c) => c.id === id) : only ? pick(only) : RARITIES.map((r) => pick(r)[Number(params.get('i') ?? 0) % pick(r).length]),
   );
 </script>
 
