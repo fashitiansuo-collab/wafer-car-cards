@@ -1,0 +1,115 @@
+import { drawCard } from '../lib/draw';
+import { refill, STOCK_MAX } from '../lib/refill';
+import { loadSave, writeSave } from '../lib/save';
+import type { Card, Rarity, Save } from '../lib/types';
+
+export type Screen = 'home' | 'opening' | 'result' | 'garage' | 'detail' | 'records' | 'debug';
+
+export interface Game {
+  readonly save: Save;
+  screen: Screen;
+  detailId: string | null;
+  forced: Rarity | null;
+  readonly current: Card | null;
+  readonly isNew: boolean;
+  tick(): void;
+  startOpening(): boolean;
+  finishOpening(): void;
+  ownedCount(): number;
+  countByRarity(): Record<Rarity, number>;
+}
+
+export interface CreateGameOpts {
+  cards: Card[];
+  storage: Storage | null;
+  now: () => number;
+  rng: () => number;
+}
+
+export function createGame(opts: CreateGameOpts): Game {
+  const { cards, storage, now, rng } = opts;
+  const byId = new Map(cards.map((c) => [c.id, c]));
+
+  let save = $state<Save>(loadSave(storage, now()));
+  let screen = $state<Screen>('home');
+  let detailId = $state<string | null>(null);
+  let forced = $state<Rarity | null>(null);
+  let current = $state<Card | null>(null);
+  let isNew = $state(false);
+
+  // Resume an interrupted opening without double counting.
+  if (save.pending != null) {
+    const card = byId.get(save.pending);
+    if (card) {
+      current = card;
+      isNew = (save.owned[card.id] ?? 0) <= 1;
+      screen = 'opening';
+    } else {
+      save.pending = null;
+    }
+  }
+
+  function persist(): void {
+    writeSave(storage, save);
+  }
+
+  function tick(): void {
+    const r = refill(save.stock, save.lastRefillAt, now());
+    save.stock = r.stock;
+    save.lastRefillAt = r.lastRefillAt;
+    persist();
+  }
+
+  function startOpening(): boolean {
+    tick();
+    if (save.stock <= 0) return false;
+    if (save.stock >= STOCK_MAX) save.lastRefillAt = now();
+    save.stock -= 1;
+    save.eaten += 1;
+    const card = drawCard(cards, rng, forced ?? undefined);
+    const had = save.owned[card.id] ?? 0;
+    save.owned[card.id] = had + 1;
+    if (save.firstPulledAt[card.id] === undefined) save.firstPulledAt[card.id] = now();
+    isNew = had <= 0;
+    save.pending = card.id;
+    current = card;
+    persist();
+    screen = 'opening';
+    return true;
+  }
+
+  function finishOpening(): void {
+    save.pending = null;
+    persist();
+    screen = 'result';
+  }
+
+  function ownedCount(): number {
+    let n = 0;
+    for (const c of cards) if ((save.owned[c.id] ?? 0) > 0) n += 1;
+    return n;
+  }
+
+  function countByRarity(): Record<Rarity, number> {
+    const out: Record<Rarity, number> = { C: 0, UC: 0, R: 0, UR: 0, SEC: 0 };
+    for (const c of cards) if ((save.owned[c.id] ?? 0) > 0) out[c.rarity] += 1;
+    return out;
+  }
+
+  return {
+    get save() { return save; },
+    get screen() { return screen; },
+    set screen(v: Screen) { screen = v; },
+    get detailId() { return detailId; },
+    set detailId(v: string | null) { detailId = v; },
+    get forced() { return forced; },
+    set forced(v: Rarity | null) { forced = v; },
+    get current() { return current; },
+    get isNew() { return isNew; },
+    tick,
+    startOpening,
+    finishOpening,
+    ownedCount,
+    countByRarity,
+  };
+}
