@@ -5,7 +5,7 @@
   import { createTilt } from '../lib/tilt.svelte';
   import { promos, specials } from '../cards/special';
 
-  // ?promo=pr01 / pr01b shows one bespoke card large (&moment plays its intro).
+  // ?promo=pr01 / pr02 shows one bespoke card large (&moment plays its intro).
   const promoId = new URLSearchParams(location.search).get('promo');
   const promo = promos.find((p) => p.id === promoId);
   const showPromo = !!promo;
