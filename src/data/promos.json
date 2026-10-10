@@ -71,5 +71,29 @@
         "modified": true
       }
     ]
+  },
+  {
+    "id": "pr02",
+    "code": "PR-02",
+    "maker": "NISSAN",
+    "model": "GT-R Proto",
+    "generation": "Concept",
+    "year": 2005,
+    "country": "Japan",
+    "image": "./promo/pr02.webp",
+    "lights": [],
+    "exif": {
+      "camera": "Canon IXY DIGITAL 55",
+      "settings": "7.1mm F3.2 1/30s",
+      "date": "2005/10/26"
+    },
+    "codeHash": "dc3dfc071525a8af1861fd4baf4d551931a29112491006faff3e6a7f49dc8c6f",
+    "credit": {
+      "author": "ppmfl",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_GT-R_PROTO.jpg",
+      "modified": true
+    }
   }
 ]

@@ -4,6 +4,7 @@
 import type { Component } from 'svelte';
 import PromoPR01 from './PromoPR01.svelte';
 import PromoPR01B from './PromoPR01B.svelte';
+import PromoPR02 from './PromoPR02.svelte';
 import promosJson from '../../data/promos.json';
 import type { Promo } from '../../lib/types';
 
@@ -13,7 +14,8 @@ export const promos = promosJson as unknown as Promo[];
 export const specials: Record<string, Component<any>> = {
   pr01: PromoPR01,
   pr01b: PromoPR01B,
+  pr02: PromoPR02,
 };
 
 /** SEC cards may be landscape (88:63) or portrait (63:88). */
-export const landscape = new Set<string>();
+export const landscape = new Set(['pr02']);
