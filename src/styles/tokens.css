@@ -30,6 +30,11 @@
 
   /* 意味のある色 */
   --magenta: #d01e94;
+  /* UR's colour is the rainbow. --rainbow for bars and rules; --rainbow-ink for text on white
+     (every stop is at least 4.5:1 on #fff). */
+  --rainbow: linear-gradient(90deg, #ff5f6d, #ffc371, #7cf29b, #4fc3ff, #a77bff, #ff5fb6);
+  --rainbow-v: linear-gradient(180deg, #ff5f6d, #ffc371, #7cf29b, #4fc3ff, #a77bff, #ff5fb6);
+  --rainbow-ink: linear-gradient(120deg, #c2185b, #b45309 22%, #15803d 42%, #1d4ed8 64%, #6d28d9 84%, #be185d);
   --red: #db0b12;
   --blue: #2e5dd3;
   --yellow: #e0b400;

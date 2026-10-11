@@ -124,7 +124,7 @@
   }
   .filter.on[data-rarity='UC'] { border-bottom-color: var(--green); }
   .filter.on[data-rarity='R'] { border-bottom-color: var(--blue); }
-  .filter.on[data-rarity='UR'] { border-bottom-color: var(--magenta); }
+  .filter.on[data-rarity='UR'] { border-image: var(--rainbow) 1; }
   .filter.on[data-rarity='SEC'] { border-bottom-color: var(--yellow); }
   .filter:focus-visible {
     outline: 1px solid var(--sel-frame);
@@ -177,7 +177,7 @@
   }
   .tile[data-rarity='UC'] { border-left-color: var(--green); }
   .tile[data-rarity='R'] { border-left-color: var(--blue); }
-  .tile[data-rarity='UR'] { border-left-color: var(--magenta); }
+  .tile[data-rarity='UR']:not(.locked) { border-image: var(--rainbow-v) 1; }
   .tile[data-rarity='SEC'] { border-left-color: var(--yellow); }
   .tile.locked {
     border-left-color: var(--line-2);

@@ -136,6 +136,33 @@
   text-underline-offset: .3em;
 }
 
+/* UR / SEC back: white, a rainbow rule, the type in the readable rainbow. */
+.back--light {
+  background: var(--rainbow) top / 100% 1.2cqw no-repeat, #fbfbfd;
+  --face-line: rgba(30, 30, 60, .12);
+}
+.back--light .back__mark,
+.back--light dl {
+  background: var(--rainbow-ink);
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.back--light dt,
+.back--light a {
+  color: transparent;
+}
+.back--light dt {
+  opacity: .8;
+}
+.back--light a {
+  text-decoration-color: rgba(60, 40, 120, .35);
+}
+.back--light .back__mark svg {
+  color: #6d28d9;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .card--flipped .card__rotator { transition: none; }
 }

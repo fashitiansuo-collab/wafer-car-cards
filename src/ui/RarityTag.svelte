@@ -16,6 +16,8 @@
   }
   .tag[data-rarity='UC'] { border-color: var(--green); }
   .tag[data-rarity='R'] { border-color: var(--blue); }
-  .tag[data-rarity='UR'] { border-color: var(--magenta); }
+  .tag[data-rarity='UR'] {
+    border-image: var(--rainbow-v) 1;
+  }
   .tag[data-rarity='SEC'] { border-color: var(--yellow); }
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Card } from '../lib/types';
 
-  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'> & { assets?: Card['credit'][] };
+  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'> & { rarity?: Card['rarity']; assets?: Card['credit'][] };
   let { card, firstPulledAt = null }: { card: BackInfo | null; firstPulledAt?: number | null } = $props();
 
   const fmt = (ms: number) => {
@@ -11,7 +11,8 @@
   };
 </script>
 
-<div class="back">
+<!-- UR and SEC turn white with rainbow type once revealed; the plain back (card = null) never does. -->
+<div class="back" class:back--light={card?.rarity === 'UR' || card?.rarity === 'SEC'}>
   <div class="back__mark" aria-hidden="true">
     <svg viewBox="0 0 40 40"><rect x="6" y="6" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" /><path d="M6 15h28M6 25h28M15 6v28M25 6v28" stroke="currentColor" stroke-width=".75" /></svg>
     <span>WAFER<br />CAR CARD</span>

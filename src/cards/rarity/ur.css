@@ -2,6 +2,12 @@
 .card[data-rarity='UR'] {
   --rarity: var(--magenta);
 }
+.card[data-rarity='UR'] .f-rarity {
+  background: var(--rainbow-ink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .card[data-rarity='UR'] .card__photo img {
   filter: contrast(1.15) saturate(1.1);
 }
