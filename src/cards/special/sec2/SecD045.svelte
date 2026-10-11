@@ -1,9 +1,10 @@
 <script lang="ts">
-  // d045 — a concours lot. Photographed from behind on the lawn of a concours: the card is set like
-  // an auction catalogue entry. A lot number in a high-contrast serif, the title in small capitals,
-  // one hairline, the day it was photographed. The moment draws the hairline and lifts the lot in.
-  import '@fontsource-variable/bodoni-moda/wght.css';
-  import '@fontsource-variable/bodoni-moda/wght-italic.css';
+  // d045 — after ERA Residence (Awwwards Site of the Month): a tall, narrow high-contrast serif in
+  // capitals at the centre, widely spaced capitals either side, a script word crossing the title,
+  // one thin vertical line and a hairline inner frame with clipped corners. Here it sits over the
+  // photograph of the car on a concours lawn. The moment draws the line and writes the script in.
+  import '@fontsource/instrument-serif/400.css';
+  import '@fontsource/pinyon-script/400.css';
   import type { Card } from '../../../lib/types';
   import type { Tilt } from '../../../lib/tilt.svelte';
   import SecShell from './SecShell.svelte';
@@ -18,30 +19,27 @@
     plainBack?: boolean;
   } = $props();
   const card = $derived(props.card);
-  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  const shot = $derived.by(() => {
-    const d = card.exif?.date?.split('/').map(Number);
-    return d && d.length === 3 ? `${d[2]} ${MONTHS[d[1] - 1]} ${d[0]}` : String(card.year);
-  });
-  // "NISSAN" + "Skyline GT-R (R34)" → "Nissan Skyline GT-R"; the trim is on the car's own badge.
-  const title = $derived(`${card.year} ${card.maker.charAt(0)}${card.maker.slice(1).toLowerCase()} ${card.model.replace(/\s*\(.*\)/, '')} V·spec II`);
 </script>
 
-<SecShell {...props} name="d045" ink="#f5f3ee">
+<SecShell {...props} name="d045" ink="#f3ece4">
   <div class="photo"><img src="./sec/d045.webp" alt="" draggable="false" /></div>
   <div class="shade"></div>
-  <header class="lot">
-    <p class="no">Lot {card.no}</p>
-    <h2 class="title">{title}</h2>
-    <span class="rule"></span>
-  </header>
-  <p class="shot">Photographed {shot}</p>
+  <div class="frame" aria-hidden="true"></div>
+
+  <h2 class="title">
+    <span class="main">Skyline<br />GT-R</span>
+    <span class="script">V·spec II</span>
+  </h2>
+  <p class="side left">{card.year}</p>
+  <p class="side right">R 3 4</p>
+  <span class="line" aria-hidden="true"></span>
+  <p class="foot">{card.exif?.date?.replaceAll('/', '.')}</p>
 </SecShell>
 
 <style>
   :global(.d045 .card__front) {
-    background: #0e1320;
-    color: #f5f3ee;
+    background: #120f1f;
+    color: #f3ece4;
   }
   .photo {
     position: absolute;
@@ -52,8 +50,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 14% 62%;
-    filter: contrast(1.04) saturate(1.04);
+    object-position: 14% 70%;
+    filter: contrast(1.04) saturate(1.02);
     scale: calc(1.03 + var(--pointer-from-center, 0) * var(--card-opacity, 0) * .04);
     transition: scale 600ms cubic-bezier(.16, 1, .3, 1);
   }
@@ -61,85 +59,109 @@
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(rgba(14, 19, 32, .82), rgba(14, 19, 32, .5) 30%, rgba(14, 19, 32, 0) 50%),
-      linear-gradient(to top, rgba(14, 19, 32, .62), rgba(14, 19, 32, 0) 20%);
+      linear-gradient(rgba(18, 15, 31, .9), rgba(18, 15, 31, .62) 34%, rgba(18, 15, 31, 0) 56%),
+      linear-gradient(to top, rgba(18, 15, 31, .6), rgba(18, 15, 31, 0) 18%);
   }
-  .lot {
+  /* Hairline inner frame with clipped corners. */
+  .frame {
     position: absolute;
-    left: 6cqw;
-    right: 6cqw;
-    top: 6cqw;
-  }
-  .no {
-    margin: 0;
-    font-family: 'Bodoni Moda Variable', serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 15cqw;
-    line-height: .95;
-    letter-spacing: -.02em;
-    color: #f5f3ee;
-  }
-  .title {
-    margin: 2.6cqw 0 0;
-    font-family: 'Bodoni Moda Variable', serif;
-    font-weight: 600;
-    font-size: 4.4cqw;
-    line-height: 1.2;
-    font-variant: small-caps;
-    letter-spacing: .06em;
-    color: #f5f3ee;
-    text-wrap: balance;
-  }
-  .rule {
-    display: block;
-    width: 46%;
-    height: 1px;
-    margin-top: 3.4cqw;
-    background: rgba(245, 243, 238, .8);
-    transform-origin: 0 50%;
-  }
-  .shot {
-    position: absolute;
-    left: 6cqw;
-    bottom: 4.6cqw;
-    margin: 0;
-    font-family: 'Bodoni Moda Variable', serif;
-    font-style: italic;
-    font-size: 3.2cqw;
-    line-height: 1;
-    color: rgba(245, 243, 238, .9);
+    inset: 2.6cqw;
+    border: 1px solid rgba(243, 236, 228, .32);
+    clip-path: polygon(3cqw 0, calc(100% - 3cqw) 0, 100% 3cqw, 100% calc(100% - 3cqw), calc(100% - 3cqw) 100%, 3cqw 100%, 0 calc(100% - 3cqw), 0 3cqw);
   }
 
-  /* The moment: the hairline draws, the lot number settles in above it. */
-  :global(.moment) .rule {
-    animation: draw 900ms cubic-bezier(.16, 1, .3, 1) 200ms both;
+  .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 9cqw;
+    margin: 0;
+    text-align: center;
   }
-  :global(.moment) .no,
-  :global(.moment) .title {
-    animation: lift 800ms cubic-bezier(.16, 1, .3, 1) both;
+  .main {
+    display: block;
+    font: 400 15cqw/.86 'Instrument Serif', serif;
+    text-transform: uppercase;
+    letter-spacing: -.01em;
+    color: #f3ece4;
   }
-  :global(.moment) .title {
-    animation-delay: 160ms;
+  .script {
+    position: absolute;
+    left: 50%;
+    top: 21cqw;
+    translate: -32% 0;
+    rotate: -10deg;
+    font: 400 9cqw/1 'Pinyon Script', cursive;
+    white-space: nowrap;
+    color: #f3ece4;
+    clip-path: inset(0 0 0 0);
   }
-  @keyframes draw {
-    from {
-      transform: scaleX(0);
-    }
+  .side {
+    position: absolute;
+    top: 17cqw;
+    margin: 0;
+    font: 400 3.2cqw/1 'Instrument Serif', serif;
+    letter-spacing: .7em;
+    color: #f3ece4;
   }
-  @keyframes lift {
+  .side.left {
+    left: 6.5cqw;
+  }
+  .side.right {
+    right: 4cqw;
+  }
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 40cqw;
+    width: 1px;
+    height: 12cqw;
+    background: rgba(243, 236, 228, .8);
+    transform-origin: 50% 0;
+  }
+  .foot {
+    position: absolute;
+    left: 6.5cqw;
+    bottom: 5.4cqw;
+    margin: 0;
+    font: 400 3cqw/1 'Instrument Serif', serif;
+    letter-spacing: .3em;
+    color: rgba(243, 236, 228, .9);
+  }
+
+  /* The moment: the title settles, the script is written left to right, the line drops. */
+  :global(.moment) .main {
+    animation: settle 900ms cubic-bezier(.16, 1, .3, 1) both;
+  }
+  :global(.moment) .script {
+    animation: write 900ms cubic-bezier(.65, 0, .35, 1) 500ms both;
+  }
+  :global(.moment) .line {
+    animation: drop 700ms cubic-bezier(.16, 1, .3, 1) 900ms both;
+  }
+  @keyframes settle {
     from {
       opacity: 0;
-      translate: 0 2cqw;
+      letter-spacing: .12em;
+    }
+  }
+  @keyframes write {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+  }
+  @keyframes drop {
+    from {
+      transform: scaleY(0);
     }
   }
   @media (prefers-reduced-motion: reduce) {
     .photo img {
       transition: none;
     }
-    :global(.moment) .rule,
-    :global(.moment) .no,
-    :global(.moment) .title {
+    :global(.moment) .main,
+    :global(.moment) .script,
+    :global(.moment) .line {
       animation: none;
     }
   }

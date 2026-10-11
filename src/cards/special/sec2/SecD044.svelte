@@ -1,8 +1,7 @@
 <script lang="ts">
-  // d044 — a 1970 brochure page. An everyday car park, an old car in a faded grey: the card sets the
-  // photograph as a plate on a dark brown page, graded like a print from the year the car was built,
-  // under the name and three warm supergraphic stripes. The moment draws the stripes in.
-  import '@fontsource/shrikhand/400.css';
+  // d044 — after Hobro Digital (Awwwards Site of the Day): a warm, close, film-graded photograph
+  // full bleed, one giant heavy word cut off by a horizontal line so only its top half shows, and
+  // a small monospace caption centred under the cut. The moment raises the word up to the line.
   import '@fontsource-variable/archivo/wdth.css';
   import type { Card } from '../../../lib/types';
   import type { Tilt } from '../../../lib/tilt.svelte';
@@ -23,93 +22,82 @@
 <SecShell {...props} name="d044" ink="#f6ead4">
   <div class="photo"><img src="./sec/d044.webp" alt="" draggable="false" /></div>
   <div class="grade"></div>
-  <div class="stripes" aria-hidden="true"><i></i><i></i><i></i></div>
-  <h2 class="name">{card.model}</h2>
-  <p class="year">{card.year}</p>
+  <div class="cut"><h2 class="word">{card.model}</h2></div>
+  <p class="caption">{card.year} · 6.3 V8</p>
   <p class="exif">{card.exif?.camera} · {card.exif?.date}</p>
 </SecShell>
 
 <style>
   :global(.d044 .card__front) {
-    background: #24180f;
+    background: #3a1408;
     color: #f6ead4;
   }
-  /* The plate: the photograph across the page, most of the car in view. */
   .photo {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 37%;
-    bottom: 13%;
+    inset: 0;
     overflow: hidden;
   }
-  /* A 1970 print: warm, lifted blacks, a little less colour. */
+  /* Close and warm: the grille and the hood, pushed toward red and amber like a film still. */
   .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 62% 56%;
-    filter: sepia(.3) saturate(.88) contrast(.92) brightness(1.06);
-    scale: calc(1.02 + var(--pointer-from-center, 0) * var(--card-opacity, 0) * .04);
+    object-position: 86% 62%;
+    filter: sepia(.45) saturate(1.5) hue-rotate(-12deg) contrast(1.05) brightness(.92);
+    scale: calc(1.06 + var(--pointer-from-center, 0) * var(--card-opacity, 0) * .05);
     transition: scale 600ms cubic-bezier(.16, 1, .3, 1);
   }
   .grade {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 37%;
-    bottom: 13%;
-    background: linear-gradient(rgba(240, 180, 110, .12), rgba(240, 180, 110, .12));
-    box-shadow: inset 0 0 6cqw rgba(36, 24, 15, .5);
-    pointer-events: none;
+    inset: 0;
+    background: radial-gradient(120% 80% at 60% 60%, transparent 35%, rgba(40, 10, 4, .7));
   }
-  /* Three stripes across the page between the name and the plate, ending in a slant. */
-  .stripes {
+  /* The warm cast: an orange wash in colour mode, so the grey car turns to amber like the reference. */
+  .grade::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #d2561c, #8f1f0c);
+    mix-blend-mode: color;
+    opacity: .55;
+  }
+
+  /* The cut: the word sits on a line and only its top half shows above it. */
+  .cut {
     position: absolute;
     left: 0;
     right: 0;
-    top: 27%;
-    display: grid;
-    gap: 1cqw;
+    top: 30cqw;
+    height: 9.2cqw;
+    overflow: hidden;
   }
-  .stripes i {
-    height: 2.6cqw;
-    clip-path: polygon(0 0, 100% 0, calc(100% - 2.6cqw) 100%, 0 100%);
-    transform-origin: 0 50%;
-  }
-  .stripes i:nth-child(1) {
-    width: 100%;
-    background: #f0a22b;
-  }
-  .stripes i:nth-child(2) {
-    width: 92%;
-    background: #e5671e;
-  }
-  .stripes i:nth-child(3) {
-    width: 84%;
-    background: #c23a20;
-  }
-  .name {
+  .word {
     position: absolute;
-    left: 5cqw;
-    top: 6cqw;
-    margin: 0;
-    font: 400 18cqw/1 'Shrikhand', serif;
-    letter-spacing: -.01em;
-    color: #f6ead4;
-  }
-  .year {
-    position: absolute;
-    left: 5.6cqw;
-    top: 27cqw;
+    left: 4cqw;
+    top: 0;
     margin: 0;
     font-family: 'Archivo Variable', var(--latin);
-    font-weight: 800;
-    font-stretch: 125%;
-    font-size: 6cqw;
-    line-height: 1;
-    letter-spacing: .08em;
-    color: #f6ead4;
+    font-weight: 900;
+    font-stretch: 100%;
+    font-size: 17cqw;
+    line-height: .78;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fbf3e6;
+    translate: calc((var(--pointer-from-left, .5) - .5) * -3cqw) 0;
+  }
+  .caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 42cqw;
+    margin: 0;
+    text-align: center;
+    font: 500 3cqw/1 var(--mono);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: rgba(251, 243, 230, .78);
   }
   .exif {
     position: absolute;
@@ -121,22 +109,16 @@
     color: rgba(246, 234, 212, .82);
   }
 
-  /* The moment: the stripes run in from the left, one after another. */
-  :global(.moment) .stripes i {
-    animation: run 640ms cubic-bezier(.16, 1, .3, 1) both;
+  /* The moment: the word rises up to the line. */
+  :global(.moment) .word {
+    animation: rise 900ms cubic-bezier(.16, 1, .3, 1) both;
   }
-  :global(.moment) .stripes i:nth-child(2) {
-    animation-delay: 90ms;
+  :global(.moment) .caption {
+    animation: fade 500ms ease-out 600ms both;
   }
-  :global(.moment) .stripes i:nth-child(3) {
-    animation-delay: 180ms;
-  }
-  :global(.moment) .year {
-    animation: fade 500ms ease-out 520ms both;
-  }
-  @keyframes run {
+  @keyframes rise {
     from {
-      transform: scaleX(0);
+      transform: translateY(100%);
     }
   }
   @keyframes fade {
@@ -148,8 +130,8 @@
     .photo img {
       transition: none;
     }
-    :global(.moment) .stripes i,
-    :global(.moment) .year {
+    :global(.moment) .word,
+    :global(.moment) .caption {
       animation: none;
     }
   }

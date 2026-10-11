@@ -39,6 +39,7 @@ Every card is a real Commons photograph with its real camera data, framed and tr
 These are binding rules the author set for card design:
 
 - **Design skills are mandatory** for any card design work.
+- **Award references are mandatory, never skipped.** Every bespoke card starts from real works on award galleries (Awwwards, CSS Design Awards, FWA, Behance, CodePen picks…) that were actually opened and studied. If the built-in browser is blocked, use Playwright or Chrome. Designing from memory is forbidden. The visited URLs and the techniques taken go in `docs/sec/`.
 - **References lead strongly.** Take strong influence from the reference sites (layout grammar, type treatment, motion, colour logic). Keep original deviations restrained. Never lift their assets, logos, copy, or characters.
 - **Type:** prefer fonts that resemble the reference's type, or free fonts popular with designers (Google Fonts / GitHub, SIL OFL or similar). Bundled app fonts (Barlow etc.) are the last choice, used only when they are genuinely the best fit. No paid fonts.
 - **Japanese text on a card only when the reference site is Japanese.**
