@@ -1,1 +1,1444 @@
-[]
+[
+  {
+    "id": "d001",
+    "no": 1,
+    "rarity": "C",
+    "maker": "HONDA",
+    "model": "Civic",
+    "year": 1997,
+    "country": "Japan",
+    "image": "./cards/d001.jpg",
+    "series": 2,
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": "2017/12/24"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Shadman Samee from Dhaka, Bangladesh",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Civic_(fifth_generation),_Bangladesh._(25392346508).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#e7ceac",
+      "#9e9591",
+      "#726e75",
+      "#444252",
+      "#807875"
+    ],
+    "focus": "41% 50%"
+  },
+  {
+    "id": "d002",
+    "no": 2,
+    "rarity": "C",
+    "maker": "ACURA",
+    "model": "Integra Type R",
+    "year": 1998,
+    "country": "Japan",
+    "image": "./cards/d002.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon PowerShot G16",
+      "settings": "12mm F2.8 1/2000s ISO80",
+      "date": "2023/06/24"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Elise240SX",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Acura_Integra_Type-R_in_Phoenix_Yellow,_Front_Right_(St._Ignace_2023).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#19202a",
+      "#554c42",
+      "#8f814c",
+      "#e3bb0f",
+      "#cbad2f"
+    ],
+    "focus": "89% 50%"
+  },
+  {
+    "id": "d003",
+    "no": 3,
+    "rarity": "C",
+    "maker": "MITSUBISHI",
+    "model": "Eclipse",
+    "year": 1990,
+    "country": "Japan",
+    "image": "./cards/d003.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 200D II",
+      "settings": "48mm F5.6 1/160s ISO160",
+      "date": "2026/05/23"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Cutlass",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1990_Mitsubishi_Eclipse_GSX_Turbo_in_Maranello_Red,_front_left,_05-23-2026.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#7f7780",
+      "#39383a",
+      "#c84349",
+      "#baa3a1",
+      "#c6c4c3"
+    ],
+    "focus": "2% 50%"
+  },
+  {
+    "id": "d004",
+    "no": 4,
+    "rarity": "C",
+    "maker": "NISSAN",
+    "model": "240SX",
+    "year": 1996,
+    "country": "Japan",
+    "image": "./cards/d004.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "NIKON D5600",
+      "settings": "ISO2000",
+      "date": "2026/04/10"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Charles from Port Chester, New York",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_240SX_Coup%C3%A9_(S14,_1997)_(55211307857).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#241b1b",
+      "#643838",
+      "#6d5e58",
+      "#f7ecb3",
+      "#aca393"
+    ],
+    "focus": "16% 50%"
+  },
+  {
+    "id": "d005",
+    "no": 5,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Celica",
+    "year": 2001,
+    "country": "Japan",
+    "image": "./cards/d005.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY DSC-P100",
+      "settings": "14mm F3.5 1/60s ISO100",
+      "date": "2009/02/08"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Andrewn4080",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Celica-GTS.JPG",
+      "modified": true
+    },
+    "palette": [
+      "#5a6262",
+      "#343b34",
+      "#a2a6a1",
+      "#7c7c73",
+      "#d8dada"
+    ],
+    "focus": "55% 50%"
+  },
+  {
+    "id": "d006",
+    "no": 6,
+    "rarity": "C",
+    "maker": "DODGE",
+    "model": "SRT-4",
+    "year": 2004,
+    "country": "USA",
+    "image": "./cards/d006.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY SLT-A65V",
+      "settings": "22mm F8 1/80s ISO100",
+      "date": "2011/06/14"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Greg Gjerdingen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Dodge_Neon_SRT-4.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#c8b04a",
+      "#25350a",
+      "#60622e",
+      "#303a11",
+      "#1a2110"
+    ],
+    "focus": "40% 50%"
+  },
+  {
+    "id": "d007",
+    "no": 7,
+    "rarity": "C",
+    "maker": "VOLKSWAGEN",
+    "model": "Jetta",
+    "year": 2002,
+    "country": "Germany",
+    "image": "./cards/d007.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Apple iPhone 5",
+      "settings": "4.1mm F2.4 1/40s ISO64",
+      "date": "2013/08/28"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Михаил Мухин 123321",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_Jetta_MK4.JPG",
+      "modified": true
+    },
+    "palette": [
+      "#6e7773",
+      "#ffffff",
+      "#4f523f",
+      "#fbfffd",
+      "#c2c8c2"
+    ],
+    "focus": "63% 50%"
+  },
+  {
+    "id": "d008",
+    "no": 8,
+    "rarity": "C",
+    "maker": "MAZDA",
+    "model": "MX-5 Miata",
+    "year": 1991,
+    "country": "Japan",
+    "image": "./cards/d008.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS RP",
+      "settings": "183mm F8 1/80s ISO160",
+      "date": "2024/10/13"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Robert Yorde from Ohio, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:-79,_1991_Mazda_Miata,_SM,_Group_1_(54077656647).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2d2b1e",
+      "#643c2d",
+      "#827446",
+      "#c3c1bd",
+      "#8f9755"
+    ],
+    "focus": "1% 50%"
+  },
+  {
+    "id": "d009",
+    "no": 9,
+    "rarity": "C",
+    "maker": "FORD",
+    "model": "Mustang GT",
+    "year": 1988,
+    "country": "USA",
+    "image": "./cards/d009.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Polaroid i531",
+      "settings": "6.2mm F2.8 1/162s ISO100",
+      "date": "2008/04/23"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Bull-Doser",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2791-%2793_Ford_Mustang_5.0_Coupe_(Orange_Julep).JPG",
+      "modified": true
+    },
+    "palette": [
+      "#30272c",
+      "#683641",
+      "#8d636b",
+      "#ae8888",
+      "#c8bbb6"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "d010",
+    "no": 10,
+    "rarity": "C",
+    "maker": "CHEVROLET",
+    "model": "Camaro IROC-Z",
+    "year": 1987,
+    "country": "USA",
+    "image": "./cards/d010.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS REBEL T3i",
+      "settings": "18mm F7.1 1/60s ISO100",
+      "date": "2012/06/30"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Nick Ares from Auburn, CA, United States",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camaro_(01).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#6a6d6b",
+      "#595b52",
+      "#29302e",
+      "#5a97aa",
+      "#c2bbb2"
+    ],
+    "focus": "34% 50%"
+  },
+  {
+    "id": "d011",
+    "no": 11,
+    "rarity": "C",
+    "maker": "PONTIAC",
+    "model": "Firebird",
+    "year": 1985,
+    "country": "USA",
+    "image": "./cards/d011.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY DSLR-A560",
+      "settings": "22mm F9 1/80s ISO200",
+      "date": "2013/07/28"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Greg Gjerdingen from Willmar, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:87_Pontiac_Firebird_(9456505362).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#c4d1a9",
+      "#6e7765",
+      "#43443c",
+      "#23352b",
+      "#8c3031"
+    ],
+    "focus": "80% 50%"
+  },
+  {
+    "id": "d012",
+    "no": 12,
+    "rarity": "C",
+    "maker": "CHEVROLET",
+    "model": "Monte Carlo SS",
+    "year": 1987,
+    "country": "USA",
+    "image": "./cards/d012.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon PowerShot SX740 HS",
+      "settings": "12mm F4.5 1/500s ISO100",
+      "date": "2024/07/01"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "MercurySable99",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Chevrolet_Monte_Carlo_SS_Aero_Coupe,_front_right,_07-01-2024.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2b2e3c",
+      "#94ad6e",
+      "#774f62",
+      "#8e9380",
+      "#b2c2a0"
+    ],
+    "focus": "94% 50%"
+  },
+  {
+    "id": "d013",
+    "no": 13,
+    "rarity": "C",
+    "maker": "CHEVROLET",
+    "model": "Impala SS",
+    "year": 1996,
+    "country": "USA",
+    "image": "./cards/d013.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Google Pixel 6a",
+      "settings": "4.4mm F1.7 1/1232s ISO60",
+      "date": "2024/01/07"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Pokemonprime",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Chevrolet_Impala_SS,_Mecum_Auctions_Kissimmee_2024.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#867f63",
+      "#312f2a",
+      "#646052",
+      "#9d9d99",
+      "#d1d4da"
+    ],
+    "focus": "18% 50%"
+  },
+  {
+    "id": "d014",
+    "no": 14,
+    "rarity": "C",
+    "maker": "FORD",
+    "model": "SVT Lightning",
+    "year": 2001,
+    "country": "USA",
+    "image": "./cards/d014.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Google Pixel 6",
+      "settings": "6.8mm F1.9 1/2571s ISO46",
+      "date": "2023/07/30"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_F-150_SVT_Lightning.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2f2e2b",
+      "#8c7556",
+      "#b42a29",
+      "#aba8b1",
+      "#b4cada"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "d015",
+    "no": 15,
+    "rarity": "C",
+    "maker": "NISSAN",
+    "model": "350Z",
+    "year": 2004,
+    "country": "Japan",
+    "image": "./cards/d015.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "HUAWEI NEM-L51",
+      "settings": "3.8mm F2 1/1015s ISO50",
+      "date": "2018/08/16"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Hugh Llewelyn from Keynsham, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Nissan_350Z_(29176392307).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#9d978f",
+      "#7d6a5d",
+      "#453734",
+      "#aab0af",
+      "#d3cec1"
+    ],
+    "focus": "38% 50%"
+  },
+  {
+    "id": "d016",
+    "no": 16,
+    "rarity": "UC",
+    "maker": "HONDA",
+    "model": "S2000",
+    "year": 2001,
+    "country": "Japan",
+    "image": "./cards/d016.jpg",
+    "series": 2,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/1429s ISO12",
+      "date": "2024/04/21"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Honda_S2000_2.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#09174a",
+      "#a29c84",
+      "#323a55",
+      "#70797f",
+      "#a7a99e"
+    ],
+    "focus": "80% 50%"
+  },
+  {
+    "id": "d017",
+    "no": 17,
+    "rarity": "UC",
+    "maker": "MITSUBISHI",
+    "model": "3000GT VR-4",
+    "year": 1992,
+    "country": "Japan",
+    "image": "./cards/d017.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon IXUS 300 HS",
+      "settings": "4.9mm F2.8 1/200s ISO125",
+      "date": "2014/11/09"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Rutger van der Maar",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Mitsubishi_3000GT_SL_Automatic.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#121920",
+      "#4a434d",
+      "#6a1b24",
+      "#a6d6e9",
+      "#7a7c9e"
+    ],
+    "focus": "12% 50%"
+  },
+  {
+    "id": "d018",
+    "no": 18,
+    "rarity": "UC",
+    "maker": "MITSUBISHI",
+    "model": "Lancer Evolution VIII",
+    "year": 2004,
+    "country": "Japan",
+    "image": "./cards/d018.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "samsung Galaxy S24 Ultra",
+      "settings": "6.3mm F1.7 1/1000s ISO12",
+      "date": "2024/10/27"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Mitsubishi_Lancer_Evolution_VIII_MR_FQ-320.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#677347",
+      "#181e28",
+      "#3c4047",
+      "#a2c9e6",
+      "#828d5d"
+    ],
+    "focus": "37% 50%"
+  },
+  {
+    "id": "d019",
+    "no": 19,
+    "rarity": "UC",
+    "maker": "SUBARU",
+    "model": "Impreza WRX STI",
+    "year": 2004,
+    "country": "Japan",
+    "image": "./cards/d019.jpg",
+    "series": 2,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/1000s ISO12",
+      "date": "2024/07/14"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Subaru_Impreza_WRX_STi_Type_UK_(20691).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#0a1120",
+      "#192d54",
+      "#788570",
+      "#445b71",
+      "#9fb5b4"
+    ],
+    "focus": "64% 50%"
+  },
+  {
+    "id": "d020",
+    "no": 20,
+    "rarity": "UC",
+    "maker": "NISSAN",
+    "model": "Silvia S15",
+    "year": 2000,
+    "country": "Japan",
+    "image": "./cards/d020.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "samsung Galaxy S24 Ultra",
+      "settings": "6.3mm F1.7 1/50s ISO500",
+      "date": "2024/09/01"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1999_Nissan_Silvia_S15_2.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#62535d",
+      "#1c1b1c",
+      "#462d34",
+      "#807579",
+      "#922b55"
+    ],
+    "focus": "73% 50%"
+  },
+  {
+    "id": "d021",
+    "no": 21,
+    "rarity": "UC",
+    "maker": "FORD",
+    "model": "Mustang GT",
+    "year": 2006,
+    "country": "USA",
+    "image": "./cards/d021.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "OLYMPUS IMAGING CORP. FE25,X20",
+      "settings": "6.3mm F4.6 1/1250s ISO400",
+      "date": "2000/01/30"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Bull-Doser",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2707_Ford_Mustang_(%2711_Cruisin%27_At_The_Boardwalk).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2e292b",
+      "#936f72",
+      "#962d31",
+      "#c7b2b5",
+      "#ebe8eb"
+    ],
+    "focus": "84% 50%"
+  },
+  {
+    "id": "d022",
+    "no": 22,
+    "rarity": "UC",
+    "maker": "CHEVROLET",
+    "model": "Chevelle SS",
+    "year": 1970,
+    "country": "USA",
+    "image": "./cards/d022.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "samsung Galaxy A35 5G",
+      "settings": "4.7mm F1.8 1/929s ISO25",
+      "date": "2026/05/02"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Xnatedawgx",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Chevrolet_Chevelle_SS_502,_black,_Golden_Super_Cruise_2026-05-02.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#1a2132",
+      "#494048",
+      "#a4a099",
+      "#797e83",
+      "#cfc9bf"
+    ],
+    "focus": "95% 50%"
+  },
+  {
+    "id": "d023",
+    "no": 23,
+    "rarity": "UC",
+    "maker": "PLYMOUTH",
+    "model": "Road Runner",
+    "year": 1969,
+    "country": "USA",
+    "image": "./cards/d023.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "PENTAX Optio E40",
+      "settings": "6.2mm F5.6 1/400s ISO80",
+      "date": "2012/09/16"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Bull-Doser at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2769_Plymouth_Road_Runner_(Auto_classique_Caf%C3%A9_Intervallo).JPG",
+      "modified": true
+    },
+    "palette": [
+      "#212230",
+      "#998f84",
+      "#6f4735",
+      "#937760",
+      "#c8aeac"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "d024",
+    "no": 24,
+    "rarity": "UC",
+    "maker": "BUICK",
+    "model": "Grand National",
+    "year": 1987,
+    "country": "USA",
+    "image": "./cards/d024.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY DSLR-A560",
+      "settings": "24mm F10 1/100s ISO200",
+      "date": "2014/08/09"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Greg Gjerdingen from Willmar, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Buick_Grand_National_(14872754372).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#514f4d",
+      "#1c1b1c",
+      "#888783",
+      "#d6dbde",
+      "#e2e5e9"
+    ],
+    "focus": "59% 50%"
+  },
+  {
+    "id": "d025",
+    "no": 25,
+    "rarity": "UC",
+    "maker": "PONTIAC",
+    "model": "GTO",
+    "year": 1966,
+    "country": "USA",
+    "image": "./cards/d025.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY DSLR-A560",
+      "settings": "26mm F4.5 1/50s ISO400",
+      "date": "2014/09/20"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Greg Gjerdingen from Willmar, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966_Pontiac_GTO_(15117795820).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2e3922",
+      "#9b9183",
+      "#504e38",
+      "#212b19",
+      "#5c302b"
+    ],
+    "focus": "71% 50%"
+  },
+  {
+    "id": "d026",
+    "no": 26,
+    "rarity": "UC",
+    "maker": "DODGE",
+    "model": "Challenger SRT8",
+    "year": 2008,
+    "country": "USA",
+    "image": "./cards/d026.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Polaroid i531",
+      "settings": "6.2mm F2.8 1/120s ISO50",
+      "date": "2010/05/02"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Bull-Doser",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2708-%2710_Dodge_Challenger_SRT-8_(Les_chauds_vendredis_%2710).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#232234",
+      "#616573",
+      "#494355",
+      "#818b9d",
+      "#aeb9c6"
+    ],
+    "focus": "2% 50%"
+  },
+  {
+    "id": "d027",
+    "no": 27,
+    "rarity": "UC",
+    "maker": "MAZDA",
+    "model": "RX-7 (FC)",
+    "year": 1987,
+    "country": "Japan",
+    "image": "./cards/d027.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 500D",
+      "settings": "24mm F16 1/500s ISO400",
+      "date": "2015/08/16"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Jeremy from Sydney, Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Mazda_RX-7_(FC)_coupe_(21105743820)_(cropped).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#837159",
+      "#302f2f",
+      "#e1e2e5",
+      "#ada49c",
+      "#edeeef"
+    ],
+    "focus": "100% 50%",
+    "focusManual": true
+  },
+  {
+    "id": "d028",
+    "no": 28,
+    "rarity": "R",
+    "maker": "HONDA",
+    "model": "NSX",
+    "year": 1991,
+    "country": "Japan",
+    "image": "./cards/d028.jpg",
+    "series": 2,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/1000s ISO12",
+      "date": "2024/07/11"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Honda_NSX_4.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#6b6f56",
+      "#c62a41",
+      "#373431",
+      "#7d8254",
+      "#a5b0ab"
+    ],
+    "focus": "13% 50%"
+  },
+  {
+    "id": "d029",
+    "no": 29,
+    "rarity": "R",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R (R33)",
+    "year": 1996,
+    "country": "Japan",
+    "image": "./cards/d029.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "motorola REVVLRY",
+      "settings": "3.5mm F2 1/968s ISO50",
+      "date": "2022/07/09"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "DestinationFearFan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Nissan_Skyline_R33_GT-R_V-Spec_front.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#47494e",
+      "#1f242d",
+      "#969fae",
+      "#727b8a",
+      "#cbc8c8"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "d030",
+    "no": 30,
+    "rarity": "R",
+    "maker": "DODGE",
+    "model": "Viper GTS",
+    "year": 1997,
+    "country": "USA",
+    "image": "./cards/d030.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Google Pixel 6",
+      "settings": "6.8mm F1.9 1/1414s ISO43",
+      "date": "2023/09/02"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1999_Dodge_Viper_GTS_2.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#323618",
+      "#72632b",
+      "#b59171",
+      "#e82c28",
+      "#822c19"
+    ],
+    "focus": "90% 50%"
+  },
+  {
+    "id": "d031",
+    "no": 31,
+    "rarity": "R",
+    "maker": "SHELBY",
+    "model": "GT500",
+    "year": 1967,
+    "country": "USA",
+    "image": "./cards/d031.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "FUJIFILM FinePix HS10 HS11",
+      "settings": "7.3mm F5 1/400s ISO100",
+      "date": "2012/07/29"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "sv1ambo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1967_Ford_Mustang_Shelby_GT500_coupe_(7708119910).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#6a6560",
+      "#1d1d1f",
+      "#6a3e42",
+      "#77736d",
+      "#a9abaa"
+    ],
+    "focus": "12% 50%"
+  },
+  {
+    "id": "d032",
+    "no": 32,
+    "rarity": "R",
+    "maker": "CHEVROLET",
+    "model": "Corvette Sting Ray",
+    "year": 1965,
+    "country": "USA",
+    "image": "./cards/d032.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 500D",
+      "settings": "23mm F10 1/250s ISO400",
+      "date": "2015/07/12"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Jeremy from Sydney, Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1965_Chevrolet_Corvette_C2_Sting_Ray_(19950816348).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#8b796e",
+      "#42403c",
+      "#aa989a",
+      "#b44e59",
+      "#c8c6c7"
+    ],
+    "focus": "100% 50%",
+    "focusManual": true
+  },
+  {
+    "id": "d033",
+    "no": 33,
+    "rarity": "R",
+    "maker": "PONTIAC",
+    "model": "Firebird Trans Am",
+    "year": 1977,
+    "country": "USA",
+    "image": "./cards/d033.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon PowerShot A650 IS",
+      "settings": "7.4mm F2.8 1/1250s ISO160",
+      "date": "2012/06/30"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "nakhon100",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pontiac_Firebird_Trans_Am_1977_(7488273768).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#98a265",
+      "#35382e",
+      "#bdc67d",
+      "#596359",
+      "#73746c"
+    ],
+    "focus": "39% 50%"
+  },
+  {
+    "id": "d034",
+    "no": 34,
+    "rarity": "R",
+    "maker": "CHEVROLET",
+    "model": "Camaro Z/28",
+    "year": 1969,
+    "country": "USA",
+    "image": "./cards/d034.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 700D",
+      "settings": "18mm F8 1/400s ISO100",
+      "date": "2014/11/30"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Sicnag",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1969_Chevrolet_Camaro_Z28_(15313432294).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#5f7186",
+      "#2f2f37",
+      "#7cb7e6",
+      "#c7beb6",
+      "#dedcda"
+    ],
+    "focus": "30% 50%"
+  },
+  {
+    "id": "d035",
+    "no": 35,
+    "rarity": "R",
+    "maker": "BUICK",
+    "model": "GNX",
+    "year": 1987,
+    "country": "USA",
+    "image": "./cards/d035.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS REBEL T3i",
+      "settings": "20mm F7.1 1/30s ISO160",
+      "date": "2015/07/31"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "ilikewaffles11",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buick_GNX_(20206519195).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#4a545f",
+      "#1d2128",
+      "#94abc3",
+      "#70859d",
+      "#dcdedc"
+    ],
+    "focus": "22% 50%"
+  },
+  {
+    "id": "d036",
+    "no": 36,
+    "rarity": "R",
+    "maker": "SHELBY",
+    "model": "Cobra 427",
+    "year": 1966,
+    "country": "USA",
+    "image": "./cards/d036.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 5D Mark II",
+      "settings": "28mm F22 1/25s ISO320",
+      "date": "2009/06/04"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Patrick from Merrimack, NH, United States",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carroll_Shelby_427_Cobra_(3608963860).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2f2427",
+      "#8c6a5e",
+      "#921a2d",
+      "#af9185",
+      "#cdc1ba"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "d037",
+    "no": 37,
+    "rarity": "UR",
+    "maker": "TOYOTA",
+    "model": "Corolla Levin (AE86)",
+    "year": 1985,
+    "country": "Japan",
+    "image": "./cards/d037.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Google Pixel 6a",
+      "settings": "4.4mm F1.7 1/33s ISO337",
+      "date": "2023/11/29"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "SoulNaber",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_AE86_1986_Levin_Coupe.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#1d1e1e",
+      "#8a837c",
+      "#4c4a49",
+      "#c0c4cb",
+      "#adaaa6"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "d038",
+    "no": 38,
+    "rarity": "UR",
+    "maker": "MAZDA",
+    "model": "RX-7 (FD)",
+    "year": 1993,
+    "country": "Japan",
+    "image": "./cards/d038.jpg",
+    "series": 2,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/909s ISO12",
+      "date": "2024/04/21"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Mazda_RX-7.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#354258",
+      "#7f8953",
+      "#1c1f27",
+      "#626e66",
+      "#95a074"
+    ],
+    "focus": "22% 50%"
+  },
+  {
+    "id": "d039",
+    "no": 39,
+    "rarity": "UR",
+    "maker": "NISSAN",
+    "model": "GT-R",
+    "year": 2009,
+    "country": "Japan",
+    "image": "./cards/d039.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY ILCE-7M3",
+      "settings": "70mm F5.6 1/1250s ISO160",
+      "date": "2025/08/09"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "OWS Photography",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_GT-R_(R35)_Washington_DC_Metro_Area,_USA_(2).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#5d666a",
+      "#292f35",
+      "#d9d9dc",
+      "#a0a3a3",
+      "#eceae9"
+    ],
+    "focus": "20% 50%"
+  },
+  {
+    "id": "d040",
+    "no": 40,
+    "rarity": "UR",
+    "maker": "FORD",
+    "model": "GT",
+    "year": 2005,
+    "country": "USA",
+    "image": "./cards/d040.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 1300D",
+      "settings": "35mm F5 1/60s ISO100",
+      "date": "2022/09/04"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Ford_GT_SP_22.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#70635d",
+      "#aa9f96",
+      "#0f0f10",
+      "#262426",
+      "#4b3030"
+    ],
+    "focus": "93% 50%"
+  },
+  {
+    "id": "d041",
+    "no": 41,
+    "rarity": "UR",
+    "maker": "PLYMOUTH",
+    "model": "Hemi 'Cuda",
+    "year": 1970,
+    "country": "USA",
+    "image": "./cards/d041.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "Canon EOS 700D",
+      "settings": "18mm F5 1/60s ISO800",
+      "date": "2018/10/14"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Sicnag",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Plymouth_AAR_Cuda_340_(31456408978).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#744e34",
+      "#2d2927",
+      "#9b7450",
+      "#b99161",
+      "#c7baa6"
+    ],
+    "focus": "74% 50%"
+  },
+  {
+    "id": "d042",
+    "no": 42,
+    "rarity": "UR",
+    "maker": "DODGE",
+    "model": "Challenger R/T",
+    "year": 1970,
+    "country": "USA",
+    "image": "./cards/d042.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY DSC-W290",
+      "settings": "5mm F3.3 1/320s ISO250",
+      "date": "2011/09/17"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Greg Gjerdingen from Willmar, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Dodge_Challenger_R_T_(6171234768).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#6c655c",
+      "#86837c",
+      "#33302d",
+      "#d4d4d3",
+      "#724b42"
+    ],
+    "focus": "63% 50%"
+  },
+  {
+    "id": "d043",
+    "no": 43,
+    "rarity": "SEC",
+    "maker": "TOYOTA",
+    "model": "Supra",
+    "year": 1994,
+    "country": "Japan",
+    "image": "./cards/d043.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "HONOR BVL-N49",
+      "settings": "15mm F2.6 1/100s ISO80",
+      "date": "2025/06/05"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Dwxn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20250605_191314_Krakowskie_Klasyki_Noc%C4%85_2025,_Tauron_Arena,_Krak%C3%B3w_13.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#7c7970",
+      "#20211a",
+      "#58564a",
+      "#ddbd60",
+      "#a59569"
+    ],
+    "focus": "27% 50%"
+  },
+  {
+    "id": "d044",
+    "no": 44,
+    "rarity": "SEC",
+    "maker": "DODGE",
+    "model": "Charger",
+    "year": 1970,
+    "country": "USA",
+    "image": "./cards/d044.jpg",
+    "series": 2,
+    "exif": {
+      "camera": "SONY DSC-W110",
+      "settings": "5.4mm F7.1 1/125s ISO125",
+      "date": "2014/10/05"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Kieran White from Manchester, England",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Dodge_Charger_6.3_V8_(15262649127).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#7c7d79",
+      "#454842",
+      "#735d54",
+      "#8a8f8d",
+      "#acb3ba"
+    ],
+    "focus": "56% 50%"
+  },
+  {
+    "id": "d045",
+    "no": 45,
+    "rarity": "SEC",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R (R34)",
+    "year": 2001,
+    "country": "Japan",
+    "image": "./cards/d045.jpg",
+    "series": 2,
+    "exif": {
+      "camera": null,
+      "settings": "6.8mm F1.9 1/1250s ISO40",
+      "date": "2022/06/30"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Nissan_Skyline_GT-R_V-Spec_II_R34_(56664).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#102a53",
+      "#5a6f57",
+      "#414946",
+      "#738b7d",
+      "#b0b9bf"
+    ],
+    "focus": "18% 50%"
+  }
+]

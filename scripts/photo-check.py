@@ -211,6 +211,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('files', nargs='*')
     ap.add_argument('--cards', action='store_true', help='check every card image in src/data/cards.json')
+    ap.add_argument('--series', type=int, default=1, help='series to use (2 reads src/data/cards-s2.json)')
     ap.add_argument('--json', help='also write the full results to this file')
     ap.add_argument('--boxes', help='write copies with the detected car / lights drawn into this folder')
     ap.add_argument('--fit', action='store_true',
@@ -219,9 +220,10 @@ def main():
     a = ap.parse_args()
 
     root = Path(__file__).resolve().parent.parent
+    suffix = '' if a.series == 1 else f'-s{a.series}'
     files = []
     if a.cards:
-        cards = json.loads((root / 'src/data/cards.json').read_text(encoding='utf-8'))
+        cards = json.loads((root / f'src/data/cards{suffix}.json').read_text(encoding='utf-8'))
         files += [root / 'public' / c['image'].removeprefix('./') for c in cards]
     for f in a.files:
         files += [Path(p) for p in glob.glob(f)] or [Path(f)]
@@ -246,9 +248,10 @@ def main():
 def fit_cards(root, proc, model, torch, a):
     from PIL import Image, ImageDraw
 
-    cards_path = root / 'src/data/cards.json'
+    suffix = '' if a.series == 1 else f'-s{a.series}'
+    cards_path = root / f'src/data/cards{suffix}.json'
     cards = json.loads(cards_path.read_text(encoding='utf-8'))
-    lineup_path = root / 'scripts/lineup.json'
+    lineup_path = root / f'scripts/lineup{suffix}.json'
     lineup = json.loads(lineup_path.read_text(encoding='utf-8'))
     rows = []
     for c in cards:

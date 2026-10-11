@@ -1,0 +1,454 @@
+[
+  {
+    "file": "File:Honda Civic (fifth generation), Bangladesh. (25392346508).jpg",
+    "rarity": "C",
+    "maker": "HONDA",
+    "model": "Civic",
+    "year": 1997,
+    "country": "Japan",
+    "frame": "gallery",
+    "focus": "41% 50%"
+  },
+  {
+    "file": "File:2001 Acura Integra Type-R in Phoenix Yellow, Front Right (St. Ignace 2023).jpg",
+    "rarity": "C",
+    "maker": "ACURA",
+    "model": "Integra Type R",
+    "year": 1998,
+    "country": "Japan",
+    "frame": "watermark",
+    "focus": "89% 50%"
+  },
+  {
+    "file": "File:1990 Mitsubishi Eclipse GSX Turbo in Maranello Red, front left, 05-23-2026.jpg",
+    "rarity": "C",
+    "maker": "MITSUBISHI",
+    "model": "Eclipse",
+    "year": 1990,
+    "country": "Japan",
+    "frame": "window",
+    "focus": "2% 50%"
+  },
+  {
+    "file": "File:Nissan 240SX Coupé (S14, 1997) (55211307857).jpg",
+    "rarity": "C",
+    "maker": "NISSAN",
+    "model": "240SX",
+    "year": 1996,
+    "country": "Japan",
+    "frame": "litt",
+    "focus": "16% 50%"
+  },
+  {
+    "file": "File:Celica-GTS.JPG",
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Celica",
+    "year": 2001,
+    "country": "Japan",
+    "frame": "palette",
+    "focus": "55% 50%"
+  },
+  {
+    "file": "File:2004 Dodge Neon SRT-4.jpg",
+    "rarity": "C",
+    "maker": "DODGE",
+    "model": "SRT-4",
+    "year": 2004,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "40% 50%"
+  },
+  {
+    "file": "File:VW Jetta MK4.JPG",
+    "rarity": "C",
+    "maker": "VOLKSWAGEN",
+    "model": "Jetta",
+    "year": 2002,
+    "country": "Germany",
+    "frame": "watermark",
+    "focus": "63% 50%"
+  },
+  {
+    "file": "File:-79, 1991 Mazda Miata, SM, Group 1 (54077656647).jpg",
+    "rarity": "C",
+    "maker": "MAZDA",
+    "model": "MX-5 Miata",
+    "year": 1991,
+    "country": "Japan",
+    "frame": "window",
+    "focus": "1% 50%"
+  },
+  {
+    "file": "File:'91-'93 Ford Mustang 5.0 Coupe (Orange Julep).JPG",
+    "rarity": "C",
+    "maker": "FORD",
+    "model": "Mustang GT",
+    "year": 1988,
+    "country": "USA",
+    "frame": "litt",
+    "focus": "0% 50%"
+  },
+  {
+    "file": "File:Camaro (01).jpg",
+    "rarity": "C",
+    "maker": "CHEVROLET",
+    "model": "Camaro IROC-Z",
+    "year": 1987,
+    "country": "USA",
+    "frame": "palette",
+    "focus": "34% 50%"
+  },
+  {
+    "file": "File:87 Pontiac Firebird (9456505362).jpg",
+    "rarity": "C",
+    "maker": "PONTIAC",
+    "model": "Firebird",
+    "year": 1985,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "80% 50%"
+  },
+  {
+    "file": "File:1987 Chevrolet Monte Carlo SS Aero Coupe, front right, 07-01-2024.jpg",
+    "rarity": "C",
+    "maker": "CHEVROLET",
+    "model": "Monte Carlo SS",
+    "year": 1987,
+    "country": "USA",
+    "frame": "watermark",
+    "focus": "94% 50%"
+  },
+  {
+    "file": "File:1996 Chevrolet Impala SS, Mecum Auctions Kissimmee 2024.jpg",
+    "rarity": "C",
+    "maker": "CHEVROLET",
+    "model": "Impala SS",
+    "year": 1996,
+    "country": "USA",
+    "frame": "window",
+    "focus": "18% 50%"
+  },
+  {
+    "file": "File:Ford F-150 SVT Lightning.jpg",
+    "rarity": "C",
+    "maker": "FORD",
+    "model": "SVT Lightning",
+    "year": 2001,
+    "country": "USA",
+    "frame": "litt",
+    "focus": "0% 50%"
+  },
+  {
+    "file": "File:2002 Nissan 350Z (29176392307).jpg",
+    "rarity": "C",
+    "maker": "NISSAN",
+    "model": "350Z",
+    "year": 2004,
+    "country": "Japan",
+    "frame": "palette",
+    "focus": "38% 50%"
+  },
+  {
+    "file": "File:2001 Honda S2000 2.jpg",
+    "rarity": "UC",
+    "maker": "HONDA",
+    "model": "S2000",
+    "year": 2001,
+    "country": "Japan",
+    "frame": "gallery",
+    "focus": "80% 50%"
+  },
+  {
+    "file": "File:1991 Mitsubishi 3000GT SL Automatic.jpg",
+    "rarity": "UC",
+    "maker": "MITSUBISHI",
+    "model": "3000GT VR-4",
+    "year": 1992,
+    "country": "Japan",
+    "frame": "watermark",
+    "focus": "12% 50%"
+  },
+  {
+    "file": "File:2004 Mitsubishi Lancer Evolution VIII MR FQ-320.jpg",
+    "rarity": "UC",
+    "maker": "MITSUBISHI",
+    "model": "Lancer Evolution VIII",
+    "year": 2004,
+    "country": "Japan",
+    "frame": "window",
+    "focus": "37% 50%"
+  },
+  {
+    "file": "File:2004 Subaru Impreza WRX STi Type UK (20691).jpg",
+    "rarity": "UC",
+    "maker": "SUBARU",
+    "model": "Impreza WRX STI",
+    "year": 2004,
+    "country": "Japan",
+    "frame": "litt",
+    "focus": "64% 50%"
+  },
+  {
+    "file": "File:1999 Nissan Silvia S15 2.jpg",
+    "rarity": "UC",
+    "maker": "NISSAN",
+    "model": "Silvia S15",
+    "year": 2000,
+    "country": "Japan",
+    "frame": "palette",
+    "focus": "73% 50%"
+  },
+  {
+    "file": "File:'07 Ford Mustang ('11 Cruisin' At The Boardwalk).jpg",
+    "rarity": "UC",
+    "maker": "FORD",
+    "model": "Mustang GT",
+    "year": 2006,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "84% 50%"
+  },
+  {
+    "file": "File:1970 Chevrolet Chevelle SS 502, black, Golden Super Cruise 2026-05-02.jpg",
+    "rarity": "UC",
+    "maker": "CHEVROLET",
+    "model": "Chevelle SS",
+    "year": 1970,
+    "country": "USA",
+    "frame": "watermark",
+    "focus": "95% 50%"
+  },
+  {
+    "file": "File:'69 Plymouth Road Runner (Auto classique Café Intervallo).JPG",
+    "rarity": "UC",
+    "maker": "PLYMOUTH",
+    "model": "Road Runner",
+    "year": 1969,
+    "country": "USA",
+    "frame": "window",
+    "focus": "0% 50%"
+  },
+  {
+    "file": "File:1987 Buick Grand National (14872754372).jpg",
+    "rarity": "UC",
+    "maker": "BUICK",
+    "model": "Grand National",
+    "year": 1987,
+    "country": "USA",
+    "frame": "litt",
+    "focus": "59% 50%"
+  },
+  {
+    "file": "File:1966 Pontiac GTO (15117795820).jpg",
+    "rarity": "UC",
+    "maker": "PONTIAC",
+    "model": "GTO",
+    "year": 1966,
+    "country": "USA",
+    "frame": "palette",
+    "focus": "71% 50%"
+  },
+  {
+    "file": "File:'08-'10 Dodge Challenger SRT-8 (Les chauds vendredis '10).jpg",
+    "rarity": "UC",
+    "maker": "DODGE",
+    "model": "Challenger SRT8",
+    "year": 2008,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "2% 50%"
+  },
+  {
+    "file": "File:1986 Mazda RX-7 (FC) coupe (21105743820) (cropped).jpg",
+    "rarity": "UC",
+    "maker": "MAZDA",
+    "model": "RX-7 (FC)",
+    "year": 1987,
+    "country": "Japan",
+    "frame": "watermark",
+    "focus": "100% 50%",
+    "focusManual": true
+  },
+  {
+    "file": "File:1991 Honda NSX 4.jpg",
+    "rarity": "R",
+    "maker": "HONDA",
+    "model": "NSX",
+    "year": 1991,
+    "country": "Japan",
+    "frame": "window",
+    "focus": "13% 50%"
+  },
+  {
+    "file": "File:1996 Nissan Skyline R33 GT-R V-Spec front.jpg",
+    "rarity": "R",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R (R33)",
+    "year": 1996,
+    "country": "Japan",
+    "frame": "litt",
+    "focus": "0% 50%"
+  },
+  {
+    "file": "File:1999 Dodge Viper GTS 2.jpg",
+    "rarity": "R",
+    "maker": "DODGE",
+    "model": "Viper GTS",
+    "year": 1997,
+    "country": "USA",
+    "frame": "palette",
+    "focus": "90% 50%"
+  },
+  {
+    "file": "File:1967 Ford Mustang Shelby GT500 coupe (7708119910).jpg",
+    "rarity": "R",
+    "maker": "SHELBY",
+    "model": "GT500",
+    "year": 1967,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "12% 50%"
+  },
+  {
+    "file": "File:1965 Chevrolet Corvette C2 Sting Ray (19950816348).jpg",
+    "rarity": "R",
+    "maker": "CHEVROLET",
+    "model": "Corvette Sting Ray",
+    "year": 1965,
+    "country": "USA",
+    "frame": "watermark",
+    "focus": "100% 50%",
+    "focusManual": true
+  },
+  {
+    "file": "File:Pontiac Firebird Trans Am 1977 (7488273768).jpg",
+    "rarity": "R",
+    "maker": "PONTIAC",
+    "model": "Firebird Trans Am",
+    "year": 1977,
+    "country": "USA",
+    "frame": "window",
+    "focus": "39% 50%"
+  },
+  {
+    "file": "File:1969 Chevrolet Camaro Z28 (15313432294).jpg",
+    "rarity": "R",
+    "maker": "CHEVROLET",
+    "model": "Camaro Z/28",
+    "year": 1969,
+    "country": "USA",
+    "frame": "litt",
+    "focus": "30% 50%"
+  },
+  {
+    "file": "File:Buick GNX (20206519195).jpg",
+    "rarity": "R",
+    "maker": "BUICK",
+    "model": "GNX",
+    "year": 1987,
+    "country": "USA",
+    "frame": "palette",
+    "focus": "22% 50%"
+  },
+  {
+    "file": "File:Carroll Shelby 427 Cobra (3608963860).jpg",
+    "rarity": "R",
+    "maker": "SHELBY",
+    "model": "Cobra 427",
+    "year": 1966,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "0% 50%"
+  },
+  {
+    "file": "File:Green AE86 1986 Levin Coupe.jpg",
+    "rarity": "UR",
+    "maker": "TOYOTA",
+    "model": "Corolla Levin (AE86)",
+    "year": 1985,
+    "country": "Japan",
+    "frame": "watermark",
+    "focus": "0% 50%"
+  },
+  {
+    "file": "File:1992 Mazda RX-7.jpg",
+    "rarity": "UR",
+    "maker": "MAZDA",
+    "model": "RX-7 (FD)",
+    "year": 1993,
+    "country": "Japan",
+    "frame": "window",
+    "focus": "22% 50%"
+  },
+  {
+    "file": "File:Nissan GT-R (R35) Washington DC Metro Area, USA (2).jpg",
+    "rarity": "UR",
+    "maker": "NISSAN",
+    "model": "GT-R",
+    "year": 2009,
+    "country": "Japan",
+    "frame": "litt",
+    "focus": "20% 50%"
+  },
+  {
+    "file": "File:2005 Ford GT SP 22.jpg",
+    "rarity": "UR",
+    "maker": "FORD",
+    "model": "GT",
+    "year": 2005,
+    "country": "USA",
+    "frame": "palette",
+    "focus": "93% 50%"
+  },
+  {
+    "file": "File:1970 Plymouth AAR Cuda 340 (31456408978).jpg",
+    "rarity": "UR",
+    "maker": "PLYMOUTH",
+    "model": "Hemi 'Cuda",
+    "year": 1970,
+    "country": "USA",
+    "frame": "gallery",
+    "focus": "74% 50%"
+  },
+  {
+    "file": "File:1970 Dodge Challenger R T (6171234768).jpg",
+    "rarity": "UR",
+    "maker": "DODGE",
+    "model": "Challenger R/T",
+    "year": 1970,
+    "country": "USA",
+    "frame": "watermark",
+    "focus": "63% 50%"
+  },
+  {
+    "file": "File:20250605 191314 Krakowskie Klasyki Nocą 2025, Tauron Arena, Kraków 13.jpg",
+    "rarity": "SEC",
+    "maker": "TOYOTA",
+    "model": "Supra",
+    "year": 1994,
+    "country": "Japan",
+    "frame": "window",
+    "focus": "27% 50%"
+  },
+  {
+    "file": "File:1970 Dodge Charger 6.3 V8 (15262649127).jpg",
+    "rarity": "SEC",
+    "maker": "DODGE",
+    "model": "Charger",
+    "year": 1970,
+    "country": "USA",
+    "frame": "litt",
+    "focus": "56% 50%"
+  },
+  {
+    "file": "File:2001 Nissan Skyline GT-R V-Spec II R34 (56664).jpg",
+    "rarity": "SEC",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R (R34)",
+    "year": 2001,
+    "country": "Japan",
+    "frame": "palette",
+    "focus": "18% 50%"
+  }
+]

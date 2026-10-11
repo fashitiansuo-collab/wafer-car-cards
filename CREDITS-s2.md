@@ -1,0 +1,49 @@
+# Credits — series 2
+
+All photos are from Wikimedia Commons and were cropped and colour-graded (modified) for use as card art.
+
+- No.001 — Shadman Samee from Dhaka, Bangladesh — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:Honda_Civic_(fifth_generation),_Bangladesh._(25392346508).jpg) — modified
+- No.002 — Elise240SX — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2001_Acura_Integra_Type-R_in_Phoenix_Yellow,_Front_Right_(St._Ignace_2023).jpg) — modified
+- No.003 — Cutlass — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:1990_Mitsubishi_Eclipse_GSX_Turbo_in_Maranello_Red,_front_left,_05-23-2026.jpg) — modified
+- No.004 — Charles from Port Chester, New York — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Nissan_240SX_Coup%C3%A9_(S14,_1997)_(55211307857).jpg) — modified
+- No.005 — Andrewn4080 — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:Celica-GTS.JPG) — modified
+- No.006 — Greg Gjerdingen — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:2004_Dodge_Neon_SRT-4.jpg) — modified
+- No.007 — Михаил Мухин 123321 — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:VW_Jetta_MK4.JPG) — modified
+- No.008 — Robert Yorde from Ohio, USA — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:-79,_1991_Mazda_Miata,_SM,_Group_1_(54077656647).jpg) — modified
+- No.009 — Bull-Doser — [Public domain]() — [source](https://commons.wikimedia.org/wiki/File:%2791-%2793_Ford_Mustang_5.0_Coupe_(Orange_Julep).JPG) — modified
+- No.010 — Nick Ares from Auburn, CA, United States — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:Camaro_(01).jpg) — modified
+- No.011 — Greg Gjerdingen from Willmar, USA — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:87_Pontiac_Firebird_(9456505362).jpg) — modified
+- No.012 — MercurySable99 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1987_Chevrolet_Monte_Carlo_SS_Aero_Coupe,_front_right,_07-01-2024.jpg) — modified
+- No.013 — Pokemonprime — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) — [source](https://commons.wikimedia.org/wiki/File:1996_Chevrolet_Impala_SS,_Mecum_Auctions_Kissimmee_2024.jpg) — modified
+- No.014 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Ford_F-150_SVT_Lightning.jpg) — modified
+- No.015 — Hugh Llewelyn from Keynsham, UK — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:2002_Nissan_350Z_(29176392307).jpg) — modified
+- No.016 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2001_Honda_S2000_2.jpg) — modified
+- No.017 — Rutger van der Maar — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1991_Mitsubishi_3000GT_SL_Automatic.jpg) — modified
+- No.018 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2004_Mitsubishi_Lancer_Evolution_VIII_MR_FQ-320.jpg) — modified
+- No.019 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2004_Subaru_Impreza_WRX_STi_Type_UK_(20691).jpg) — modified
+- No.020 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1999_Nissan_Silvia_S15_2.jpg) — modified
+- No.021 — Bull-Doser — [Public domain]() — [source](https://commons.wikimedia.org/wiki/File:%2707_Ford_Mustang_(%2711_Cruisin%27_At_The_Boardwalk).jpg) — modified
+- No.022 — Xnatedawgx — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1970_Chevrolet_Chevelle_SS_502,_black,_Golden_Super_Cruise_2026-05-02.jpg) — modified
+- No.023 — Bull-Doser at English Wikipedia — [Public domain]() — [source](https://commons.wikimedia.org/wiki/File:%2769_Plymouth_Road_Runner_(Auto_classique_Caf%C3%A9_Intervallo).JPG) — modified
+- No.024 — Greg Gjerdingen from Willmar, USA — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1987_Buick_Grand_National_(14872754372).jpg) — modified
+- No.025 — Greg Gjerdingen from Willmar, USA — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1966_Pontiac_GTO_(15117795820).jpg) — modified
+- No.026 — Bull-Doser — [Public domain]() — [source](https://commons.wikimedia.org/wiki/File:%2708-%2710_Dodge_Challenger_SRT-8_(Les_chauds_vendredis_%2710).jpg) — modified
+- No.027 — Jeremy from Sydney, Australia — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1986_Mazda_RX-7_(FC)_coupe_(21105743820)_(cropped).jpg) — modified
+- No.028 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1991_Honda_NSX_4.jpg) — modified
+- No.029 — DestinationFearFan — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1996_Nissan_Skyline_R33_GT-R_V-Spec_front.jpg) — modified
+- No.030 — Calreyn88 — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) — [source](https://commons.wikimedia.org/wiki/File:1999_Dodge_Viper_GTS_2.jpg) — modified
+- No.031 — sv1ambo — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1967_Ford_Mustang_Shelby_GT500_coupe_(7708119910).jpg) — modified
+- No.032 — Jeremy from Sydney, Australia — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1965_Chevrolet_Corvette_C2_Sting_Ray_(19950816348).jpg) — modified
+- No.033 — nakhon100 — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Pontiac_Firebird_Trans_Am_1977_(7488273768).jpg) — modified
+- No.034 — Sicnag — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1969_Chevrolet_Camaro_Z28_(15313432294).jpg) — modified
+- No.035 — ilikewaffles11 — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Buick_GNX_(20206519195).jpg) — modified
+- No.036 — Patrick from Merrimack, NH, United States — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Carroll_Shelby_427_Cobra_(3608963860).jpg) — modified
+- No.037 — SoulNaber — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Green_AE86_1986_Levin_Coupe.jpg) — modified
+- No.038 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1992_Mazda_RX-7.jpg) — modified
+- No.039 — OWS Photography — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) — [source](https://commons.wikimedia.org/wiki/File:Nissan_GT-R_(R35)_Washington_DC_Metro_Area,_USA_(2).jpg) — modified
+- No.040 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2005_Ford_GT_SP_22.jpg) — modified
+- No.041 — Sicnag — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1970_Plymouth_AAR_Cuda_340_(31456408978).jpg) — modified
+- No.042 — Greg Gjerdingen from Willmar, USA — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1970_Dodge_Challenger_R_T_(6171234768).jpg) — modified
+- No.043 — Dwxn — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:20250605_191314_Krakowskie_Klasyki_Noc%C4%85_2025,_Tauron_Arena,_Krak%C3%B3w_13.jpg) — modified
+- No.044 — Kieran White from Manchester, England — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1970_Dodge_Charger_6.3_V8_(15262649127).jpg) — modified
+- No.045 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:2001_Nissan_Skyline_GT-R_V-Spec_II_R34_(56664).jpg) — modified

@@ -2,13 +2,19 @@
 
 Run after fetch-commons.mjs:  python scripts/make-palettes.py
 """
+import argparse
 import json
 from pathlib import Path
 
 from PIL import Image
 
+ap = argparse.ArgumentParser(description=__doc__)
+ap.add_argument('--series', type=int, default=1, help='series to read (2 uses src/data/cards-s2.json)')
+a = ap.parse_args()
+
 root = Path(__file__).resolve().parent.parent
-cards_path = root / 'src/data/cards.json'
+suffix = '' if a.series == 1 else f'-s{a.series}'
+cards_path = root / f'src/data/cards{suffix}.json'
 cards = json.loads(cards_path.read_text(encoding='utf-8'))
 
 for card in cards:

@@ -45,7 +45,13 @@ async function download(url, dest) {
 }
 
 async function main() {
-  const lineup = JSON.parse(await readFile(join(root, 'scripts', 'lineup.json'), 'utf8'));
+  const argv = process.argv.slice(2);
+  const si = argv.indexOf('--series');
+  const series = si >= 0 ? Number(argv[si + 1]) : 0;
+  const cfg = series === 2
+    ? { lineup: 'lineup-s2.json', cards: 'cards-s2.json', credits: 'CREDITS-s2.md', prefix: 'd', title: '# Credits \u2014 series 2' }
+    : { lineup: 'lineup.json', cards: 'cards.json', credits: 'CREDITS.md', prefix: 'c', title: '# Credits' };
+  const lineup = JSON.parse(await readFile(join(root, 'scripts', cfg.lineup), 'utf8'));
   const sorted = [...lineup].sort((a, b) => ORDER.indexOf(a.rarity) - ORDER.indexOf(b.rarity));
   const info = new Map();
   for (let i = 0; i < sorted.length; i += BATCH) {
@@ -84,7 +90,7 @@ async function main() {
   let n = 0;
   for (const a of accepted) {
     n++;
-    const id = 'c' + String(n).padStart(3, '0');
+    const id = cfg.prefix + String(n).padStart(3, '0');
     await download(a.thumburl, join(root, 'public', 'cards', `${id}.jpg`));
     const card = {
       id,
@@ -96,6 +102,7 @@ async function main() {
       country: a.entry.country,
       image: `./cards/${id}.jpg`,
     };
+    if (series) card.series = series;
     if (a.entry.focus) card.focus = a.entry.focus;
     card.exif = a.exif;
     if (a.entry.frame) card.frame = a.entry.frame;
@@ -105,13 +112,13 @@ async function main() {
     if (n < accepted.length) await sleep(300);
   }
   await mkdir(join(root, 'src', 'data'), { recursive: true });
-  await writeFile(join(root, 'src', 'data', 'cards.json'), JSON.stringify(cards, null, 2) + '\n');
-  const lines = ['# Credits', '', 'All photos are from Wikimedia Commons and were cropped and colour-graded (modified) for use as card art.', ''];
+  await writeFile(join(root, 'src', 'data', cfg.cards), JSON.stringify(cards, null, 2) + '\n');
+  const lines = [cfg.title, '', 'All photos are from Wikimedia Commons and were cropped and colour-graded (modified) for use as card art.', ''];
   accepted.forEach((a, i) => {
     const no = 'No.' + String(i + 1).padStart(3, '0');
     lines.push(`- ${no} — ${a.author} — [${a.license}](${a.licenseUrl}) — [source](${a.sourceUrl}) — modified`);
   });
-  await writeFile(join(root, 'CREDITS.md'), lines.join('\n') + '\n');
+  await writeFile(join(root, cfg.credits), lines.join('\n') + '\n');
   console.log(`accepted: ${accepted.length}`);
   console.log(`rejected: ${rejected}`);
   for (const r of ORDER) console.log(`${r}: ${accepted.filter((a) => a.entry.rarity === r).length}`);

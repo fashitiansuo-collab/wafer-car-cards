@@ -3,6 +3,7 @@
   import { createTilt, type Tilt } from '../lib/tilt.svelte';
   import CardBack from './CardBack.svelte';
   import Frame from './Frame.svelte';
+  import { secFronts } from './special/sec2';
   import './frames.css';
   import './rarity/base.css';
   import './rarity/c.css';
@@ -21,14 +22,19 @@
     firstPulledAt?: number | null;
     /** A plain back with no details, for a card that has not been revealed yet. */
     plainBack?: boolean;
+    /** Play a bespoke card's one-off moment (right after its reveal). */
+    moment?: boolean;
   }
 
-  let { card, total = 45, interactive = true, flipped = false, tilt, firstPulledAt = null, plainBack = false }: Props =
+  let { card, total = 45, interactive = true, flipped = false, tilt, firstPulledAt = null, plainBack = false, moment = false }: Props =
     $props();
+
+  // Series-2 SEC cards have a front of their own instead of a frame.
+  const Bespoke = $derived(secFronts[card.id]);
 
   const own = createTilt();
   const t = $derived(tilt ?? own);
-  let el: HTMLElement;
+  let el: HTMLElement | undefined = $state();
 
   $effect(() => {
     if (!interactive || !el) return;
@@ -43,6 +49,9 @@
   );
 </script>
 
+{#if Bespoke}
+  <Bespoke {card} {interactive} {flipped} {tilt} {firstPulledAt} {plainBack} {moment} />
+{:else}
 <div
   class="card"
   class:card--active={t.active}
@@ -66,3 +75,4 @@
     </div>
   </div>
 </div>
+{/if}

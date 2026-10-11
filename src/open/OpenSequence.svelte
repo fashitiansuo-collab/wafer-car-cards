@@ -89,7 +89,7 @@
       <CardView {card} {total} {flipped} {tilt} interactive={false} plainBack />
     </div>
     {#if stage === 'bag'}
-      <div class="bag-out" aria-hidden="true"></div>
+      <div class="bag-out" class:choco={card.series === 2} class:premium={untrack(() => game.pity)} aria-hidden="true"></div>
     {/if}
     {#if stage === 'bag' || stage === 'wafer'}
       <Wafer bind:this={wafer} flavor={card.series === 2 ? 'choco' : 'vanilla'} {sparkle} onEaten={reveal} />
@@ -160,6 +160,12 @@
     background: linear-gradient(100deg, #9aa0a8, #e7eaee 40%, #8d939c 70%, #c9ced6);
     animation: bag-out 520ms cubic-bezier(.4, 0, 1, 1) forwards;
     z-index: 3;
+  }
+  .bag-out.choco {
+    background: linear-gradient(100deg, #6b4430, #d6a77e 40%, #4a2a1a 70%, #9a6a48);
+  }
+  .bag-out.premium {
+    background: linear-gradient(100deg, #8a6516, #fff3c4 40%, #6e4f10 70%, #e9c76a);
   }
   @keyframes bag-out {
     to {

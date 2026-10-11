@@ -33,7 +33,7 @@
 
 <div class="stage">
   <div class="slot">
-    <CardView {card} total={cards.length} firstPulledAt={game.save.firstPulledAt[card.id]} />
+    <CardView {card} total={cards.length} firstPulledAt={game.save.firstPulledAt[card.id]} moment />
   </div>
   <div class="lockup">
     <TitleLockup maker={card.maker} model={card.model} year={card.year} rarity={card.rarity} />
