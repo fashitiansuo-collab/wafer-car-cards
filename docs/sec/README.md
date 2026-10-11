@@ -30,3 +30,8 @@
 
 - `src/cards/special/index.ts` — id → コンポーネントの対応表。カードは `{ promo, interactive, flipped, tilt, wink, firstPulledAt }` を受け取る。
 - 傾きの値は `--pointer-from-left` / `--pointer-from-top`(0〜1、単位なし)を使う。`--rotate-*` を deg で割る計算は Safari で効かない。
+
+## 写真の選び方
+
+候補は必ず `scripts/photo-check.py` を通してから選ぶ(手順はプロジェクトのスキル `.claude/skills/car-photo-pick/SKILL.md`)。
+縮小した一覧だけで選ぶと、後ろ姿や遠くの小さな車を見落とす(第 1 弾で実際に起きた)。
