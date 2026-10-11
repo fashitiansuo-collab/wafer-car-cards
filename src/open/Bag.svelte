@@ -7,8 +7,10 @@
     /** Called once the strip has fallen away. */
     onTorn: () => void;
     disabled?: boolean;
+    /** Series 1 is the silver vanilla bag, series 2 the bronze chocolate one. */
+    series?: 1 | 2;
   }
-  let { onTorn, disabled = false }: Props = $props();
+  let { onTorn, disabled = false, series = 1 }: Props = $props();
 
   const seed = Math.floor(Math.random() * 1e6);
   const tilt = createTilt();
@@ -77,6 +79,7 @@
 
 <div
   class="bag"
+  class:choco={series === 2}
   class:disabled
   class:dragging
   class:off
@@ -107,8 +110,8 @@
     <div class="label">
       <div class="mark"><Icon name="mark" size="100%" /></div>
       <p class="name">WAFER</p>
-      <p class="sub">CAR CARD COLLECTION</p>
-      <p class="no">No. 01 · 1 CARD INSIDE</p>
+      <p class="sub">{series === 2 ? 'CHOCOLATE' : 'CAR CARD COLLECTION'}</p>
+      <p class="no">No. 0{series} · 1 CARD INSIDE</p>
     </div>
     <div class="crimp crimp--bottom"></div>
     <div class="glare"></div>
@@ -171,6 +174,22 @@
     background-size: 96px, 100% 100%;
     background-blend-mode: soft-light, normal;
     overflow: hidden;
+  }
+  /* Series 2: bronze foil round a chocolate label. */
+  .choco .art {
+    background-image:
+      url('/fx/noise.png'),
+      conic-gradient(
+        from calc(200deg + var(--rotate-y) * 3) at 30% 40%,
+        #9a6a48, #4a2a1a, #d6a77e, #3b2115, #8a5a3a, #e8c4a0, #4f2d1c, #9a6a48
+      );
+  }
+  .choco .label {
+    background: #20120b;
+    box-shadow: inset 0 0 0 1px rgba(232, 196, 160, .18);
+  }
+  .choco .sub {
+    color: #d9b08a;
   }
   .crimp {
     position: absolute;

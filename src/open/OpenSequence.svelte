@@ -69,7 +69,7 @@
   }
 
   // Counted before this card, so the strip does not give the draw away either.
-  const owned = untrack(() => game.ownedCount() - (game.isNew ? 1 : 0));
+  const owned = untrack(() => game.ownedCount(game.series) - (game.isNew ? 1 : 0));
   const dim = $derived((rarity === 'UR' || rarity === 'SEC') && (stage === 'flip' || stage === 'black'));
   const hints: Hint[] = $derived(
     stage === 'wafer' || stage === 'bag'

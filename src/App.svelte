@@ -3,6 +3,7 @@
   import cardsS2Json from './data/cards-s2.json';
   import type { Card } from './lib/types';
   import { createGame } from './state/game.svelte';
+  import { cardsOf } from './lib/series';
   import { SAVE_KEY } from './lib/save';
   import Header from './ui/Header.svelte';
   import Home from './screens/Home.svelte';
@@ -33,6 +34,8 @@
   }
 
   const game = createGame({ cards, storage: storage(), now: () => Date.now(), rng: Math.random });
+  // Every screen works on the series whose bag is selected.
+  const set = $derived(cardsOf(cards, game.series));
   let now = $state(Date.now());
   // ?force=SEC fixes the rarity of the next draws (same switch as on the records screen).
   const force = new URLSearchParams(location.search).get('force');
@@ -92,21 +95,21 @@
           }}
         />
       {:else if game.screen === 'home'}
-        <Home {game} {cards} {now} />
+        <Home {game} cards={set} {now} />
       {:else if game.screen === 'opening' && game.current}
         {#key game.save.eaten}
-          <OpenSequence {game} total={game.seriesCount(1)} />
+          <OpenSequence {game} total={set.length} />
         {/key}
       {:else if game.screen === 'result' && game.current}
-        <Result {game} {cards} />
+        <Result {game} cards={set} />
       {:else if game.screen === 'garage'}
-        <Garage {game} {cards} />
+        <Garage {game} cards={set} />
       {:else if game.screen === 'detail'}
         <Detail {game} {cards} />
       {:else if game.screen === 'records'}
-        <Records {game} {cards} {claim} />
+        <Records {game} cards={set} {claim} />
       {:else}
-        <Home {game} {cards} {now} />
+        <Home {game} cards={set} {now} />
       {/if}
     </main>
   {/if}

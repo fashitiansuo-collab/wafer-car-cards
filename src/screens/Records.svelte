@@ -15,7 +15,7 @@
     if (!wrong) code = '';
   }
 
-  const byR = $derived(game.countByRarity());
+  const byR = $derived(game.countByRarity(game.series));
   const totalOf = (r: Rarity) => cards.filter((c) => c.rarity === r).length;
   const forcedOptions: (Rarity | null)[] = [null, ...RARITIES];
 </script>
@@ -24,7 +24,7 @@
   <section class="block">
     <div class="nums">
       <div><span class="v">{game.save.eaten}</span><span class="l">食べた数</span></div>
-      <div><span class="v">{game.ownedCount()}<small>/{cards.length}</small></span><span class="l">図鑑</span></div>
+      <div><span class="v">{game.ownedCount(game.series)}<small>/{cards.length}</small></span><span class="l">図鑑</span></div>
     </div>
     <dl class="rows">
       {#each RARITIES as r (r)}

@@ -4,7 +4,10 @@
   let { card, total }: { card: Card; total: number } = $props();
 
   const frame = $derived(card.frame ?? 'gallery');
-  const no = $derived(`No.${String(card.no).padStart(3, '0')} / ${String(total).padStart(3, '0')}`);
+  // Series 2 onwards carry the series in front of the number: No.2-001 / 045.
+  const no = $derived(
+    `No.${card.series && card.series > 1 ? `${card.series}-` : ''}${String(card.no).padStart(3, '0')} / ${String(total).padStart(3, '0')}`,
+  );
   const camera = $derived(card.exif?.camera ?? 'Wikimedia Commons');
   const settings = $derived(card.exif?.settings ?? `${card.year} · ${card.country}`);
   const shot = $derived(card.exif?.date ?? String(card.year));

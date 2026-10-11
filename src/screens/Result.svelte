@@ -11,7 +11,7 @@
 
   const card = $derived(game.current!);
   const count = $derived(game.save.owned[card.id] ?? 1);
-  const owned = $derived(game.ownedCount());
+  const owned = $derived(game.ownedCount(game.series));
   const empty = $derived(game.save.stock <= 0);
 
   const hints: Hint[] = $derived([

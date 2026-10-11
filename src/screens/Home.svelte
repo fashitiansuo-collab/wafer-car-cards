@@ -5,12 +5,13 @@
   import BottomStrip from '../ui/BottomStrip.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import Bag from '../open/Bag.svelte';
+  import SeriesSwitch from '../ui/SeriesSwitch.svelte';
   import { isGlobalKey } from '../lib/keys';
 
   let { game, cards, now }: { game: Game; cards: Card[]; now: number } = $props();
 
-  const owned = $derived(game.ownedCount());
-  const byR = $derived(game.countByRarity());
+  const owned = $derived(game.ownedCount(game.series));
+  const byR = $derived(game.countByRarity(game.series));
   const empty = $derived(game.save.stock <= 0);
   const left = $derived(msToNext(game.save.stock, game.save.lastRefillAt, now) ?? 0);
   const leftText = $derived(`${Math.floor(Math.ceil(left / 1000) / 60)}:${String(Math.ceil(left / 1000) % 60).padStart(2, '0')}`);
@@ -27,14 +28,21 @@
   );
 
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Enter' && !empty && isGlobalKey(e)) bag?.autoTear();
+    if (!isGlobalKey(e)) return;
+    if (e.key === 'Enter' && !empty) bag?.autoTear();
+    // ← → pick the other series' bag.
+    const s = e.key === 'ArrowLeft' ? 1 : e.key === 'ArrowRight' ? 2 : null;
+    if (s && game.seriesCount(s) > 0) game.series = s;
   }
 </script>
 
 <svelte:window onkeydown={onkey} />
 
+<SeriesSwitch {game} />
 <div class="stage">
-  <Bag bind:this={bag} disabled={empty} onTorn={() => game.startOpening()} />
+  {#key game.series}
+    <Bag bind:this={bag} series={game.series} disabled={empty} onTorn={() => game.startOpening()} />
+  {/key}
 </div>
 
 <BottomStrip

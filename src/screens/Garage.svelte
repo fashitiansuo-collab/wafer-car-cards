@@ -14,8 +14,8 @@
 
   const shown = $derived(filter === 'ALL' ? cards : cards.filter((c) => c.rarity === filter));
   const has = (c: Card) => (game.save.owned[c.id] ?? 0) > 0;
-  const owned = $derived(game.ownedCount());
-  const byR = $derived(game.countByRarity());
+  const owned = $derived(game.ownedCount(game.series));
+  const byR = $derived(game.countByRarity(game.series));
   const totalOf = (r: Rarity) => cards.filter((c) => c.rarity === r).length;
   const focused = $derived(cards.find((c) => c.id === focus) ?? null);
 
@@ -69,7 +69,7 @@
         </button>
       {/each}
     </div>
-    <p class="row-label">SERIES 1</p>
+    <p class="row-label">SERIES {game.series}</p>
   {/if}
   <div class="grid">
     {#each shown as c (c.id)}
