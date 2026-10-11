@@ -1,5 +1,6 @@
 <script lang="ts">
   import cardsJson from './data/cards.json';
+  import cardsS2Json from './data/cards-s2.json';
   import type { Card } from './lib/types';
   import { createGame } from './state/game.svelte';
   import { SAVE_KEY } from './lib/save';
@@ -15,7 +16,10 @@
   import { promos } from './cards/special';
   import { redeem } from './lib/promo';
 
-  const cards = cardsJson as Card[];
+  const cards1 = cardsJson as Card[];
+  const cards2 = cardsS2Json as Card[];
+  // Series-1 cards carry no `series` field; a missing series means the first set.
+  const cards = [...cards1, ...cards2];
   const debug = new URLSearchParams(location.search).has('debug');
 
   function storage(): Storage | null {
@@ -91,7 +95,7 @@
         <Home {game} {cards} {now} />
       {:else if game.screen === 'opening' && game.current}
         {#key game.save.eaten}
-          <OpenSequence {game} total={cards.length} />
+          <OpenSequence {game} total={game.seriesCount(1)} />
         {/key}
       {:else if game.screen === 'result' && game.current}
         <Result {game} {cards} />

@@ -22,5 +22,7 @@
 ## クレジット
 写真の作者とライセンスは `CREDITS.md`、カード裏面、記録画面にある。写真は切り抜きと色調整をしている（改変あり）。
 
+ウエハースの質感は Paolo Neo の写真2枚（パブリックドメイン、Wikimedia Commons の [Biscuit with chocolate.jpg](https://commons.wikimedia.org/wiki/File:Biscuit_with_chocolate.jpg) と [Biscuit with jam and chocolate.jpg](https://commons.wikimedia.org/wiki/File:Biscuit_with_jam_and_chocolate.jpg)）から `scripts/make-wafer.py` で作っている。タイル化と色の付け替えをした改変版。
+
 ## 参考
 カードのホロ表現は simeydotme/pokemon-cards-css（poke-holo）の手法を参考にした。UIは Gran Turismo SPORT のメニューの配置の考え方を参考にしているが、名称・ロゴ・素材は使っていない。

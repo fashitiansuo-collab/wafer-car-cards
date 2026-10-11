@@ -1,21 +1,24 @@
 import { describe, expect, it } from 'vitest';
 import { SAVE_KEY } from '../src/lib/save';
 import { createGame } from '../src/state/game.svelte.ts';
-import type { Card, Rarity, Save } from '../src/lib/types';
+import type { Card, Rarity, Save, SeriesId } from '../src/lib/types';
 
-function makeCard(id: string, no: number, rarity: Rarity): Card {
-  return {
+function makeCard(id: string, no: number, rarity: Rarity, series?: SeriesId): Card {
+  const card: Card = {
     id, no, rarity, maker: 'maker', model: 'model', year: 2000, country: 'JP',
     image: `/cards/${id}.jpg`,
     credit: { author: 'a', license: 'CC0', licenseUrl: 'https://example.com/l', sourceUrl: 'https://example.com/s', modified: false },
   };
+  if (series !== undefined) card.series = series;
+  return card;
 }
 
-function makeCards(): Card[] {
+function makeCards(series?: SeriesId): Card[] {
   const out: Card[] = [];
   const rarities: Rarity[] = ['C', 'UC', 'R', 'UR', 'SEC'];
+  const prefix = series === 2 ? 's2-' : '';
   let no = 1;
-  for (const r of rarities) for (let i = 1; i <= 2; i++) out.push(makeCard(`${r.toLowerCase()}${i}`, no++, r));
+  for (const r of rarities) for (let i = 1; i <= 2; i++) out.push(makeCard(`${prefix}${r.toLowerCase()}${i}`, no++, r, series));
   return out;
 }
 
@@ -126,5 +129,60 @@ describe('game', () => {
     a.reload();
     expect(a.save.eaten).toBe(1);
     expect(a.ownedCount()).toBe(1);
+  });
+
+  it('draws only from the selected series', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const cards = [...makeCards(1), ...makeCards(2)];
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    game.series = 2;
+    expect(game.startOpening()).toBe(true);
+    expect(game.current?.series).toBe(2);
+    expect(game.ownedCount(2)).toBe(1);
+    expect(game.ownedCount(1)).toBe(0);
+  });
+
+  it('refuses an empty series without spending a bag', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const game = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    game.series = 2;
+    expect(game.startOpening()).toBe(false);
+    expect(game.screen).toBe('home');
+    expect(game.save.stock).toBe(10);
+    expect(game.save.eaten).toBe(0);
+  });
+
+  it('counts owned cards and rarities per series', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t), owned: { c1: 1, 's2-c1': 1, 's2-uc1': 1 } });
+    const cards = [...makeCards(1), ...makeCards(2)];
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    expect(game.ownedCount()).toBe(3);
+    expect(game.ownedCount(1)).toBe(1);
+    expect(game.ownedCount(2)).toBe(2);
+    expect(game.countByRarity(1).C).toBe(1);
+    expect(game.countByRarity(2).C).toBe(1);
+    expect(game.countByRarity(2).UC).toBe(1);
+    expect(game.countByRarity().C).toBe(2);
+  });
+
+  it('reports the size of each series', () => {
+    const cards = [...makeCards(1), ...makeCards(2)];
+    const game = createGame({ cards, storage: memStorage(1_000_000), now: () => 1_000_000, rng: () => 0 });
+    expect(game.seriesCount(1)).toBe(10);
+    expect(game.seriesCount(2)).toBe(10);
+  });
+
+  it('remembers the selected series across a reload', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const cards = [...makeCards(1), ...makeCards(2)];
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    game.series = 2;
+    expect(JSON.parse(storage.getItem(SAVE_KEY)!).series).toBe(2);
+    const again = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    expect(again.series).toBe(2);
   });
 });

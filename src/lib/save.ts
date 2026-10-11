@@ -40,7 +40,7 @@ export function parseSave(raw: string | null, now: number): Save {
   }
   const stock = data.stock;
   const eaten = data.eaten;
-  return {
+  const out: Save = {
     v: 1,
     stock: typeof stock === 'number' && Number.isInteger(stock) && stock >= 0 && stock <= STOCK_MAX ? stock : STOCK_MAX,
     lastRefillAt: toTimestamp(data.lastRefillAt) ?? now,
@@ -49,6 +49,9 @@ export function parseSave(raw: string | null, now: number): Save {
     firstPulledAt,
     pending: typeof data.pending === 'string' || data.pending === null ? data.pending : null,
   };
+  // Old saves have no series; keep it only when it is a real one.
+  if (data.series === 1 || data.series === 2) out.series = data.series;
+  return out;
 }
 
 export function loadSave(storage: Pick<Storage, 'getItem'> | null, now: number): Save {

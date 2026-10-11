@@ -1,12 +1,14 @@
 <script lang="ts">
-  import { biteMask, bitesToFinish, type Bite } from './bite';
+  import { biteMask, bitesToFinish, RIM, type Bite } from './bite';
 
   interface Props {
+    /** Series 1 is a vanilla cream wafer, series 2 a single-layer cocoa wafer. */
+    flavor?: 'vanilla' | 'choco';
     /** One crumb of the last bite sparkles. */
     sparkle?: boolean;
     onEaten: () => void;
   }
-  let { sparkle = false, onEaten }: Props = $props();
+  let { flavor = 'vanilla', sparkle = false, onEaten }: Props = $props();
 
   interface Crumb {
     id: number;
@@ -16,6 +18,9 @@
     rot: number;
     size: number;
     gold: boolean;
+    /** Which bit of the wafer texture the crumb carries. */
+    bx: number;
+    by: number;
   }
 
   const total = bitesToFinish(Math.random);
@@ -25,7 +30,12 @@
   let el: HTMLElement;
   let nextId = 0;
 
+  // The body (cut face) loses exactly the bite; the top surface sits a little further back,
+  // so a rim of the cut face shows round every bite.
   const mask = $derived(biteMask(bites));
+  const topMask = $derived(biteMask(bites, RIM));
+  const css = (m: { image: string; composite: string }) =>
+    `mask-image:${m.image || 'none'};mask-composite:${m.composite || 'add'}`;
 
   function addCrumbs(b: Bite, last: boolean) {
     const n = 4 + Math.floor(Math.random() * 3);
@@ -38,6 +48,8 @@
         rot: (Math.random() - 0.5) * 540,
         size: 1.6 + Math.random() * 2.4,
         gold: last && sparkle && i === 0,
+        bx: Math.random() * 100,
+        by: Math.random() * 100,
       };
       crumbs.push(c);
       setTimeout(() => (crumbs = crumbs.filter((k) => k.id !== c.id)), c.gold ? 1400 : 900);
@@ -66,21 +78,15 @@
   }
 </script>
 
-<div class="wafer-wrap" bind:this={el}>
-  <button
-    class="wafer"
-    class:gone
-    style="mask-image:{mask.image || 'none'};mask-composite:{mask.composite || 'add'}"
-    onpointerdown={tap}
-    aria-label="かじる"
-  >
-    <span class="cream"></span>
+<div class="wafer-wrap {flavor}" bind:this={el}>
+  <button class="wafer" class:gone style={css(mask)} onpointerdown={tap} aria-label="かじる">
+    <span class="top" style={css(topMask)}></span>
   </button>
   {#each crumbs as c (c.id)}
     <span
       class="crumb"
       class:gold={c.gold}
-      style="left:{c.x}%;top:{c.y}%;--dx:{c.dx}cqw;--rot:{c.rot}deg;--s:{c.size}cqw"
+      style="left:{c.x}%;top:{c.y}%;--dx:{c.dx}cqw;--rot:{c.rot}deg;--s:{c.size}cqw;--bx:{c.bx}%;--by:{c.by}%"
     ></span>
   {/each}
 </div>
@@ -92,30 +98,51 @@
     container-type: inline-size;
     pointer-events: none;
   }
+  /* Photographic textures (scripts/make-wafer.py): the lattice top and the cut face. */
+  .vanilla {
+    --top: url('/wafer/vanilla-top.webp');
+    --side: url('/wafer/vanilla-side.webp');
+    --side-h: 4.4cqw;
+    --edge: rgba(96, 58, 20, .55);
+  }
+  .choco {
+    --top: url('/wafer/choco-top.webp');
+    --side: url('/wafer/choco-side.webp');
+    --side-h: 2.6cqw;
+    --edge: rgba(20, 10, 6, .6);
+  }
+  .wafer-wrap {
+    filter: drop-shadow(0 1.6cqw 2.4cqw rgba(0, 0, 0, .45));
+  }
+  /* The body is the cut face: it shows along the front edge and as the rim of every bite. */
   .wafer {
     position: absolute;
     inset: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 1.2cqw;
     pointer-events: auto;
     cursor: pointer;
-    background:
-      repeating-linear-gradient(45deg, rgba(120, 72, 22, .4) 0 .35cqw, transparent .35cqw 4.2cqw),
-      repeating-linear-gradient(-45deg, rgba(120, 72, 22, .4) 0 .35cqw, transparent .35cqw 4.2cqw),
-      radial-gradient(circle at 30% 25%, #f0c27e, #d9a35b 55%, #b98034);
-    box-shadow: inset 0 0 0 1.2cqw rgba(160, 104, 40, .55);
+    background: var(--side) 0 100% / auto var(--side-h) repeat;
     transition: opacity var(--t-page) var(--ease-standard);
   }
   .wafer:focus-visible {
     outline: 1px solid var(--sel-frame);
     outline-offset: 4px;
   }
-  /* The cream layer shows as a pale line across the middle of the side. */
-  .cream {
+  /* The top surface: one light from the upper left, darker toward the edges. */
+  .top {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2.4cqw;
-    background: linear-gradient(#f6ead2 0 40%, #c58c46 40% 60%, #f6ead2 60%);
+    inset: 0 0 var(--side-h) 0;
+    border-radius: 1.2cqw 1.2cqw .6cqw .6cqw;
+    background:
+      radial-gradient(130% 90% at 28% 18%, rgba(255, 246, 225, .22), transparent 55%),
+      linear-gradient(transparent 82%, rgba(0, 0, 0, .14)),
+      var(--top) 0 0 / 64cqw auto repeat;
+    box-shadow:
+      inset 0 0 0 .5cqw var(--edge),
+      inset 0 0 3cqw rgba(0, 0, 0, .25),
+      inset 0 .4cqw .2cqw rgba(255, 240, 210, .25);
   }
   .wafer.gone {
     opacity: 0;
@@ -125,7 +152,7 @@
     position: absolute;
     width: var(--s);
     height: calc(var(--s) * .8);
-    background: #d39a52;
+    background: var(--top) var(--bx) var(--by) / 40cqw auto;
     clip-path: polygon(10% 0, 100% 20%, 80% 100%, 0 70%);
     animation: crumb 900ms cubic-bezier(.4, 0, .9, .5) forwards;
   }

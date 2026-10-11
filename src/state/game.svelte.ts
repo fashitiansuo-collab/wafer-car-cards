@@ -1,7 +1,8 @@
 import { drawCard } from '../lib/draw';
 import { refill, STOCK_MAX } from '../lib/refill';
 import { loadSave, writeSave } from '../lib/save';
-import type { Card, Rarity, Save } from '../lib/types';
+import { cardsOf } from '../lib/series';
+import type { Card, Rarity, Save, SeriesId } from '../lib/types';
 
 export type Screen = 'home' | 'opening' | 'result' | 'garage' | 'detail' | 'records' | 'debug';
 
@@ -10,6 +11,8 @@ export interface Game {
   screen: Screen;
   detailId: string | null;
   forced: Rarity | null;
+  /** The bag currently selected on Home. */
+  series: SeriesId;
   readonly current: Card | null;
   readonly isNew: boolean;
   tick(): void;
@@ -19,8 +22,9 @@ export interface Game {
   finishOpening(): void;
   /** Add a promo card (no bag spent, not part of the collection count). False if already owned. */
   grantPromo(id: string): boolean;
-  ownedCount(): number;
-  countByRarity(): Record<Rarity, number>;
+  ownedCount(s?: SeriesId): number;
+  countByRarity(s?: SeriesId): Record<Rarity, number>;
+  seriesCount(s: SeriesId): number;
 }
 
 export interface CreateGameOpts {
@@ -38,6 +42,7 @@ export function createGame(opts: CreateGameOpts): Game {
   let screen = $state<Screen>('home');
   let detailId = $state<string | null>(null);
   let forced = $state<Rarity | null>(null);
+  let series = $state<SeriesId>(save.series ?? 1);
   let current = $state<Card | null>(null);
   let isNew = $state(false);
 
@@ -78,12 +83,15 @@ export function createGame(opts: CreateGameOpts): Game {
 
   function startOpening(): boolean {
     reload();
+    const pool = cardsOf(cards, series);
+    // An empty set has nothing to draw; do not spend a bag on it.
+    if (pool.length === 0) return false;
     tick();
     if (save.stock <= 0) return false;
     if (save.stock >= STOCK_MAX) save.lastRefillAt = now();
     save.stock -= 1;
     save.eaten += 1;
-    const card = drawCard(cards, rng, forced ?? undefined);
+    const card = drawCard(pool, rng, forced ?? undefined);
     const had = save.owned[card.id] ?? 0;
     save.owned[card.id] = had + 1;
     if (save.firstPulledAt[card.id] === undefined) save.firstPulledAt[card.id] = now();
@@ -110,16 +118,20 @@ export function createGame(opts: CreateGameOpts): Game {
     return true;
   }
 
-  function ownedCount(): number {
+  function ownedCount(s?: SeriesId): number {
     let n = 0;
-    for (const c of cards) if ((save.owned[c.id] ?? 0) > 0) n += 1;
+    for (const c of s == null ? cards : cardsOf(cards, s)) if ((save.owned[c.id] ?? 0) > 0) n += 1;
     return n;
   }
 
-  function countByRarity(): Record<Rarity, number> {
+  function countByRarity(s?: SeriesId): Record<Rarity, number> {
     const out: Record<Rarity, number> = { C: 0, UC: 0, R: 0, UR: 0, SEC: 0 };
-    for (const c of cards) if ((save.owned[c.id] ?? 0) > 0) out[c.rarity] += 1;
+    for (const c of s == null ? cards : cardsOf(cards, s)) if ((save.owned[c.id] ?? 0) > 0) out[c.rarity] += 1;
     return out;
+  }
+
+  function seriesCount(s: SeriesId): number {
+    return cardsOf(cards, s).length;
   }
 
   return {
@@ -130,6 +142,13 @@ export function createGame(opts: CreateGameOpts): Game {
     set detailId(v: string | null) { detailId = v; },
     get forced() { return forced; },
     set forced(v: Rarity | null) { forced = v; },
+    get series() { return series; },
+    set series(v: SeriesId) {
+      reload();
+      series = v;
+      save.series = v;
+      persist();
+    },
     get current() { return current; },
     get isNew() { return isNew; },
     tick,
@@ -139,5 +158,6 @@ export function createGame(opts: CreateGameOpts): Game {
     grantPromo,
     ownedCount,
     countByRarity,
+    seriesCount,
   };
 }

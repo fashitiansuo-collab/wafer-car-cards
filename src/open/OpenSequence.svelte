@@ -92,7 +92,7 @@
       <div class="bag-out" aria-hidden="true"></div>
     {/if}
     {#if stage === 'bag' || stage === 'wafer'}
-      <Wafer bind:this={wafer} {sparkle} onEaten={reveal} />
+      <Wafer bind:this={wafer} flavor={card.series === 2 ? 'choco' : 'vanilla'} {sparkle} onEaten={reveal} />
     {/if}
   </div>
   <div class="lockup-space"></div>

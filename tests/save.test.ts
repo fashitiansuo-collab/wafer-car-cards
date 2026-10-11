@@ -28,6 +28,13 @@ describe('parseSave', () => {
     const s: Save = { v: 1, stock: 4, lastRefillAt: 60_000, eaten: 3, owned: { c001: 2 }, firstPulledAt: { c001: 50_000 }, pending: 'c001' };
     expect(parseSave(JSON.stringify(s), 0)).toEqual(s);
   });
+
+  it('keeps a valid series and drops junk', () => {
+    expect(parseSave(JSON.stringify({ ...base, series: 1 }), 5).series).toBe(1);
+    expect(parseSave(JSON.stringify({ ...base, series: 2 }), 5).series).toBe(2);
+    expect(parseSave(JSON.stringify({ ...base, series: 3 }), 5).series).toBeUndefined();
+    expect(parseSave(JSON.stringify({ ...base, series: 'x' }), 5).series).toBeUndefined();
+  });
 });
 
 describe('loadSave / writeSave', () => {

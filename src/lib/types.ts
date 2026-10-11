@@ -2,6 +2,10 @@ export type Rarity = 'C' | 'UC' | 'R' | 'UR' | 'SEC';
 
 export const RARITIES: Rarity[] = ['C', 'UC', 'R', 'UR', 'SEC'];
 
+export type SeriesId = 1 | 2;
+
+export const SERIES: SeriesId[] = [1, 2];
+
 export interface CardCredit {
   author: string;
   license: string;
@@ -23,6 +27,8 @@ export interface Card {
   id: string;
   no: number;
   rarity: Rarity;
+  /** Which set the card belongs to; a missing series means the first set. */
+  series?: SeriesId;
   maker: string;
   model: string;
   year: number;
@@ -47,6 +53,8 @@ export interface Save {
   owned: Record<string, number>;
   firstPulledAt: Record<string, number>;
   pending: string | null;
+  /** The set whose bag is selected; missing means series 1. */
+  series?: SeriesId;
 }
 
 /** A promo card: given by code, outside the numbered set, with a design of its own. */

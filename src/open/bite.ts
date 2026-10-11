@@ -23,21 +23,25 @@ const TEETH = 5;
 const hole = (x: string, y: string, r: number) =>
   `radial-gradient(circle at ${x} ${y}, transparent ${r}cqw, #000 ${r + 0.4}cqw)`;
 
+/** How far the wafer's top surface is bitten back past the hole, so the cut face shows as a rim. */
+export const RIM = 2;
+
 /**
  * mask-image layers that cut every bite out of the wafer: one round hole plus a row of small
  * scallops along its rim, so the edge reads as teeth. Holes are combined with `intersect`.
+ * `grow` widens every hole (cqw), for the top surface that sits back from the cut.
  */
-export function biteMask(bites: Bite[]): { image: string; composite: string } {
+export function biteMask(bites: Bite[], grow = 0): { image: string; composite: string } {
   const layers: string[] = [];
   for (const b of bites) {
-    layers.push(hole(`${b.x}%`, `${b.y}%`, R));
+    layers.push(hole(`${b.x}%`, `${b.y}%`, R + grow));
     // Scallops face the middle of the wafer.
     const toward = Math.atan2(50 - b.y, 50 - b.x);
     for (let i = 0; i < TEETH; i++) {
       const a = toward + ((i - (TEETH - 1) / 2) * Math.PI) / 7;
       const dx = Math.cos(a) * (R - 1);
       const dy = Math.sin(a) * (R - 1);
-      layers.push(hole(`calc(${b.x}% + ${dx.toFixed(2)}cqw)`, `calc(${b.y}% + ${dy.toFixed(2)}cqw)`, TOOTH));
+      layers.push(hole(`calc(${b.x}% + ${dx.toFixed(2)}cqw)`, `calc(${b.y}% + ${dy.toFixed(2)}cqw)`, TOOTH + grow));
     }
   }
   return { image: layers.join(', '), composite: layers.map(() => 'intersect').join(', ') };
