@@ -99,6 +99,7 @@ async function main() {
     if (a.entry.focus) card.focus = a.entry.focus;
     card.exif = a.exif;
     if (a.entry.frame) card.frame = a.entry.frame;
+    if (a.entry.focusManual) card.focusManual = true;
     card.credit = { author: a.author, license: a.license, licenseUrl: a.licenseUrl, sourceUrl: a.sourceUrl, modified: true };
     cards.push(card);
     if (n < accepted.length) await sleep(300);

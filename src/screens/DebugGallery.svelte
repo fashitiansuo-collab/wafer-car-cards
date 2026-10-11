@@ -20,10 +20,12 @@
   if (fixed) fixed.set(Number(params.get('px')), Number(params.get('py') ?? 0.5), 1);
   const pick = (r: Rarity) => cards.filter((c) => c.rarity === r);
   const id = params.get('id');
+  // ?ids=c001,c002 shows just those cards.
+  const ids = params.get('ids')?.split(',');
   // ?frame=litt shows every card in that frame, to compare tones.
   const frame = params.get('frame') as Frame | null;
   const shown = $derived(
-    id ? cards.filter((c) => c.id === id) : only ? pick(only) : RARITIES.map((r) => pick(r)[Number(params.get('i') ?? 0) % pick(r).length]),
+    ids ? cards.filter((c) => ids.includes(c.id)) : id ? cards.filter((c) => c.id === id) : only ? pick(only) : RARITIES.map((r) => pick(r)[Number(params.get('i') ?? 0) % pick(r).length]),
   );
 </script>
 

@@ -29,6 +29,8 @@ export interface Card {
   country: string;
   image: string;
   focus?: string;
+  /** focus was set by hand; scripts/photo-check.py --fit leaves it alone. */
+  focusManual?: boolean;
   /** The frame picked for this photo's mood; defaults to 'gallery'. */
   frame?: Frame;
   exif?: Exif;
