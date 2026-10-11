@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { SAVE_KEY } from '../src/lib/save';
+import { parseSave, SAVE_KEY } from '../src/lib/save';
 import { createGame } from '../src/state/game.svelte.ts';
 import type { Card, Rarity, Save, SeriesId } from '../src/lib/types';
 
@@ -184,5 +184,120 @@ describe('game', () => {
     expect(JSON.parse(storage.getItem(SAVE_KEY)!).series).toBe(2);
     const again = createGame({ cards, storage, now: () => t, rng: () => 0 });
     expect(again.series).toBe(2);
+  });
+});
+
+describe('calories', () => {
+  it('banks calories per series, separately', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const cards = [...makeCards(1), ...makeCards(2)];
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    game.series = 1;
+    game.startOpening();
+    expect(game.kcal(1)).toBe(52);
+    expect(game.kcal(2)).toBe(0);
+    game.finishOpening();
+    game.series = 2;
+    game.startOpening();
+    expect(game.kcal(1)).toBe(52);
+    expect(game.kcal(2)).toBe(64);
+  });
+
+  it('keeps calories across a reload', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const cards = makeCards(1);
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    game.startOpening();
+    game.finishOpening();
+    const again = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    expect(again.kcal(1)).toBe(52);
+    expect(again.canPity(1)).toBe(false);
+  });
+
+  it('loads an old save without calories', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const game = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(game.kcal(1)).toBe(0);
+    expect(game.kcal(2)).toBe(0);
+    expect(game.canPity(1)).toBe(false);
+    expect(game.startOpening()).toBe(true);
+  });
+
+  it('drops junk calories when parsing a save', () => {
+    const t = 1_000_000;
+    expect(parseSave(JSON.stringify({ ...blank(t), kcal: { '1': 100, '2': -5 } }), t).kcal).toEqual({ '1': 100 });
+    expect(parseSave(JSON.stringify({ ...blank(t), kcal: { '1': 'x', '2': 2 } }), t).kcal).toEqual({ '2': 2 });
+    expect(parseSave(JSON.stringify({ ...blank(t), kcal: [] }), t).kcal).toBeUndefined();
+    expect(parseSave(JSON.stringify(blank(t)), t).kcal).toBeUndefined();
+  });
+});
+
+describe('pity pack', () => {
+  it('is unavailable below the goal', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t), kcal: { '1': 1999 } });
+    const game = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(game.canPity(1)).toBe(false);
+    expect(game.startPity()).toBe(false);
+    expect(game.screen).toBe('home');
+  });
+
+  it('draws only a UR or SEC from the selected series', () => {
+    const t = 1_000_000;
+    const cards = [...makeCards(1), ...makeCards(2)];
+    const storage = memStorage({ ...blank(t), kcal: { '1': 2000 } });
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    expect(game.startPity()).toBe(true);
+    expect(game.current?.rarity).toBe('UR');
+    expect(game.current?.series).toBe(1);
+    expect(game.screen).toBe('opening');
+  });
+
+  it('rolls the rarity first, so the SEC tail is reachable', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t), kcal: { '1': 2000 } });
+    const rolls = [0.99, 0];
+    let i = 0;
+    const game = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => rolls[Math.min(i++, rolls.length - 1)] });
+    expect(game.startPity()).toBe(true);
+    expect(game.current?.rarity).toBe('SEC');
+  });
+
+  it('leaves the bag stock untouched and works at zero stock', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t, 0), kcal: { '1': 2000 } });
+    const game = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(game.save.stock).toBe(0);
+    expect(game.startPity()).toBe(true);
+    expect(game.save.stock).toBe(0);
+  });
+
+  it('counts in eaten and owned, pays the goal and carries the remainder', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t), kcal: { '1': 2050 } });
+    const game = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(game.startPity()).toBe(true);
+    expect(game.save.eaten).toBe(1);
+    expect(game.ownedCount(1)).toBe(1);
+    expect(game.kcal(1)).toBe(50);
+  });
+
+  it('keeps the pity flag on a resumed opening and clears it on finish', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t), kcal: { '1': 2000 } });
+    const game = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(game.pity).toBe(false);
+    game.startPity();
+    expect(game.pity).toBe(true);
+    const again = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(again.screen).toBe('opening');
+    expect(again.pity).toBe(true);
+    again.finishOpening();
+    const third = createGame({ cards: makeCards(1), storage, now: () => t, rng: () => 0 });
+    expect(third.pity).toBe(false);
+    expect(third.screen).toBe('home');
   });
 });

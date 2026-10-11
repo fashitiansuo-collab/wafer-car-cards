@@ -15,7 +15,7 @@
   // The card is fixed for the life of this sequence.
   const card = untrack(() => game.current!);
   const rarity = card.rarity;
-  const sparkle = omen(rarity, Math.random);
+  const sparkle = untrack(() => game.pity) || omen(rarity, Math.random);
   const FLIP_MS: Record<string, number> = { C: 500, UC: 500, R: 700, UR: 1200, SEC: 1400 };
 
   const tilt = createTilt();

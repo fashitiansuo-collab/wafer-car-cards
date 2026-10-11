@@ -9,8 +9,10 @@
     disabled?: boolean;
     /** Series 1 is the silver vanilla bag, series 2 the bronze chocolate one. */
     series?: 1 | 2;
+    /** The high-rare guaranteed pack: a gold label marked UR+. */
+    premium?: boolean;
   }
-  let { onTorn, disabled = false, series = 1 }: Props = $props();
+  let { onTorn, disabled = false, series = 1, premium = false }: Props = $props();
 
   const seed = Math.floor(Math.random() * 1e6);
   const tilt = createTilt();
@@ -80,6 +82,7 @@
 <div
   class="bag"
   class:choco={series === 2}
+  class:premium
   class:disabled
   class:dragging
   class:off
@@ -111,7 +114,7 @@
       <div class="mark"><Icon name="mark" size="100%" /></div>
       <p class="name">WAFER</p>
       <p class="sub">{series === 2 ? 'CHOCOLATE' : 'CAR CARD COLLECTION'}</p>
-      <p class="no">No. 0{series} · 1 CARD INSIDE</p>
+      <p class="no">{premium ? 'No. 0' + series + ' · UR+ GUARANTEED' : 'No. 0' + series + ' · 1 CARD INSIDE'}</p>
     </div>
     <div class="crimp crimp--bottom"></div>
     <div class="glare"></div>
@@ -190,6 +193,24 @@
   }
   .choco .sub {
     color: #d9b08a;
+  }
+  /* The high-rare guaranteed pack: gold foil, a gold rule round the label. */
+  .premium .art {
+    background-image:
+      url('/fx/glitter.png'),
+      conic-gradient(
+        from calc(200deg + var(--rotate-y) * 3) at 30% 40%,
+        #e9c76a, #8a6516, #fff3c4, #6e4f10, #d4a93c, #fff8dc, #7d5a14, #e9c76a
+      );
+    background-size: 160px, 100% 100%;
+    background-blend-mode: overlay, normal;
+  }
+  .premium .label {
+    box-shadow: inset 0 0 0 1px #e9c76a, inset 0 0 0 .9cqw #141518, inset 0 0 0 calc(.9cqw + 1px) rgba(233, 199, 106, .45);
+  }
+  .premium .no {
+    color: #f1d58a;
+    border-top-color: rgba(233, 199, 106, .5);
   }
   .crimp {
     position: absolute;

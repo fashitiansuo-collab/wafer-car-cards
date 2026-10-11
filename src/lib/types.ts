@@ -55,6 +55,10 @@ export interface Save {
   pending: string | null;
   /** The set whose bag is selected; missing means series 1. */
   series?: SeriesId;
+  /** Calories banked per series; a missing key means none. */
+  kcal?: Partial<Record<'1' | '2', number>>;
+  /** The opening that is pending is a high-rare guaranteed (pity) pack. */
+  pendingPity?: boolean;
 }
 
 /** A promo card: given by code, outside the numbered set, with a design of its own. */

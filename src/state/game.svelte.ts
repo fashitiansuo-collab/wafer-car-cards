@@ -1,4 +1,5 @@
-import { drawCard } from '../lib/draw';
+import { drawCard, drawHighRare } from '../lib/draw';
+import { addKcal, canPity as kcalReady, payKcal } from '../lib/kcal';
 import { refill, STOCK_MAX } from '../lib/refill';
 import { loadSave, writeSave } from '../lib/save';
 import { cardsOf } from '../lib/series';
@@ -15,11 +16,19 @@ export interface Game {
   series: SeriesId;
   readonly current: Card | null;
   readonly isNew: boolean;
+  /** The current opening is a high-rare guaranteed (pity) pack. */
+  readonly pity: boolean;
   tick(): void;
   /** Re-read the save (another tab may have changed it). */
   reload(): void;
   startOpening(): boolean;
+  /** Open the pity pack of the selected series. False when it is not ready. */
+  startPity(): boolean;
   finishOpening(): void;
+  /** Calories banked by series `s`. */
+  kcal(s: SeriesId): number;
+  /** Whether series `s` has banked enough calories for its pity pack. */
+  canPity(s: SeriesId): boolean;
   /** Add a promo card (no bag spent, not part of the collection count). False if already owned. */
   grantPromo(id: string): boolean;
   ownedCount(s?: SeriesId): number;
@@ -45,12 +54,14 @@ export function createGame(opts: CreateGameOpts): Game {
   let series = $state<SeriesId>(save.series ?? 1);
   let current = $state<Card | null>(null);
   let isNew = $state(false);
+  let pity = $state(false);
 
   // Resume an interrupted opening without double counting.
   if (save.pending != null) {
     const card = byId.get(save.pending);
     if (card) {
       current = card;
+      pity = save.pendingPity === true;
       isNew = (save.owned[card.id] ?? 0) <= 1;
       screen = 'opening';
     } else {
@@ -91,6 +102,7 @@ export function createGame(opts: CreateGameOpts): Game {
     if (save.stock >= STOCK_MAX) save.lastRefillAt = now();
     save.stock -= 1;
     save.eaten += 1;
+    setKcal(series, addKcal(kcalOf(series), series));
     const card = drawCard(pool, rng, forced ?? undefined);
     const had = save.owned[card.id] ?? 0;
     save.owned[card.id] = had + 1;
@@ -103,8 +115,49 @@ export function createGame(opts: CreateGameOpts): Game {
     return true;
   }
 
+  const kkey = (s: SeriesId): '1' | '2' => (s === 1 ? '1' : '2');
+
+  function kcalOf(s: SeriesId): number {
+    return save.kcal?.[kkey(s)] ?? 0;
+  }
+
+  function setKcal(s: SeriesId, v: number): void {
+    const next: Partial<Record<'1' | '2', number>> = { ...(save.kcal ?? {}) };
+    next[kkey(s)] = v;
+    save.kcal = next;
+  }
+
+  function canPitySeries(s: SeriesId): boolean {
+    return kcalReady(kcalOf(s), s);
+  }
+
+  /** A high-rare guaranteed pack: no bag spent, and the goal is paid instead of more calories added. */
+  function startPity(): boolean {
+    reload();
+    const s = series;
+    if (!canPitySeries(s)) return false;
+    const pool = cardsOf(cards, s);
+    if (pool.length === 0) return false;
+    setKcal(s, payKcal(kcalOf(s), s));
+    save.eaten += 1;
+    const card = drawHighRare(pool, rng);
+    const had = save.owned[card.id] ?? 0;
+    save.owned[card.id] = had + 1;
+    if (save.firstPulledAt[card.id] === undefined) save.firstPulledAt[card.id] = now();
+    isNew = had <= 0;
+    save.pending = card.id;
+    save.pendingPity = true;
+    pity = true;
+    current = card;
+    persist();
+    screen = 'opening';
+    return true;
+  }
+
   function finishOpening(): void {
     save.pending = null;
+    save.pendingPity = undefined;
+    pity = false;
     persist();
     screen = 'result';
   }
@@ -151,10 +204,14 @@ export function createGame(opts: CreateGameOpts): Game {
     },
     get current() { return current; },
     get isNew() { return isNew; },
+    get pity() { return pity; },
     tick,
     reload,
     startOpening,
+    startPity,
     finishOpening,
+    kcal: kcalOf,
+    canPity: canPitySeries,
     grantPromo,
     ownedCount,
     countByRarity,

@@ -25,6 +25,38 @@ export function drawCard(cards: Card[], rng: () => number, forced?: Rarity): Car
   throw new Error('drawCard: no cards to draw');
 }
 
+/** The rarities a high-rare guaranteed (pity) pack can show. */
+const HIGH: Rarity[] = ['UR', 'SEC'];
+
+/**
+ * A pity card: the rarity is rolled first (UR vs SEC with WEIGHTS) among the rarities present,
+ * then a card is taken uniformly within it, so the odds do not depend on the pool sizes.
+ * With no UR/SEC at all, the highest rarity present is drawn instead.
+ */
+export function drawHighRare(cards: Card[], rng: () => number): Card {
+  const present = HIGH.filter((r) => cards.some((c) => c.rarity === r));
+  if (present.length > 0) {
+    const total = present.reduce((sum, r) => sum + WEIGHTS[r], 0);
+    const roll = rng() * total;
+    let acc = 0;
+    let pick: Rarity = present[present.length - 1];
+    for (const r of present) {
+      acc += WEIGHTS[r];
+      if (roll < acc) {
+        pick = r;
+        break;
+      }
+    }
+    const pool = cards.filter((c) => c.rarity === pick);
+    return pool[Math.floor(rng() * pool.length)];
+  }
+  for (let i = ORDER.length - 1; i >= 0; i--) {
+    const pool = cards.filter((c) => c.rarity === ORDER[i]);
+    if (pool.length > 0) return pool[Math.floor(rng() * pool.length)];
+  }
+  throw new Error('drawHighRare: no cards to draw');
+}
+
 export function mulberry32(seed: number): () => number {
   let a = seed >>> 0;
   return () => {

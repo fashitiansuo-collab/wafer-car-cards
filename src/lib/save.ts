@@ -51,6 +51,15 @@ export function parseSave(raw: string | null, now: number): Save {
   };
   // Old saves have no series; keep it only when it is a real one.
   if (data.series === 1 || data.series === 2) out.series = data.series;
+  const kcal: Partial<Record<'1' | '2', number>> = {};
+  if (isRecord(data.kcal)) {
+    for (const k of ['1', '2'] as const) {
+      const v = data.kcal[k];
+      if (typeof v === 'number' && Number.isFinite(v) && v >= 0) kcal[k] = v;
+    }
+  }
+  if (Object.keys(kcal).length > 0) out.kcal = kcal;
+  if (data.pendingPity === true) out.pendingPity = true;
   return out;
 }
 
