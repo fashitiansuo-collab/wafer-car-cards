@@ -19,6 +19,8 @@
     firstPulledAt?: number | null;
     plainBack?: boolean;
     ink?: string;
+    /** A raised grain that only shows where the light falls (series 3 onwards). */
+    grain?: boolean;
     children: Snippet;
   }
   let {
@@ -31,6 +33,7 @@
     firstPulledAt = null,
     plainBack = false,
     ink = '#f4f1ea',
+    grain = false,
     children,
   }: Props = $props();
 
@@ -52,6 +55,7 @@
   <div class="card__rotator">
     <div class="card__front">
       {@render children()}
+      {#if grain}<div class="card__grain" aria-hidden="true"></div>{/if}
       <Signature {no} label="SEC" {ink} />
       <div class="card__glare"></div>
     </div>

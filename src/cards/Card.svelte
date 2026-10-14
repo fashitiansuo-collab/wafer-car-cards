@@ -116,6 +116,7 @@
       <div class="card__photo"><img src={card.image} alt="" draggable="false" /></div>
       <div class="card__shine"></div>
       <div class="card__shine card__shine--2"></div>
+      {#if etched}<div class="card__grain" aria-hidden="true"></div>{/if}
       <div class="card__glare"></div>
     </div>
     <div class="card__back">
