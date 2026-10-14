@@ -1,10 +1,12 @@
-export type Rarity = 'C' | 'UC' | 'R' | 'UR' | 'SEC';
+export type Rarity = 'C' | 'UC' | 'R' | 'UR' | 'SEC' | 'RSEC';
 
 export const RARITIES: Rarity[] = ['C', 'UC', 'R', 'UR', 'SEC'];
 
-export type SeriesId = 1 | 2;
+export const ALL_RARITIES: Rarity[] = [...RARITIES, 'RSEC'];
 
-export const SERIES: SeriesId[] = [1, 2];
+export type SeriesId = 1 | 2 | 3;
+
+export const SERIES: SeriesId[] = [1, 2, 3];
 
 export interface CardCredit {
   author: string;
@@ -42,6 +44,11 @@ export interface Card {
   exif?: Exif;
   /** Five colours of the photo, most common first. */
   palette?: string[];
+  spec?: { engine?: string; power?: string; weight?: string; source?: string };
+  /** A short note about the car, quoted from Wikipedia (CC BY-SA), credited with its source. */
+  flavor?: { text: string; lang: 'ja' | 'en'; source: string; license: string };
+  /** RSEC: the ordinary card it poses as until peeled (model is what that card says). */
+  stock?: { image: string; model?: string; focus?: string; frame?: Frame; credit: CardCredit; exif?: Exif; palette?: string[] };
   credit: CardCredit;
 }
 
@@ -56,9 +63,10 @@ export interface Save {
   /** The set whose bag is selected; missing means series 1. */
   series?: SeriesId;
   /** Calories banked per series; a missing key means none. */
-  kcal?: Partial<Record<'1' | '2', number>>;
+  kcal?: Partial<Record<'1' | '2' | '3', number>>;
   /** The opening that is pending is a high-rare guaranteed (pity) pack. */
   pendingPity?: boolean;
+  peeled?: Record<string, number>;
 }
 
 /** A promo card: given by code, outside the numbered set, with a design of its own. */

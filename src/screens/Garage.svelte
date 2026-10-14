@@ -8,11 +8,20 @@
   import { promos } from '../cards/special';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
+  // RSEC cards are hidden extras, outside the numbered set.
+  const total = $derived(cards.filter((c) => c.rarity !== 'RSEC').length);
 
   let filter = $state<Rarity | 'ALL'>('ALL');
   let focus = $state<string | null>(null);
 
-  const shown = $derived(filter === 'ALL' ? cards : cards.filter((c) => c.rarity === filter));
+  // RSEC tiles appear only once drawn, and pass for commons until peeled.
+  const listed = $derived(cards.filter((c) => c.rarity !== 'RSEC' || has(c)));
+  const shown = $derived(filter === 'ALL' ? listed : listed.filter((c) => shownRarity(c) === filter));
+  const shownRarity = (c: Card) => (c.rarity === 'RSEC' && !game.isPeeled(c.id) ? 'C' : c.rarity);
+  const face = (c: Card) =>
+    c.rarity === 'RSEC' && c.stock && !game.isPeeled(c.id)
+      ? { image: c.stock.image, focus: c.stock.focus, model: c.stock.model ?? c.model }
+      : { image: c.image, focus: c.focus, model: c.model };
   const has = (c: Card) => (game.save.owned[c.id] ?? 0) > 0;
   const owned = $derived(game.ownedCount(game.series));
   const byR = $derived(game.countByRarity(game.series));
@@ -73,12 +82,12 @@
   {/if}
   <div class="grid">
     {#each shown as c (c.id)}
-      <button class="tile" class:locked={!has(c)} data-rarity={c.rarity} onclick={() => pick(c)} onfocus={(e) => {
+      <button class="tile" class:locked={!has(c)} data-rarity={shownRarity(c)} onclick={() => pick(c)} onfocus={(e) => {
           if (e.currentTarget.matches(':focus-visible')) focus = c.id;
         }}>
         {#if has(c)}
-          <img src={c.image} alt="" style="object-position:{c.focus ?? '50% 50%'}" loading="lazy" />
-          <span class="name">{c.model}</span>
+          <img src={face(c).image} alt="" style="object-position:{face(c).focus ?? '50% 50%'}" loading="lazy" />
+          <span class="name">{face(c).model}</span>
           {#if (game.save.owned[c.id] ?? 0) > 1}<span class="count">×{game.save.owned[c.id]}</span>{/if}
         {:else}
           <span class="unknown">???</span>
@@ -92,7 +101,7 @@
 
 <BottomStrip
   cells={[
-    { title: `図鑑 ${owned} / ${cards.length}`, value: `${Math.round((owned / cards.length) * 100)}%`, progress: owned / cards.length },
+    { title: `図鑑 ${owned} / ${total}`, value: `${Math.round((owned / total) * 100)}%`, progress: owned / total },
     {
       title: filter === 'ALL' ? 'レア別' : `${filter} の所持`,
       value: filter === 'ALL' ? `${byR.UR + byR.SEC}` : `${byR[filter]} / ${totalOf(filter)}`,

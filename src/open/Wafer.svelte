@@ -1,14 +1,19 @@
 <script lang="ts">
-  import { biteMask, bitesToFinish, RIM, type Bite } from './bite';
+  import { untrack } from 'svelte';
+  import { biteMask, bitesToFinish, EXTRA_BITES, RIM, type Bite } from './bite';
 
   interface Props {
     /** Series 1 is a vanilla cream wafer, series 2 a single-layer cocoa wafer. */
-    flavor?: 'vanilla' | 'choco';
+    flavor?: 'vanilla' | 'choco' | 'matcha';
     /** One crumb of the last bite sparkles. */
     sparkle?: boolean;
+    /** Needs one bite more than any wafer normally takes. */
+    extraBite?: boolean;
+    /** Lies upside down: the cut face shows along the top edge. */
+    upsideDown?: boolean;
     onEaten: () => void;
   }
-  let { flavor = 'vanilla', sparkle = false, onEaten }: Props = $props();
+  let { flavor = 'vanilla', sparkle = false, extraBite = false, upsideDown = false, onEaten }: Props = $props();
 
   interface Crumb {
     id: number;
@@ -23,7 +28,7 @@
     by: number;
   }
 
-  const total = bitesToFinish(Math.random);
+  const total = untrack(() => (extraBite ? EXTRA_BITES : bitesToFinish(Math.random)));
   let bites = $state<Bite[]>([]);
   let crumbs = $state<Crumb[]>([]);
   let gone = $state(false);
@@ -78,7 +83,7 @@
   }
 </script>
 
-<div class="wafer-wrap {flavor}" bind:this={el}>
+<div class="wafer-wrap {flavor}" class:upside={upsideDown} bind:this={el}>
   <button class="wafer" class:gone style={css(mask)} onpointerdown={tap} aria-label="かじる">
     <span class="top" style={css(topMask)}></span>
   </button>
@@ -110,6 +115,12 @@
     --side: url('/wafer/choco-side.webp');
     --side-h: 2.6cqw;
     --edge: rgba(20, 10, 6, .6);
+  }
+  .matcha {
+    --top: url('/wafer/matcha-top.webp');
+    --side: url('/wafer/matcha-side.webp');
+    --side-h: 2.6cqw;
+    --edge: rgba(38, 50, 14, .55);
   }
   .wafer-wrap {
     filter: drop-shadow(0 1.6cqw 2.4cqw rgba(0, 0, 0, .45));
@@ -143,6 +154,14 @@
       inset 0 0 0 .5cqw var(--edge),
       inset 0 0 3cqw rgba(0, 0, 0, .25),
       inset 0 .4cqw .2cqw rgba(255, 240, 210, .25);
+  }
+  /* Upside down: the cut face runs along the top edge instead of the bottom. */
+  .upside .wafer {
+    background-position: 0 0;
+  }
+  .upside .top {
+    inset: var(--side-h) 0 0 0;
+    border-radius: .6cqw .6cqw 1.2cqw 1.2cqw;
   }
   .wafer.gone {
     opacity: 0;

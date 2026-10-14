@@ -9,7 +9,8 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 root = Path(__file__).resolve().parent.parent
-cards = json.loads((root / 'src/data/cards.json').read_text(encoding='utf-8'))
+# Series 1 and 3 SEC use the framed SEC treatment (series 2 SEC cards are bespoke).
+cards = [c for f in ('cards.json', 'cards-s3.json') for c in json.loads((root / 'src/data' / f).read_text(encoding='utf-8'))]
 for card in cards:
     if card['rarity'] != 'SEC':
         continue

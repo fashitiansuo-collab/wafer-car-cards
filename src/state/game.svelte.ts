@@ -31,6 +31,8 @@ export interface Game {
   canPity(s: SeriesId): boolean;
   /** Add a promo card (no bag spent, not part of the collection count). False if already owned. */
   grantPromo(id: string): boolean;
+  peel(id: string): void;
+  isPeeled(id: string): boolean;
   ownedCount(s?: SeriesId): number;
   countByRarity(s?: SeriesId): Record<Rarity, number>;
   seriesCount(s: SeriesId): number;
@@ -115,14 +117,14 @@ export function createGame(opts: CreateGameOpts): Game {
     return true;
   }
 
-  const kkey = (s: SeriesId): '1' | '2' => (s === 1 ? '1' : '2');
+  const kkey = (s: SeriesId): '1' | '2' | '3' => String(s) as '1' | '2' | '3';
 
   function kcalOf(s: SeriesId): number {
     return save.kcal?.[kkey(s)] ?? 0;
   }
 
   function setKcal(s: SeriesId, v: number): void {
-    const next: Partial<Record<'1' | '2', number>> = { ...(save.kcal ?? {}) };
+    const next: Partial<Record<'1' | '2' | '3', number>> = { ...(save.kcal ?? {}) };
     next[kkey(s)] = v;
     save.kcal = next;
   }
@@ -173,14 +175,26 @@ export function createGame(opts: CreateGameOpts): Game {
 
   function ownedCount(s?: SeriesId): number {
     let n = 0;
-    for (const c of s == null ? cards : cardsOf(cards, s)) if ((save.owned[c.id] ?? 0) > 0) n += 1;
+    // RSEC cards sit outside the numbered set: they never count toward the collection.
+    for (const c of s == null ? cards : cardsOf(cards, s)) if (c.rarity !== 'RSEC' && (save.owned[c.id] ?? 0) > 0) n += 1;
     return n;
   }
 
   function countByRarity(s?: SeriesId): Record<Rarity, number> {
-    const out: Record<Rarity, number> = { C: 0, UC: 0, R: 0, UR: 0, SEC: 0 };
+    const out: Record<Rarity, number> = { C: 0, UC: 0, R: 0, UR: 0, SEC: 0, RSEC: 0 };
     for (const c of s == null ? cards : cardsOf(cards, s)) if ((save.owned[c.id] ?? 0) > 0) out[c.rarity] += 1;
     return out;
+  }
+
+  function peel(id: string): void {
+    reload();
+    if (save.peeled?.[id] !== undefined) return;
+    save.peeled = { ...(save.peeled ?? {}), [id]: now() };
+    persist();
+  }
+
+  function isPeeled(id: string): boolean {
+    return save.peeled?.[id] !== undefined;
   }
 
   function seriesCount(s: SeriesId): number {
@@ -213,6 +227,8 @@ export function createGame(opts: CreateGameOpts): Game {
     kcal: kcalOf,
     canPity: canPitySeries,
     grantPromo,
+    peel,
+    isPeeled,
     ownedCount,
     countByRarity,
     seriesCount,

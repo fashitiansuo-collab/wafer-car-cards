@@ -3,7 +3,7 @@
   top:     File:Biscuit with chocolate.jpg      (lattice surface, seen from above)
   section: File:Biscuit with jam and chocolate.jpg (side cut: wafer / filling / wafer)
 
-Writes public/wafer/{vanilla,choco}-{top,side}.webp. The top is a seamless tile (whole lattice
+Writes public/wafer/{vanilla,choco,matcha}-{top,side}.webp. The top is a seamless tile (whole lattice
 periods, lighting flattened so the card's own CSS light can sit on it); chocolate is the same
 photo gradient-mapped to cocoa brown.
 Usage: python scripts/make-wafer.py <top.jpg> <section.jpg>
@@ -62,6 +62,9 @@ VANILLA = [(0, (150, 104, 56)), (.45, (212, 168, 106)), (.8, (234, 204, 152)), (
 COCOA = [(0, (50, 27, 16)), (.45, (90, 55, 35)), (.8, (122, 81, 55)), (1, (150, 106, 76))]
 save(gradient_map(tile, VANILLA), 'vanilla-top', size)
 save(gradient_map(tile, COCOA), 'choco-top', size)
+# Series 3: a matcha-dusted wafer.
+MATCHA = [(0, (52, 62, 22)), (.45, (112, 134, 52)), (.8, (168, 186, 104)), (1, (214, 224, 168))]
+save(gradient_map(tile, MATCHA), 'matcha-top', size)
 
 # --- side: the cut face, a strip across the whole wafer height ---
 s = np.asarray(Image.open(side_src).convert('RGB')).astype(float)
@@ -77,3 +80,6 @@ save(gradient_map(strip, VANILLA) * (1 - jam) + cream * jam, 'vanilla-side', (90
 # Series 2 is a single layer: wafer, one cream, wafer (the photo's top half).
 half = slice(0, 265)
 save((gradient_map(strip, COCOA) * (1 - jam) + cream * jam)[half], 'choco-side', (900, 132))
+# Matcha: one layer of green cream between pale wafer.
+cream_m = np.array([150, 178, 82]) * (1 + shade)
+save((gradient_map(strip, VANILLA) * (1 - jam) + cream_m * jam)[half], 'matcha-side', (900, 132))

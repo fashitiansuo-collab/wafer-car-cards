@@ -8,7 +8,7 @@
     onTorn: () => void;
     disabled?: boolean;
     /** Series 1 is the silver vanilla bag, series 2 the bronze chocolate one. */
-    series?: 1 | 2;
+    series?: 1 | 2 | 3;
     /** The high-rare guaranteed pack: a gold label marked UR+. */
     premium?: boolean;
   }
@@ -82,6 +82,7 @@
 <div
   class="bag"
   class:choco={series === 2}
+  class:matcha={series === 3}
   class:premium
   class:disabled
   class:dragging
@@ -113,7 +114,7 @@
     <div class="label">
       <div class="mark"><Icon name="mark" size="100%" /></div>
       <p class="name">WAFER</p>
-      <p class="sub">{series === 2 ? 'CHOCOLATE' : 'CAR CARD COLLECTION'}</p>
+      <p class="sub">{series === 3 ? 'MATCHA' : series === 2 ? 'CHOCOLATE' : 'CAR CARD COLLECTION'}</p>
       <p class="no">{premium ? 'No. 0' + series + ' · UR+ GUARANTEED' : 'No. 0' + series + ' · 1 CARD INSIDE'}</p>
     </div>
     <div class="crimp crimp--bottom"></div>
@@ -190,6 +191,22 @@
   .choco .label {
     background: #20120b;
     box-shadow: inset 0 0 0 1px rgba(232, 196, 160, .18);
+  }
+  /* Series 3: a pale green foil round a deep matcha label. */
+  .matcha .art {
+    background-image:
+      url('/fx/noise.png'),
+      conic-gradient(
+        from calc(200deg + var(--rotate-y) * 3) at 30% 40%,
+        #8fa65a, #34461a, #dfe8bf, #2a3a12, #7d9448, #eef3d8, #3b4f1c, #8fa65a
+      );
+  }
+  .matcha .label {
+    background: #16210b;
+    box-shadow: inset 0 0 0 1px rgba(214, 228, 170, .2);
+  }
+  .matcha .sub {
+    color: #c3d88e;
   }
   .choco .sub {
     color: #d9b08a;

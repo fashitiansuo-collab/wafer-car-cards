@@ -10,6 +10,8 @@
   import { isGlobalKey } from '../lib/keys';
 
   let { game, cards, now }: { game: Game; cards: Card[]; now: number } = $props();
+  // RSEC cards are hidden extras, outside the numbered set.
+  const total = $derived(cards.filter((c) => c.rarity !== 'RSEC').length);
 
   const owned = $derived(game.ownedCount(game.series));
   const byR = $derived(game.countByRarity(game.series));
@@ -52,9 +54,17 @@
   function onkey(e: KeyboardEvent) {
     if (!isGlobalKey(e)) return;
     if (e.key === 'Enter' && !bagDisabled) bag?.autoTear();
-    // ← → pick the other series' bag.
-    const s = e.key === 'ArrowLeft' ? 1 : e.key === 'ArrowRight' ? 2 : null;
-    if (s && game.seriesCount(s) > 0) game.series = s;
+    // ← → step to the previous/next series that has cards.
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      const dir = e.key === 'ArrowLeft' ? -1 : 1;
+      for (let i = 1; i <= 3; i++) {
+        const s = ((((game.series - 1 + dir * i) % 3) + 3) % 3 + 1) as 1 | 2 | 3;
+        if (game.seriesCount(s) > 0) {
+          game.series = s;
+          break;
+        }
+      }
+    }
   }
 </script>
 
@@ -79,10 +89,10 @@
 <BottomStrip
   cells={[
     {
-      title: `図鑑 ${owned} / ${cards.length}`,
-      value: `${Math.round((owned / cards.length) * 100)}%`,
+      title: `図鑑 ${owned} / ${total}`,
+      value: `${Math.round((owned / total) * 100)}%`,
       sub: `食べた ${game.save.eaten} ・ UR ${byR.UR} · SEC ${byR.SEC}`,
-      progress: owned / cards.length,
+      progress: owned / total,
     },
     {
       title: 'カロリー',

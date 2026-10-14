@@ -8,6 +8,8 @@
   import { landscape, promos, specials } from '../cards/special';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
+  // RSEC cards are hidden extras, outside the numbered set.
+  const total = $derived(cards.filter((c) => c.rarity !== 'RSEC').length);
 
   const card = $derived(cards.find((c) => c.id === game.detailId && (game.save.owned[c.id] ?? 0) > 0));
   const promo = $derived(promos.find((p) => p.id === game.detailId && (game.save.owned[p.id] ?? 0) > 0));
@@ -52,10 +54,15 @@
 {:else if card}
   <div class="stage">
     <button class="slot" onclick={() => (flipped = !flipped)} aria-label={flipped ? '表を見る' : '裏を見る'}>
-      <CardView {card} total={cards.length} {flipped} firstPulledAt={game.save.firstPulledAt[card.id]} />
+      <CardView {card} total={total} {flipped} firstPulledAt={game.save.firstPulledAt[card.id]} peeled={game.isPeeled(card.id)} canPeel={!flipped} onPeel={() => game.peel(card.id)} />
     </button>
     <div class="lockup">
-      <TitleLockup maker={card.maker} model={card.model} year={card.year} rarity={card.rarity} />
+      <TitleLockup
+        maker={card.maker}
+        model={card.rarity === 'RSEC' && !game.isPeeled(card.id) ? (card.stock?.model ?? card.model) : card.model}
+        year={card.year}
+        rarity={card.rarity === 'RSEC' && !game.isPeeled(card.id) ? 'C' : card.rarity}
+      />
       <span class="count">×{game.save.owned[card.id]}</span>
     </div>
   </div>

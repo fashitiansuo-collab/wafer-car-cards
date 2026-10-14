@@ -4,7 +4,7 @@
 
   let { game }: { game: Game } = $props();
 
-  const NAMES: Record<SeriesId, string> = { 1: 'VANILLA', 2: 'CHOCOLATE' };
+  const NAMES: Record<SeriesId, string> = { 1: 'VANILLA', 2: 'CHOCOLATE', 3: 'MATCHA' };
 
   function pick(s: SeriesId) {
     if (s !== game.series && game.seriesCount(s) > 0) game.series = s;
@@ -57,6 +57,9 @@
   }
   .tab.on[data-series='2'] {
     border-bottom-color: #a8673d;
+  }
+  .tab.on[data-series='3'] {
+    border-bottom-color: #8fa65a;
   }
   .tab:disabled {
     opacity: .35;

@@ -1,8 +1,8 @@
 import type { Card, Rarity } from './types';
 
-export const WEIGHTS: Record<Rarity, number> = { C: 55, UC: 25, R: 13, UR: 6, SEC: 1 };
+export const WEIGHTS: Record<Rarity, number> = { C: 55, UC: 25, R: 13, UR: 6, SEC: 1, RSEC: 0.3 };
 
-const ORDER: Rarity[] = ['C', 'UC', 'R', 'UR', 'SEC'];
+const ORDER: Rarity[] = ['C', 'UC', 'R', 'UR', 'SEC', 'RSEC'];
 
 export function pickRarity(rng: () => number, forced?: Rarity): Rarity {
   if (forced) return forced;
@@ -13,11 +13,18 @@ export function pickRarity(rng: () => number, forced?: Rarity): Rarity {
     acc += WEIGHTS[r];
     if (roll < acc) return r;
   }
-  return 'SEC';
+  return 'RSEC';
 }
 
 export function drawCard(cards: Card[], rng: () => number, forced?: Rarity): Card {
   const start = forced ?? pickRarity(rng);
+  if (start === 'RSEC') {
+    const hidden = cards.filter((c) => c.rarity === 'RSEC');
+    if (hidden.length > 0) return hidden[Math.floor(rng() * hidden.length)];
+    const commons = cards.filter((c) => c.rarity === 'C');
+    if (commons.length > 0) return commons[Math.floor(rng() * commons.length)];
+    throw new Error('drawCard: no cards to draw');
+  }
   for (let i = ORDER.indexOf(start); i >= 0; i--) {
     const pool = cards.filter((c) => c.rarity === ORDER[i]);
     if (pool.length > 0) return pool[Math.floor(rng() * pool.length)];
@@ -50,7 +57,7 @@ export function drawHighRare(cards: Card[], rng: () => number): Card {
     const pool = cards.filter((c) => c.rarity === pick);
     return pool[Math.floor(rng() * pool.length)];
   }
-  for (let i = ORDER.length - 1; i >= 0; i--) {
+  for (let i = ORDER.indexOf('SEC'); i >= 0; i--) {
     const pool = cards.filter((c) => c.rarity === ORDER[i]);
     if (pool.length > 0) return pool[Math.floor(rng() * pool.length)];
   }

@@ -1,0 +1,55 @@
+# Credits — series 3
+
+All photos are from Wikimedia Commons and were cropped and colour-graded (modified) for use as card art.
+
+- No.001 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1992_Ford_Escort_RS_Cosworth_1.jpg) — modified
+- No.002 — FotoSleuth — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1997_Subaru_Impreza_(GC8_MY97)_WRX_sedan_(14629933734).jpg) — modified
+- No.003 — Guyon — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) — [source](https://commons.wikimedia.org/wiki/File:1995_Mitsubishi_Lancer_Evolution_III_GSR_(CE9A_SNGF)_02.jpg) — modified
+- No.004 — Tokumeigakarinoaoshima — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Toyota_CELICA_2.0_GT-FOUR_(ST205)_front.JPG) — modified
+- No.005 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1987_Lancia_Delta_HF_Integrale_HCC24.jpg) — modified
+- No.006 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1987_BMW_M3_E30_Silver.jpg) — modified
+- No.007 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1990_Mercedes-Benz_190_E_2.5-16_Evolution_II_LC25.jpg) — modified
+- No.008 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1983_Ford_Sierra_RS_Cosworth.jpg) — modified
+- No.009 — Ross — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:Audi_Ur-Quattro_(9532193009).jpg) — modified
+- No.010 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1981_Renault_5_Turbo_BS_O24.jpg) — modified
+- No.011 — Kevauto — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1991_Nissan_Skyline_GT-R_R32_front,_Bonhams_6.1.19.jpg) — modified
+- No.012 — Tokumeigakarinoaoshima — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Honda_CIVIC_TYPE_R_(EK9)_right.JPG) — modified
+- No.013 — nakhon100 — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Volvo_240_Turbo_(15020374112).jpg) — modified
+- No.014 — Tsungam — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Detmold_-_2016-08-27_-_Opel_Manta_400_BJ_1984_(01).jpg) — modified
+- No.015 — Jones028 from Hong Kong — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1984_Peugeot_205_GTI_(49837293177).jpg) — modified
+- No.016 — Wikisympathisant — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:BMW_M3_E30_2026-08.jpg) — modified
+- No.017 — Morio — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:Mercedes-Benz_190E_Evolution_II_DTM_top_Mercedes-Benz_Museum.jpg) — modified
+- No.018 — nakhon100 — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Volvo_242_Turbo_(14850066799).jpg) — modified
+- No.019 — Sicnag — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1988_Ford_Sierra_RS500_Bathurst_winner_(28249502760).jpg) — modified
+- No.020 — Jiří Sedláček — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_155_TI_DTM_at_Legendy_2014.JPG) — modified
+- No.021 — Martin Lee from London, UK — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:JJ_Lehto_-_Opel_Calibra_V6_4x4_at_Donington_1995_(49788830256).jpg) — modified
+- No.022 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1992_Nissan_Skyline_GT-R_R32_Calsonic_Group_A.jpg) — modified
+- No.023 — Neil — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:Ford_Escort_WRC_(49352180628).jpg) — modified
+- No.024 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1996_Subaru_Impreza_WRC_97001_BS_O24.jpg) — modified
+- No.025 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1999_Mitsubishi_EVO_VI_Rally_Car_2.jpg) — modified
+- No.026 — Andros Hadjilucas — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) — [source](https://commons.wikimedia.org/wiki/File:Vahan_Terzian_-_Rothmans_Cyprus_Rally_1994.jpg) — modified
+- No.027 — Original: Carlom1961 / Derivative work: Danyele — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1990_Rallye_Sanremo_-_Didier_Auriol_-_Lancia_Delta_HF_Integrale_(cropped).jpg) — modified
+- No.028 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1974_Lancia_Stratos_HF_Stradale.jpg) — modified
+- No.029 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Lancia_037_Rally_6.jpg) — modified
+- No.030 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1986_MG_Metro_6R4_2.jpg) — modified
+- No.031 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1986_Ford_RS200_Evo.jpg) — modified
+- No.032 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1986_Peugeot_205_Turbo_16_Evo2_no.3.jpg) — modified
+- No.033 — Calreyn88 — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1984_Audi_Sport_Quattro_S1_E2.jpg) — modified
+- No.034 — Quelle: GTHO / Bildbearbeitung & Retusche von Auge=mit — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Ferrari_288_GTO_(1)_mod.jpg) — modified
+- No.035 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1993_Jaguar_XJ220_C_LM_SCD_24.jpg) — modified
+- No.036 — Mr.choppers — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:1985_Lancia_Delta_S4_(ex-Toivonen),_front_right_-_Greenwich_2021.jpg) — modified
+- No.037 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1992_Porsche_959_Komfort.jpg) — modified
+- No.038 — Rick W. Dryve from Berlin, Germany — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1996_Porsche_911_GT1_(10543957514).jpg) — modified
+- No.039 — Mr.choppers — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:1999_Mercedes-Benz_CLK-GTR_at_Lime_Rock,_front_left.jpg) — modified
+- No.040 — Morio — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Nissan_R390_GT1_(1998)_front-left_2015_Nissan_Global_Headquarters_Gallery.jpg) — modified
+- No.041 — Edvvc from London, UK — [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) — [source](https://commons.wikimedia.org/wiki/File:1985_Porsche_962_(20015464209).jpg) — modified
+- No.042 — Martin Lee from London, UK — [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) — [source](https://commons.wikimedia.org/wiki/File:Nissan_Skyline_GT-R_LM_-_Kazuyoshi_Hoshino,_Masahiro_Hasemi_%26_Toshio_Suzuki_at_Dunlop_Curve_at_the_1996_Le_Mans_(51718055585).jpg) — modified
+- No.043 — Charles from Port Chester, New York — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Mazda_787B_(1991)_(55082164651).jpg) — modified
+- No.044 — LSDSL — [CC BY-SA 2.0 de](https://creativecommons.org/licenses/by-sa/2.0/de/deed.en) — [source](https://commons.wikimedia.org/wiki/File:Toyota_TS020_GT_One.jpg) — modified
+- No.045 — Bahnfrend — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1995_McLaren_F1_GTR_Goodwood,_2009_(02).jpg) — modified
+- No.046 — 328cia — [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) — [source](https://commons.wikimedia.org/wiki/File:Nissan_Skyline_Calsonic_Carest.JPG) — modified
+  - (under) DestinationFearFan — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1990_Nissan_Skyline_R32_GT-R_front.jpg) — modified
+- No.047 — Tokumeigakarinoaoshima — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:The_frontview_of_No.6_Castrol_Celica.JPG) — modified
+  - (under) Tokumeigakarinoaoshima — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:Toyota_CELICA_2.0_GT-FOUR_(E-ST205)_front.jpg) — modified
+- No.048 — MrWalkr — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) — [source](https://commons.wikimedia.org/wiki/File:1985_Audi_Sport_Quattro_S1_E2_HCC23.jpg) — modified
+  - (under) Calreyn88 — [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) — [source](https://commons.wikimedia.org/wiki/File:1987_Audi_Sport_Quattro.jpg) — modified

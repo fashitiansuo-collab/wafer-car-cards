@@ -32,8 +32,30 @@ describe('parseSave', () => {
   it('keeps a valid series and drops junk', () => {
     expect(parseSave(JSON.stringify({ ...base, series: 1 }), 5).series).toBe(1);
     expect(parseSave(JSON.stringify({ ...base, series: 2 }), 5).series).toBe(2);
-    expect(parseSave(JSON.stringify({ ...base, series: 3 }), 5).series).toBeUndefined();
+    expect(parseSave(JSON.stringify({ ...base, series: 3 }), 5).series).toBe(3);
+    expect(parseSave(JSON.stringify({ ...base, series: 9 }), 5).series).toBeUndefined();
     expect(parseSave(JSON.stringify({ ...base, series: 'x' }), 5).series).toBeUndefined();
+  });
+});
+
+describe('series 3 save', () => {
+  it("keeps kcal '3' and drops junk", () => {
+    const s = parseSave(JSON.stringify({ ...base, kcal: { '1': 1, '2': 2, '3': 58 } }), 5);
+    expect(s.kcal).toEqual({ '1': 1, '2': 2, '3': 58 });
+    expect(parseSave(JSON.stringify({ ...base, kcal: { '3': -1 } }), 5).kcal).toBeUndefined();
+    expect(parseSave(JSON.stringify({ ...base, kcal: { '3': 'x' } }), 5).kcal).toBeUndefined();
+  });
+});
+
+describe('peeled', () => {
+  it('keeps first-peeled timestamps and drops junk', () => {
+    const s = parseSave(JSON.stringify({ ...base, peeled: { e001: 500, bad: -1, nan: NaN, str: 'x' } }), 5);
+    expect(s.peeled).toEqual({ e001: 500 });
+  });
+
+  it("leaves old saves without peeled or kcal '3' unchanged", () => {
+    const s: Save = { v: 1, stock: 4, lastRefillAt: 60_000, eaten: 3, owned: { c001: 2 }, firstPulledAt: { c001: 50_000 }, pending: 'c001' };
+    expect(parseSave(JSON.stringify(s), 0)).toEqual(s);
   });
 });
 

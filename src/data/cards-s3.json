@@ -1,0 +1,1933 @@
+[
+  {
+    "id": "e001",
+    "no": 1,
+    "rarity": "C",
+    "maker": "FORD",
+    "model": "Escort RS Cosworth",
+    "year": 1992,
+    "country": "UK",
+    "image": "./cards/e001.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Google Pixel 6",
+      "settings": "6.8mm F1.9 1/2058s ISO40",
+      "date": "2023/09/09"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Ford_Escort_RS_Cosworth_1.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "1993 cc Cosworth YB turbo",
+      "source": "https://en.wikipedia.org/wiki/Ford_Escort_RS_Cosworth"
+    },
+    "flavor": {
+      "text": "エスコート RSコスワースは、フォード・モーターがフォード・エスコートベースで開発したスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/フォード・エスコートRSコスワース",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#6d7562",
+      "#1c2127",
+      "#3c4854",
+      "#a4afa6",
+      "#82947f"
+    ],
+    "focus": "9% 50%"
+  },
+  {
+    "id": "e002",
+    "no": 2,
+    "rarity": "C",
+    "maker": "SUBARU",
+    "model": "Impreza WRX",
+    "year": 1994,
+    "country": "Japan",
+    "image": "./cards/e002.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "GoPro Hero3-Black Edition",
+      "settings": "2.8mm F2.8 1/939s ISO100",
+      "date": "2014/04/25"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "FotoSleuth",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1997_Subaru_Impreza_(GC8_MY97)_WRX_sedan_(14629933734).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "インプレッサは、SUBARU（旧・富士重工業）が生産・販売している乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/スバル・インプレッサ",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#635f44",
+      "#2d2a20",
+      "#d9e6e6",
+      "#fbfcfb",
+      "#9ca8a1"
+    ],
+    "focus": "55% 50%"
+  },
+  {
+    "id": "e003",
+    "no": 3,
+    "rarity": "C",
+    "maker": "MITSUBISHI",
+    "model": "Lancer Evolution III",
+    "year": 1995,
+    "country": "Japan",
+    "image": "./cards/e003.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 6D",
+      "settings": "70mm F5 1/320s ISO400",
+      "date": "2021/10/05"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Guyon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1995_Mitsubishi_Lancer_Evolution_III_GSR_(CE9A_SNGF)_02.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "ランサーエボリューション（英語: LANCER Evolution）は、三菱自動車工業が生産・販売していたセダン型、およびステーションワゴン型のスポーツカー（自動車）である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/三菱・ランサーエボリューション",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#6a6a6c",
+      "#272a2b",
+      "#d3cfc4",
+      "#c0bbb0",
+      "#e9eced"
+    ],
+    "focus": "19% 50%"
+  },
+  {
+    "id": "e004",
+    "no": 4,
+    "rarity": "C",
+    "maker": "TOYOTA",
+    "model": "Celica GT-Four",
+    "year": 1994,
+    "country": "Japan",
+    "image": "./cards/e004.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Panasonic DMC-TZ60",
+      "settings": "13mm F4.5 1/100s ISO200",
+      "date": "2015/03/08"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_CELICA_2.0_GT-FOUR_(ST205)_front.JPG",
+      "modified": true
+    },
+    "flavor": {
+      "text": "The Toyota Celica GT-Four is a high performance sports car and variation of the Celica Liftback, produced from 1986 to 1999, with a turbocharged 3S-GTE engine, and full-time AWD.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Toyota_Celica_GT-Four",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#5b5a5a",
+      "#82807f",
+      "#2e2c2c",
+      "#a7aaad",
+      "#c0c4c2"
+    ],
+    "focus": "18% 50%"
+  },
+  {
+    "id": "e005",
+    "no": 5,
+    "rarity": "C",
+    "maker": "LANCIA",
+    "model": "Delta HF Integrale",
+    "year": 1991,
+    "country": "Italy",
+    "image": "./cards/e005.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "samsung Galaxy S24 Ultra",
+      "settings": "6.3mm F1.7 1/734s ISO12",
+      "date": "2024/09/01"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Lancia_Delta_HF_Integrale_HCC24.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "デルタは、イタリアの自動車メーカー、ランチアが製造するハッチバック型の乗用車。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ランチア・デルタ",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#725e5e",
+      "#2b2b2b",
+      "#bbaa92",
+      "#923238",
+      "#9e8076"
+    ],
+    "focus": "93% 50%"
+  },
+  {
+    "id": "e006",
+    "no": 6,
+    "rarity": "C",
+    "maker": "BMW",
+    "model": "M3",
+    "year": 1988,
+    "country": "Germany",
+    "image": "./cards/e006.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 1300D",
+      "settings": "31mm F5 1/200s ISO100",
+      "date": "2022/09/04"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_BMW_M3_E30_Silver.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "M3は、ドイツの自動車メーカー・BMWが製造・販売しているセダン型のスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/BMW・M3",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#6c5541",
+      "#2b2b29",
+      "#837a70",
+      "#aaabad",
+      "#c3c4c6"
+    ],
+    "focus": "99% 50%"
+  },
+  {
+    "id": "e007",
+    "no": 7,
+    "rarity": "C",
+    "maker": "MERCEDES-BENZ",
+    "model": "190 E 2.5-16 Evolution II",
+    "year": 1990,
+    "country": "Germany",
+    "image": "./cards/e007.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1990_Mercedes-Benz_190_E_2.5-16_Evolution_II_LC25.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#5b603a",
+      "#171916",
+      "#434037",
+      "#74745f",
+      "#b3b2b1"
+    ],
+    "focus": "93% 50%"
+  },
+  {
+    "id": "e008",
+    "no": 8,
+    "rarity": "C",
+    "maker": "FORD",
+    "model": "Sierra RS Cosworth",
+    "year": 1986,
+    "country": "UK",
+    "image": "./cards/e008.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Google Pixel 6",
+      "settings": "6.8mm F1.9 1/1088s ISO49",
+      "date": "2022/05/22"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1983_Ford_Sierra_RS_Cosworth.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "2.0 L Cosworth YB turbo",
+      "weight": "1217 kg",
+      "source": "https://en.wikipedia.org/wiki/Ford_Sierra_RS_Cosworth"
+    },
+    "flavor": {
+      "text": "The Ford Sierra RS Cosworth is a high-performance version of the Ford Sierra that was built by Ford Europe from 1986 to 1992.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Ford_Sierra_RS_Cosworth",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#6d715d",
+      "#1b1f1c",
+      "#acac9f",
+      "#454b48",
+      "#323934"
+    ],
+    "focus": "100% 50%"
+  },
+  {
+    "id": "e009",
+    "no": 9,
+    "rarity": "C",
+    "maker": "AUDI",
+    "model": "quattro",
+    "year": 1983,
+    "country": "Germany",
+    "image": "./cards/e009.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Panasonic DMC-LX5",
+      "settings": "5.1mm F4 1/800s ISO80",
+      "date": "2013/08/15"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Ross",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Ur-Quattro_(9532193009).jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "2.1 L SOHC turbo",
+      "source": "https://en.wikipedia.org/wiki/Audi_Quattro"
+    },
+    "flavor": {
+      "text": "クワトロは、ドイツの自動車メーカー、アウディが1980年から1991年まで製造したクーペ型乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/アウディ・クワトロ",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#0d111a",
+      "#9d9e9c",
+      "#464754",
+      "#81868d",
+      "#d8dfe2"
+    ],
+    "focus": "95% 50%"
+  },
+  {
+    "id": "e010",
+    "no": 10,
+    "rarity": "C",
+    "maker": "RENAULT",
+    "model": "5 Turbo",
+    "year": 1981,
+    "country": "France",
+    "image": "./cards/e010.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "samsung Galaxy S24 Ultra",
+      "settings": "6.3mm F1.7 1/100s ISO32",
+      "date": "2024/10/06"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1981_Renault_5_Turbo_BS_O24.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "1.4 L Cléon-Fonte turbo",
+      "weight": "970 kg",
+      "source": "https://en.wikipedia.org/wiki/Renault_5_Turbo"
+    },
+    "flavor": {
+      "text": "The Renault 5 Turbo or R5 Turbo is a sports car which was produced by French manufacturer Renault from 1980 until 1984.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Renault_5_Turbo",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#343537",
+      "#9b969b",
+      "#c43646",
+      "#987e81",
+      "#b5adb4"
+    ],
+    "focus": "88% 50%"
+  },
+  {
+    "id": "e011",
+    "no": 11,
+    "rarity": "C",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R (R32)",
+    "year": 1991,
+    "country": "Japan",
+    "image": "./cards/e011.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS Rebel T6",
+      "settings": "30mm F8 1/125s ISO100",
+      "date": "2019/06/01"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Kevauto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Nissan_Skyline_GT-R_R32_front,_Bonhams_6.1.19.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "スカイラインGT-Rは、日産自動車が生産・販売していたスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/日産・スカイラインGT-R",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#2e251a",
+      "#13140d",
+      "#555646",
+      "#c6c8c8",
+      "#9d9e98"
+    ],
+    "focus": "90% 50%"
+  },
+  {
+    "id": "e012",
+    "no": 12,
+    "rarity": "C",
+    "maker": "HONDA",
+    "model": "Civic Type R (EK9)",
+    "year": 1997,
+    "country": "Japan",
+    "image": "./cards/e012.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Panasonic DMC-TZ40",
+      "settings": "28mm F5.4 1/320s ISO100",
+      "date": "2013/12/18"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_CIVIC_TYPE_R_(EK9)_right.JPG",
+      "modified": true
+    },
+    "flavor": {
+      "text": "シビック タイプRは、本田技研工業が1997年から生産・販売するスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ホンダ・シビックタイプR",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#646151",
+      "#847b54",
+      "#3b3a31",
+      "#b8b7a0",
+      "#a6a588"
+    ],
+    "focus": "92% 50%"
+  },
+  {
+    "id": "e013",
+    "no": 13,
+    "rarity": "C",
+    "maker": "VOLVO",
+    "model": "240 Turbo",
+    "year": 1985,
+    "country": "Sweden",
+    "image": "./cards/e013.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon PowerShot A650 IS",
+      "settings": "7.4mm F4 1/80s ISO80",
+      "date": "2014/08/24"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "nakhon100",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volvo_240_Turbo_(15020374112).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "ボルボ・240シリーズはスウェーデンの自動車メーカー・ボルボが1974年から1993年まで、累計2,862,053台を生産した乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ボルボ・240",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#ceccc9",
+      "#3a3e42",
+      "#889096",
+      "#606b77",
+      "#56555a"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "e014",
+    "no": 14,
+    "rarity": "C",
+    "maker": "OPEL",
+    "model": "Manta 400",
+    "year": 1982,
+    "country": "Germany",
+    "image": "./cards/e014.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "NIKON D5300",
+      "settings": "27mm F11 1/640s ISO200",
+      "date": "2016/08/27"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Tsungam",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detmold_-_2016-08-27_-_Opel_Manta_400_BJ_1984_(01).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "マンタは、ドイツの自動車メーカーであるオペルが1970年から1988年まで生産・販売したクーペ型の乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/オペル・マンタ",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#aeada8",
+      "#3c3f3d",
+      "#888780",
+      "#e4e5e6",
+      "#c2b9a9"
+    ],
+    "focus": "44% 50%"
+  },
+  {
+    "id": "e015",
+    "no": 15,
+    "rarity": "C",
+    "maker": "PEUGEOT",
+    "model": "205 GTI",
+    "year": 1986,
+    "country": "France",
+    "image": "./cards/e015.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS M6 Mark II",
+      "settings": "45mm F13 1/160s ISO200",
+      "date": "2020/04/30"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Jones028 from Hong Kong",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1984_Peugeot_205_GTI_(49837293177).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "プジョー・205 (Peugeot 205 ) は、フランスの自動車メーカー、プジョーが1983年から1998年にかけて製造・販売した、小型のハッチバック型乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/プジョー・205",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#a2a2a2",
+      "#c9c5c2",
+      "#1d1e23",
+      "#4e535e",
+      "#7a7e83"
+    ],
+    "focus": "4% 50%"
+  },
+  {
+    "id": "e016",
+    "no": 16,
+    "rarity": "UC",
+    "maker": "BMW",
+    "model": "M3 DTM",
+    "year": 1989,
+    "country": "Germany",
+    "image": "./cards/e016.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 100D",
+      "settings": "24mm F6.3 1/200s ISO1600",
+      "date": "2026/08/29"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Wikisympathisant",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M3_E30_2026-08.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "M3は、ドイツの自動車メーカー・BMWが製造・販売しているセダン型のスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/BMW・M3",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#554b49",
+      "#232323",
+      "#7b7a77",
+      "#91918d",
+      "#b7b6b4"
+    ],
+    "focus": "69% 50%"
+  },
+  {
+    "id": "e017",
+    "no": 17,
+    "rarity": "UC",
+    "maker": "MERCEDES-BENZ",
+    "model": "190 E Evo II DTM",
+    "year": 1992,
+    "country": "Germany",
+    "image": "./cards/e017.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 5D Mark III",
+      "settings": "70mm F8 1/15s ISO6400",
+      "date": "2013/03/02"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Morio",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_190E_Evolution_II_DTM_top_Mercedes-Benz_Museum.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#2b2423",
+      "#3b3332",
+      "#1a171b",
+      "#4f4645",
+      "#7c6e68"
+    ],
+    "focus": "13% 50%"
+  },
+  {
+    "id": "e018",
+    "no": 18,
+    "rarity": "UC",
+    "maker": "VOLVO",
+    "model": "240 Turbo Group A",
+    "year": 1985,
+    "country": "Sweden",
+    "image": "./cards/e018.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon PowerShot A650 IS",
+      "settings": "7.4mm F4 1/800s ISO80",
+      "date": "2014/08/24"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "nakhon100",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volvo_242_Turbo_(14850066799).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "ボルボ・240シリーズはスウェーデンの自動車メーカー・ボルボが1974年から1993年まで、累計2,862,053台を生産した乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ボルボ・240",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#555251",
+      "#abb1b6",
+      "#332825",
+      "#63696b",
+      "#434a46"
+    ],
+    "focus": "69% 50%"
+  },
+  {
+    "id": "e019",
+    "no": 19,
+    "rarity": "UC",
+    "maker": "FORD",
+    "model": "Sierra RS500 Group A",
+    "year": 1988,
+    "country": "UK",
+    "image": "./cards/e019.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 700D",
+      "settings": "18mm F4 1/30s ISO640",
+      "date": "2016/07/19"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Sicnag",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1988_Ford_Sierra_RS500_Bathurst_winner_(28249502760).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "The Ford Sierra RS Cosworth is a high-performance version of the Ford Sierra that was built by Ford Europe from 1986 to 1992.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Ford_Sierra_RS_Cosworth",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#705e4a",
+      "#332828",
+      "#a68c5d",
+      "#d4c7b9",
+      "#c7aa6b"
+    ],
+    "focus": "29% 50%"
+  },
+  {
+    "id": "e020",
+    "no": 20,
+    "rarity": "UC",
+    "maker": "ALFA ROMEO",
+    "model": "155 V6 TI",
+    "year": 1993,
+    "country": "Italy",
+    "image": "./cards/e020.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 1000D",
+      "settings": "17mm F10 1/250s ISO100",
+      "date": "2014/06/15"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Jiří Sedláček",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_155_TI_DTM_at_Legendy_2014.JPG",
+      "modified": true
+    },
+    "flavor": {
+      "text": "アルファロメオ・155（Alfa Romeo 155）は、イタリアの自動車会社アルファロメオが1992年から1997年まで製造、販売していたFF/4WD駆動4ドアセダン型の乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/アルファロメオ・155",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#3d3221",
+      "#181f16",
+      "#565854",
+      "#bfc6cb",
+      "#98a6ae"
+    ],
+    "focus": "61% 50%"
+  },
+  {
+    "id": "e021",
+    "no": 21,
+    "rarity": "UC",
+    "maker": "OPEL",
+    "model": "Calibra V6 4x4",
+    "year": 1996,
+    "country": "Germany",
+    "image": "./cards/e021.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Plustek OpticFilm 8100",
+      "settings": null,
+      "date": "2020/04/18"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Martin Lee from London, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JJ_Lehto_-_Opel_Calibra_V6_4x4_at_Donington_1995_(49788830256).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "カリブラは、ドイツの自動車メーカー・オペルが1989年から1997年まで生産・販売したスペシャルティカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/オペル・カリブラ",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#5a4c48",
+      "#78675b",
+      "#2b2b33",
+      "#97847a",
+      "#c5c2c1"
+    ],
+    "focus": "36% 50%"
+  },
+  {
+    "id": "e022",
+    "no": 22,
+    "rarity": "UC",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R Group A",
+    "year": 1990,
+    "country": "Japan",
+    "image": "./cards/e022.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "6.8mm F1.9 1/1000s ISO48",
+      "date": "2022/06/25"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Nissan_Skyline_GT-R_R32_Calsonic_Group_A.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "スカイラインGT-Rは、日産自動車が生産・販売していたスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/日産・スカイラインGT-R",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#12171d",
+      "#303a4b",
+      "#596375",
+      "#898989",
+      "#aeaaa1"
+    ],
+    "focus": "73% 50%"
+  },
+  {
+    "id": "e023",
+    "no": 23,
+    "rarity": "UC",
+    "maker": "FORD",
+    "model": "Escort WRC",
+    "year": 1997,
+    "country": "UK",
+    "image": "./cards/e023.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "NIKON D5100",
+      "settings": "35mm F2.2 1/3200s ISO100",
+      "date": "2019/07/06"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Neil",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Escort_WRC_(49352180628).jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Cosworth YBT 1993 cc",
+      "power": "304 bhp",
+      "weight": "1230 kg",
+      "source": "https://en.wikipedia.org/wiki/Ford_Escort_WRC"
+    },
+    "flavor": {
+      "text": "エスコートWRCは、世界ラリー選手権に出場するためにフォードが製作した競技専用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/フォード・エスコートWRC",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#584a43",
+      "#202230",
+      "#7a736b",
+      "#c2d4df",
+      "#abbac5"
+    ],
+    "focus": "30% 50%"
+  },
+  {
+    "id": "e024",
+    "no": 24,
+    "rarity": "UC",
+    "maker": "SUBARU",
+    "model": "Impreza WRC",
+    "year": 1997,
+    "country": "Japan",
+    "image": "./cards/e024.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "samsung Galaxy S24 Ultra",
+      "settings": "6.3mm F1.7 1/50s ISO20",
+      "date": "2024/10/06"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Subaru_Impreza_WRC_97001_BS_O24.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "インプレッサは、SUBARU（旧・富士重工業）が生産・販売している乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/スバル・インプレッサWRC",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#21284b",
+      "#8d7a61",
+      "#5b5a65",
+      "#92915c",
+      "#adb895"
+    ],
+    "focus": "91% 50%"
+  },
+  {
+    "id": "e025",
+    "no": 25,
+    "rarity": "UC",
+    "maker": "MITSUBISHI",
+    "model": "Lancer Evolution VI",
+    "year": 1999,
+    "country": "Japan",
+    "image": "./cards/e025.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/222s ISO12",
+      "date": "2024/07/12"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1999_Mitsubishi_EVO_VI_Rally_Car_2.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "ランサーエボリューション（英語: LANCER Evolution）は、三菱自動車工業が生産・販売していたセダン型、およびステーションワゴン型のスポーツカー（自動車）である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/三菱・ランサーエボリューション",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#2d2f22",
+      "#796e52",
+      "#a9a997",
+      "#b81324",
+      "#804b43"
+    ],
+    "focus": "34% 50%"
+  },
+  {
+    "id": "e026",
+    "no": 26,
+    "rarity": "UC",
+    "maker": "TOYOTA",
+    "model": "Celica GT-Four (ST185)",
+    "year": 1992,
+    "country": "Japan",
+    "image": "./cards/e026.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Andros Hadjilucas",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vahan_Terzian_-_Rothmans_Cyprus_Rally_1994.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "The Toyota Celica GT-Four is a high performance sports car and variation of the Celica Liftback, produced from 1986 to 1999, with a turbocharged 3S-GTE engine, and full-time AWD.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Toyota_Celica_GT-Four",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#988b7d",
+      "#a39789",
+      "#5c5358",
+      "#a79e93",
+      "#b1b0b2"
+    ],
+    "focus": "29% 50%"
+  },
+  {
+    "id": "e027",
+    "no": 27,
+    "rarity": "UC",
+    "maker": "LANCIA",
+    "model": "Delta HF Integrale",
+    "year": 1992,
+    "country": "Italy",
+    "image": "./cards/e027.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "GCMC RODFS70",
+      "settings": "4mm F3.5 1/17s ISO50",
+      "date": "2024/01/01"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Original: Carlom1961 / Derivative work: Danyele",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1990_Rallye_Sanremo_-_Didier_Auriol_-_Lancia_Delta_HF_Integrale_(cropped).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "デルタは、イタリアの自動車メーカー、ランチアが製造するハッチバック型の乗用車。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ランチア・デルタ",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#1a151f",
+      "#514c5a",
+      "#98959c",
+      "#d4d8db",
+      "#c7cac8"
+    ],
+    "focus": "85% 50%"
+  },
+  {
+    "id": "e028",
+    "no": 28,
+    "rarity": "R",
+    "maker": "LANCIA",
+    "model": "Stratos HF",
+    "year": 1974,
+    "country": "Italy",
+    "image": "./cards/e028.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "6.8mm F1.9 1/1250s ISO37",
+      "date": "2022/06/25"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1974_Lancia_Stratos_HF_Stradale.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Tipo 829A V6 2418 cc",
+      "weight": "980 kg",
+      "source": "https://en.wikipedia.org/wiki/Lancia_Stratos"
+    },
+    "flavor": {
+      "text": "ストラトスHF（STRATO'S HF ）は、イタリアのランチアが製造したスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ランチア・ストラトス",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#5a4733",
+      "#1f2c33",
+      "#2ba5f5",
+      "#b3b5ae",
+      "#607a89"
+    ],
+    "focus": "7% 50%"
+  },
+  {
+    "id": "e029",
+    "no": 29,
+    "rarity": "R",
+    "maker": "LANCIA",
+    "model": "037",
+    "year": 1983,
+    "country": "Italy",
+    "image": "./cards/e029.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 1300D",
+      "settings": "38mm F5 1/833s ISO100",
+      "date": "2025/04/27"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lancia_037_Rally_6.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Tipo 232 2.0 L",
+      "weight": "960 kg",
+      "source": "https://en.wikipedia.org/wiki/Lancia_037"
+    },
+    "flavor": {
+      "text": "ランチア・ラリー037（Lancia Rally 037 ）は、イタリアのランチアが製造したラリーカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ランチア・037ラリー",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#22281a",
+      "#533a20",
+      "#515137",
+      "#787e7f",
+      "#a8adab"
+    ],
+    "focus": "66% 50%"
+  },
+  {
+    "id": "e030",
+    "no": 30,
+    "rarity": "R",
+    "maker": "MG",
+    "model": "Metro 6R4",
+    "year": 1986,
+    "country": "UK",
+    "image": "./cards/e030.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/1429s ISO12",
+      "date": "2024/06/06"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_MG_Metro_6R4_2.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "MG・メトロ6R4とは、MGブランドでブリティッシュ・レイランドが開発したグループB車両である。名前は6気筒（6cylinder ）・ラリー・4WDに由来する。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/MG・メトロ6R4",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#4a4d3b",
+      "#0f212d",
+      "#587153",
+      "#728c83",
+      "#bac0b8"
+    ],
+    "focus": "59% 50%"
+  },
+  {
+    "id": "e031",
+    "no": 31,
+    "rarity": "R",
+    "maker": "FORD",
+    "model": "RS200",
+    "year": 1986,
+    "country": "UK",
+    "image": "./cards/e031.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/476s ISO12",
+      "date": "2024/07/12"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Ford_RS200_Evo.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "1.8 L Cosworth BDT",
+      "source": "https://en.wikipedia.org/wiki/Ford_RS200"
+    },
+    "flavor": {
+      "text": "RS200は、フォード・モーターが世界ラリー選手権に参戦する目的で1984年から1986年まで製作したスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/フォード・RS200",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#242a17",
+      "#4e4e2d",
+      "#8c8e71",
+      "#bfc3bc",
+      "#ced5d3"
+    ],
+    "focus": "74% 50%"
+  },
+  {
+    "id": "e032",
+    "no": 32,
+    "rarity": "R",
+    "maker": "PEUGEOT",
+    "model": "205 Turbo 16",
+    "year": 1985,
+    "country": "France",
+    "image": "./cards/e032.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Peugeot_205_Turbo_16_Evo2_no.3.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "プジョー・205 (Peugeot 205 ) は、フランスの自動車メーカー、プジョーが1983年から1998年にかけて製造・販売した、小型のハッチバック型乗用車である。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/プジョー・205",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#6c6866",
+      "#484341",
+      "#1a1b1d",
+      "#93918d",
+      "#d9d4cf"
+    ],
+    "focus": "75% 50%"
+  },
+  {
+    "id": "e033",
+    "no": 33,
+    "rarity": "R",
+    "maker": "AUDI",
+    "model": "Sport quattro S1 E2",
+    "year": 1985,
+    "country": "Germany",
+    "image": "./cards/e033.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "6.3mm F1.7 1/385s ISO12",
+      "date": "2024/07/11"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Calreyn88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1984_Audi_Sport_Quattro_S1_E2.jpg",
+      "modified": true
+    },
+    "palette": [
+      "#1f2323",
+      "#4a4b43",
+      "#858067",
+      "#e3e9e2",
+      "#c5be8f"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "e034",
+    "no": 34,
+    "rarity": "R",
+    "maker": "FERRARI",
+    "model": "288 GTO",
+    "year": 1984,
+    "country": "Italy",
+    "image": "./cards/e034.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon DIGITAL IXUS 80 IS",
+      "settings": "6.2mm F2.8 1/60s ISO160",
+      "date": "2015/02/26"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Quelle: GTHO / Bildbearbeitung & Retusche von Auge=mit",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_288_GTO_(1)_mod.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "2855 cc twin-turbo V8",
+      "weight": "1160 kg",
+      "source": "https://en.wikipedia.org/wiki/Ferrari_288_GTO"
+    },
+    "flavor": {
+      "text": "GTOは、イタリアの自動車メーカーのフェラーリが1984年から1986年にかけて製造、販売したリアミッドシップエンジン・後輪駆動のスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/フェラーリ・288GTO",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#44373b",
+      "#ba2731",
+      "#dadfe5",
+      "#b6b7bf",
+      "#eaeded"
+    ],
+    "focus": "0% 50%"
+  },
+  {
+    "id": "e035",
+    "no": 35,
+    "rarity": "R",
+    "maker": "JAGUAR",
+    "model": "XJ220 C",
+    "year": 1993,
+    "country": "UK",
+    "image": "./cards/e035.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 1300D",
+      "settings": "22mm F5 1/125s ISO100",
+      "date": "2024/06/18"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1993_Jaguar_XJ220_C_LM_SCD_24.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "XJ220は、イギリスの自動車メーカーであるジャガーがかつて販売していたスポーツカー。車名は最高速度220マイル時（約354 km/h）を目標としていたことに由来する。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ジャガー・XJ220",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#11151a",
+      "#686764",
+      "#2e393f",
+      "#6f7779",
+      "#75b3c0"
+    ],
+    "focus": "11% 50%"
+  },
+  {
+    "id": "e036",
+    "no": 36,
+    "rarity": "R",
+    "maker": "LANCIA",
+    "model": "Delta S4",
+    "year": 1986,
+    "country": "Italy",
+    "image": "./cards/e036.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 6D",
+      "settings": "70mm F7.1 1/30s ISO50",
+      "date": "2021/10/24"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Mr.choppers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_Lancia_Delta_S4_(ex-Toivonen),_front_right_-_Greenwich_2021.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "デルタS4（LANCIA Delta S4 ）は、イタリアの自動車メーカーであるランチアが世界ラリー選手権に参戦する目的で製作したスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ランチア・デルタS4",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#2e3937",
+      "#cfd5dd",
+      "#9b9da5",
+      "#666b72",
+      "#624540"
+    ],
+    "focus": "92% 50%"
+  },
+  {
+    "id": "e037",
+    "no": 37,
+    "rarity": "UR",
+    "maker": "PORSCHE",
+    "model": "959",
+    "year": 1987,
+    "country": "Germany",
+    "image": "./cards/e037.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "samsung SM-N986B",
+      "settings": "ISO50",
+      "date": "2021/06/09"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Porsche_959_Komfort.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "2849 cc twin-turbo flat-6",
+      "weight": "1450 kg",
+      "source": "https://en.wikipedia.org/wiki/Porsche_959"
+    },
+    "flavor": {
+      "text": "ポルシェ・959（Porsche 959 ）は、ドイツの自動車メーカーポルシェが製造・販売していたスーパーカーである。当時のポルシェが持つ技術を結集した1台であった。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ポルシェ・959",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#58695f",
+      "#241c25",
+      "#aab8c6",
+      "#83977f",
+      "#dbe0e1"
+    ],
+    "focus": "4% 50%"
+  },
+  {
+    "id": "e038",
+    "no": 38,
+    "rarity": "UR",
+    "maker": "PORSCHE",
+    "model": "911 GT1",
+    "year": 1996,
+    "country": "Germany",
+    "image": "./cards/e038.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon DIGITAL IXUS 80 IS",
+      "settings": "6.2mm F2.8 1/60s ISO160",
+      "date": "2013/08/08"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Rick W. Dryve from Berlin, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Porsche_911_GT1_(10543957514).jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "3.2 L twin-turbo flat-6",
+      "power": "600 PS",
+      "weight": "1050 kg",
+      "source": "https://en.wikipedia.org/wiki/Porsche_911_GT1"
+    },
+    "flavor": {
+      "text": "ポルシェ・911 GT1（Porsche 911 GT1）は、ポルシェが1996年のル・マン24時間レースに参戦するために993型のポルシェ・911をベースに開発した、グループGT1規定のスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ポルシェ・911_GT1",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#22252a",
+      "#96969c",
+      "#676164",
+      "#b1b0b4",
+      "#d7d5dd"
+    ],
+    "focus": "81% 50%"
+  },
+  {
+    "id": "e039",
+    "no": 39,
+    "rarity": "UR",
+    "maker": "MERCEDES-BENZ",
+    "model": "CLK GTR",
+    "year": 1998,
+    "country": "Germany",
+    "image": "./cards/e039.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 6D",
+      "settings": "59mm F5.6 1/80s ISO100",
+      "date": "2021/09/05"
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "Mr.choppers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1999_Mercedes-Benz_CLK-GTR_at_Lime_Rock,_front_left.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Mercedes-Benz LS600 5987 cc",
+      "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_CLK_GTR"
+    },
+    "flavor": {
+      "text": "メルセデス・ベンツ・CLK-GTR は、メルセデス・ベンツとAMGが1997年FIA GT選手権参戦用に開発した、FIA グループGT1のグランドツーリングスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/メルセデス・ベンツ・CLK-GTR",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#514941",
+      "#2e2c29",
+      "#75736c",
+      "#e8e8e8",
+      "#b6b6b5"
+    ],
+    "focus": "4% 50%"
+  },
+  {
+    "id": "e040",
+    "no": 40,
+    "rarity": "UR",
+    "maker": "NISSAN",
+    "model": "R390 GT1",
+    "year": 1998,
+    "country": "Japan",
+    "image": "./cards/e040.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": "102mm F8 1/125s ISO640",
+      "date": "2015/06/27"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Morio",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_R390_GT1_(1998)_front-left_2015_Nissan_Global_Headquarters_Gallery.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Nissan VRH35L 3495 cc",
+      "weight": "1098 kg",
+      "source": "https://en.wikipedia.org/wiki/Nissan_R390_GT1"
+    },
+    "flavor": {
+      "text": "日産・R390は、日産自動車が1990年代後半にル・マン24時間レースのために、トム・ウォーキンショー・レーシング の協力のもと開発されたスポーツカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/日産・R390",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#502a2c",
+      "#77737b",
+      "#9fa6aa",
+      "#bfc5c5",
+      "#e1deda"
+    ],
+    "focus": "9% 50%"
+  },
+  {
+    "id": "e041",
+    "no": 41,
+    "rarity": "UR",
+    "maker": "PORSCHE",
+    "model": "962",
+    "year": 1986,
+    "country": "Germany",
+    "image": "./cards/e041.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Panasonic DMC-GX1",
+      "settings": "158mm F5.3 1/800s ISO800",
+      "date": "2015/06/28"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Edvvc from London, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_Porsche_962_(20015464209).jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "ポルシェ・962(Porsche 962 )は、1984年にポルシェがIMSA-GTPクラス用に開発・製作したプロトタイプレーシングカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/ポルシェ・962C",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#4d4e44",
+      "#5e6147",
+      "#292a30",
+      "#6f7365",
+      "#b4b9c3"
+    ],
+    "focus": "96% 50%"
+  },
+  {
+    "id": "e042",
+    "no": 42,
+    "rarity": "UR",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R LM",
+    "year": 1995,
+    "country": "Japan",
+    "image": "./cards/e042.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Plustek OpticFilm 8100",
+      "settings": null,
+      "date": "2021/11/25"
+    },
+    "frame": "watermark",
+    "credit": {
+      "author": "Martin Lee from London, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_Skyline_GT-R_LM_-_Kazuyoshi_Hoshino,_Masahiro_Hasemi_%26_Toshio_Suzuki_at_Dunlop_Curve_at_the_1996_Le_Mans_(51718055585).jpg",
+      "modified": true
+    },
+    "palette": [
+      "#e3dec1",
+      "#6a4a44",
+      "#6c5c4f",
+      "#9e8f70",
+      "#433a37"
+    ],
+    "focus": "57% 50%"
+  },
+  {
+    "id": "e043",
+    "no": 43,
+    "rarity": "SEC",
+    "maker": "MAZDA",
+    "model": "787B",
+    "year": 1991,
+    "country": "Japan",
+    "image": "./cards/e043.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "NIKON D5600",
+      "settings": "18mm F6.3 1/160s ISO400",
+      "date": "2026/01/30"
+    },
+    "frame": "window",
+    "credit": {
+      "author": "Charles from Port Chester, New York",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_787B_(1991)_(55082164651).jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Mazda R26B 2616 cc",
+      "weight": "830 kg",
+      "source": "https://en.wikipedia.org/wiki/Mazda_787B"
+    },
+    "flavor": {
+      "text": "マツダ・787、787Bは、マツダが製作したプロトタイプレーシングカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/マツダ・787B",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#432a25",
+      "#141112",
+      "#8e7962",
+      "#795743",
+      "#83a779"
+    ],
+    "focus": "36% 50%"
+  },
+  {
+    "id": "e044",
+    "no": 44,
+    "rarity": "SEC",
+    "maker": "TOYOTA",
+    "model": "GT-One (TS020)",
+    "year": 1999,
+    "country": "Japan",
+    "image": "./cards/e044.jpg",
+    "series": 3,
+    "exif": {
+      "camera": null,
+      "settings": null,
+      "date": null
+    },
+    "frame": "litt",
+    "credit": {
+      "author": "LSDSL",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_TS020_GT_One.jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "Toyota 3578 cc",
+      "power": "600 hp",
+      "source": "https://en.wikipedia.org/wiki/Toyota_GT-One"
+    },
+    "flavor": {
+      "text": "トヨタ・GT-One(トヨタジーティーワン、Toyota GT-One)は、トヨタ自動車が1998年のル・マン24時間レース参戦用に開発したレーシングカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/トヨタ・TS020",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#271e1d",
+      "#a51b24",
+      "#827270",
+      "#bdbcc1",
+      "#e5e7ee"
+    ],
+    "focus": "70% 50%"
+  },
+  {
+    "id": "e045",
+    "no": 45,
+    "rarity": "SEC",
+    "maker": "MCLAREN",
+    "model": "F1 GTR",
+    "year": 1995,
+    "country": "UK",
+    "image": "./cards/e045.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "NIKON D50",
+      "settings": "125mm F4.5 1/500s",
+      "date": "2009/07/04"
+    },
+    "frame": "palette",
+    "credit": {
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1995_McLaren_F1_GTR_Goodwood,_2009_(02).jpg",
+      "modified": true
+    },
+    "spec": {
+      "engine": "BMW S70/2 6064 cc",
+      "source": "https://en.wikipedia.org/wiki/McLaren_F1_GTR"
+    },
+    "flavor": {
+      "text": "F1は、イギリスのマクラーレン・カーズ（現マクラーレン・オートモーティブ）が1992年から1998年にかけて製造・販売したスーパーカーである。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/マクラーレン・F1",
+      "license": "CC BY-SA 4.0"
+    },
+    "palette": [
+      "#5e6a70",
+      "#7e7f69",
+      "#283e47",
+      "#9b9677",
+      "#bbb075"
+    ],
+    "focus": "92% 50%"
+  },
+  {
+    "id": "e046",
+    "no": 46,
+    "rarity": "RSEC",
+    "maker": "NISSAN",
+    "model": "Skyline GT-R Group A",
+    "year": 1990,
+    "country": "Japan",
+    "image": "./cards/e046.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "OLYMPUS IMAGING CORP. FE-120,X-700",
+      "settings": "6.3mm F2.8 1/30s ISO100",
+      "date": "2009/03/17"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "328cia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_Skyline_Calsonic_Carest.JPG",
+      "modified": true
+    },
+    "flavor": {
+      "text": "スカイラインGT-Rは、日産自動車が生産・販売していたスポーツカー。",
+      "lang": "ja",
+      "source": "https://ja.wikipedia.org/wiki/日産・スカイラインGT-R",
+      "license": "CC BY-SA 4.0"
+    },
+    "stock": {
+      "image": "./cards/e046-stock.jpg",
+      "model": "Skyline GT-R (R32)",
+      "frame": "gallery",
+      "exif": {
+        "camera": "motorola REVVLRY",
+        "settings": "3.5mm F2 1/858s ISO50",
+        "date": "2022/07/09"
+      },
+      "credit": {
+        "author": "DestinationFearFan",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1990_Nissan_Skyline_R32_GT-R_front.jpg",
+        "modified": true
+      },
+      "focus": "33% 50%"
+    },
+    "palette": [
+      "#a08a5f",
+      "#746b5e",
+      "#3d3c41",
+      "#b19d74",
+      "#d8c598"
+    ],
+    "focus": "50% 50%"
+  },
+  {
+    "id": "e047",
+    "no": 47,
+    "rarity": "RSEC",
+    "maker": "TOYOTA",
+    "model": "Celica GT-Four (ST185)",
+    "year": 1994,
+    "country": "Japan",
+    "image": "./cards/e047.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Panasonic DMC-TZ60",
+      "settings": "4.3mm F3.3 1/60s ISO400",
+      "date": "2015/03/26"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_frontview_of_No.6_Castrol_Celica.JPG",
+      "modified": true
+    },
+    "flavor": {
+      "text": "The Toyota Celica GT-Four is a high performance sports car and variation of the Celica Liftback, produced from 1986 to 1999, with a turbocharged 3S-GTE engine, and full-time AWD.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Toyota_Celica_GT-Four",
+      "license": "CC BY-SA 4.0"
+    },
+    "stock": {
+      "image": "./cards/e047-stock.jpg",
+      "model": "Celica GT-Four",
+      "frame": "watermark",
+      "exif": {
+        "camera": "Apple iPhone 12 Pro Max",
+        "settings": "5.1mm F1.6 1/3922s ISO32",
+        "date": "2022/03/05"
+      },
+      "credit": {
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_CELICA_2.0_GT-FOUR_(E-ST205)_front.jpg",
+        "modified": true
+      },
+      "focus": "0% 50%"
+    },
+    "palette": [
+      "#4c4342",
+      "#1a1a19",
+      "#696561",
+      "#a39e9c",
+      "#d6d5d5"
+    ],
+    "focus": "4% 50%"
+  },
+  {
+    "id": "e048",
+    "no": 48,
+    "rarity": "RSEC",
+    "maker": "AUDI",
+    "model": "Sport quattro S1 E2",
+    "year": 1984,
+    "country": "Germany",
+    "image": "./cards/e048.jpg",
+    "series": 3,
+    "exif": {
+      "camera": "Canon EOS 1300D",
+      "settings": "28mm F5 1/400s ISO100",
+      "date": "2023/09/03"
+    },
+    "frame": "gallery",
+    "credit": {
+      "author": "MrWalkr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_Audi_Sport_Quattro_S1_E2_HCC23.jpg",
+      "modified": true
+    },
+    "flavor": {
+      "text": "The Audi Quattro is a road and rally car, produced by the German automobile manufacturer Audi, part of the Volkswagen Group. It was first shown at the 1980 Geneva Motor Show on 3 March. Production continued until 1991.",
+      "lang": "en",
+      "source": "https://en.wikipedia.org/wiki/Audi_Sport_Quattro",
+      "license": "CC BY-SA 4.0"
+    },
+    "stock": {
+      "image": "./cards/e048-stock.jpg",
+      "model": "Sport quattro",
+      "frame": "window",
+      "exif": {
+        "camera": "samsung Galaxy S24 Ultra",
+        "settings": "6.3mm F1.7 1/370s ISO12",
+        "date": "2024/04/21"
+      },
+      "credit": {
+        "author": "Calreyn88",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Audi_Sport_Quattro.jpg",
+        "modified": true
+      },
+      "focus": "76% 50%"
+    },
+    "palette": [
+      "#ae916b",
+      "#26201a",
+      "#866e52",
+      "#f1eac0",
+      "#d8c98f"
+    ],
+    "focus": "90% 50%"
+  }
+]

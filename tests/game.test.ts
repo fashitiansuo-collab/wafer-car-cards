@@ -16,7 +16,7 @@ function makeCard(id: string, no: number, rarity: Rarity, series?: SeriesId): Ca
 function makeCards(series?: SeriesId): Card[] {
   const out: Card[] = [];
   const rarities: Rarity[] = ['C', 'UC', 'R', 'UR', 'SEC'];
-  const prefix = series === 2 ? 's2-' : '';
+  const prefix = series === 2 ? 's2-' : series === 3 ? 's3-' : '';
   let no = 1;
   for (const r of rarities) for (let i = 1; i <= 2; i++) out.push(makeCard(`${prefix}${r.toLowerCase()}${i}`, no++, r, series));
   return out;
@@ -184,6 +184,50 @@ describe('game', () => {
     expect(JSON.parse(storage.getItem(SAVE_KEY)!).series).toBe(2);
     const again = createGame({ cards, storage, now: () => t, rng: () => 0 });
     expect(again.series).toBe(2);
+  });
+});
+
+describe('series 3', () => {
+  it('draws from the series-3 pool and banks 58 kcal per wafer', () => {
+    const t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const cards = [...makeCards(1), ...makeCards(2), ...makeCards(3)];
+    const game = createGame({ cards, storage, now: () => t, rng: () => 0 });
+    game.series = 3;
+    expect(game.seriesCount(3)).toBe(10);
+    expect(game.startOpening()).toBe(true);
+    expect(game.current?.series).toBe(3);
+    expect(game.kcal(3)).toBe(58);
+    expect(game.kcal(1)).toBe(0);
+  });
+
+  it('reports series 3 in the pity goal', () => {
+    const t = 1_000_000;
+    const storage = memStorage({ ...blank(t), kcal: { '3': 2000 } });
+    const game = createGame({ cards: makeCards(3), storage, now: () => t, rng: () => 0 });
+    game.series = 3;
+    expect(game.canPity(3)).toBe(true);
+    expect(game.startPity()).toBe(true);
+    expect(game.current?.series).toBe(3);
+    expect(game.kcal(3)).toBe(0);
+  });
+});
+
+describe('peel', () => {
+  it('persists the first-peeled timestamp without touching it again', () => {
+    let t = 1_000_000;
+    const storage = memStorage(blank(t));
+    const game = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    expect(game.isPeeled('c1')).toBe(false);
+    game.peel('c1');
+    expect(game.isPeeled('c1')).toBe(true);
+    expect(game.save.peeled).toEqual({ c1: t });
+    t += 5000;
+    game.peel('c1');
+    expect(game.save.peeled).toEqual({ c1: 1_000_000 });
+    const again = createGame({ cards: makeCards(), storage, now: () => t, rng: () => 0 });
+    expect(again.isPeeled('c1')).toBe(true);
+    expect(again.isPeeled('c2')).toBe(false);
   });
 });
 

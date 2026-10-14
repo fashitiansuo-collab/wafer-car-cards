@@ -32,7 +32,8 @@ IIPROP = 'url|size|extmetadata'
 THUMB_WIDTH = 640
 
 ROOT = Path(__file__).resolve().parent.parent
-S2 = ROOT / '.superpowers/pf/s2'
+import os
+S2 = ROOT / os.environ.get('CAND_DIR', '.superpowers/pf/s2')
 THUMBS = S2 / 'thumbs'
 SHEETS = S2 / 'sheets'
 CARS = S2 / 'cars.json'

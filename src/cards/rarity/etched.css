@@ -1,0 +1,83 @@
+/* Etched — series 3 SEC and RSEC. After the etched full-art foils of poke-holo
+   (simeydotme/pokemon-cards-css, "VStar" / "Trainer full art"): a raised relief pressed into the
+   card's frame (scripts/make-emboss.py, the wafer's diamond lattice with a star in each diamond).
+   The photo window stays clear. Two copies of the relief, lit from opposite sides, cross-fade as the
+   card tilts so the ridges catch the light; a rainbow foil rides the ridges. */
+.card--etched {
+  /* Everything but the photo window. */
+  --frame-only:
+    linear-gradient(#000 0 0) var(--win-left) var(--win-top) / var(--win-w) var(--win-h) no-repeat,
+    linear-gradient(#000 0 0);
+}
+.card--etched .card__front::before,
+.card--etched .card__front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  -webkit-mask: var(--frame-only);
+  -webkit-mask-composite: xor;
+  mask: var(--frame-only);
+  mask-composite: exclude;
+}
+/* Relief lit from the left: strongest while the light (pointer) is on the left. */
+.card--etched .card__front::before {
+  background: url('/fx/emboss-l.png') 0 0 / 22cqw;
+  mix-blend-mode: overlay;
+  opacity: calc(.25 + (1 - var(--pointer-from-left, .5)) * .5);
+}
+/* Rainbow on the ridges: the relief multiplies a moving rainbow, then dodges onto the frame. */
+.card--etched .card__front::after {
+  background:
+    url('/fx/emboss-l.png') 0 0 / 22cqw,
+    repeating-linear-gradient(
+      110deg,
+      hsl(0, 100%, 70%) 0%,
+      hsl(50, 100%, 65%) 4%,
+      hsl(140, 90%, 62%) 8%,
+      hsl(200, 100%, 66%) 12%,
+      hsl(270, 100%, 74%) 16%,
+      hsl(330, 100%, 70%) 20%,
+      hsl(0, 100%, 70%) 24%
+    )
+    var(--background-x, 50%) var(--background-y, 50%) / 300% 300%;
+  background-blend-mode: multiply;
+  mix-blend-mode: color-dodge;
+  opacity: calc(.15 + var(--card-opacity, 0) * .6);
+}
+/* The right-lit relief rides the glare layer, stronger as the light moves right. */
+.card--etched .card__glare {
+  background:
+    radial-gradient(farthest-corner circle at var(--pointer-x, 50%) var(--pointer-y, 50%), hsla(0, 0%, 100%, .7) 8%, hsla(0, 0%, 100%, .15) 30%, hsla(0, 0%, 0%, .4) 90%),
+    url('/fx/emboss-r.png') 0 0 / 22cqw;
+  background-blend-mode: overlay, normal;
+  mix-blend-mode: overlay;
+  opacity: calc(var(--pointer-from-left, .5) * .55 + var(--card-opacity, 0) * .2);
+  -webkit-mask: var(--frame-only);
+  -webkit-mask-composite: xor;
+  mask: var(--frame-only);
+  mask-composite: exclude;
+}
+
+/* RSEC: white frame like UR, etched, with a red label. */
+.card[data-rarity='RSEC'] {
+  --rarity: #d4002a;
+}
+.card[data-rarity='RSEC'] .f-rarity {
+  color: #d4002a;
+  border-left-color: #d4002a;
+  border-image: none;
+}
+.card[data-rarity='RSEC'] .card__photo img {
+  filter: contrast(1.12) saturate(1.15);
+}
+/* On a white frame the relief is softer, so the name stays readable. */
+.card--etched[data-tone='light'] .card__front::before {
+  opacity: calc(.12 + (1 - var(--pointer-from-left, .5)) * .25);
+}
+.card--etched[data-tone='light'] .card__glare {
+  opacity: calc(var(--pointer-from-left, .5) * .3 + var(--card-opacity, 0) * .2);
+}

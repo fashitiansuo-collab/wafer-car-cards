@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { biteMask, bitesToFinish, omen } from '../src/open/bite';
+import { anomaly, biteMask, bitesToFinish, EXTRA_BITES, omen } from '../src/open/bite';
 import { mulberry32 } from '../src/lib/draw';
 
 describe('omen', () => {
@@ -10,6 +10,25 @@ describe('omen', () => {
   it('shows for UR / SEC half of the time', () => {
     expect(omen('UR', () => 0.4)).toBe(true);
     expect(omen('SEC', () => 0.6)).toBe(false);
+  });
+});
+
+describe('anomaly', () => {
+  it('never happens on C or UC', () => {
+    expect(anomaly('C', () => 0)).toEqual({ extraBite: false, upsideDown: false });
+    expect(anomaly('UC', () => 0)).toEqual({ extraBite: false, upsideDown: false });
+  });
+  it('can happen on high rares, and rarely on R as a false alarm', () => {
+    expect(anomaly('SEC', () => 0.1)).toEqual({ extraBite: true, upsideDown: true });
+    expect(anomaly('UR', () => 0.25)).toEqual({ extraBite: true, upsideDown: false });
+    expect(anomaly('R', () => 0.035)).toEqual({ extraBite: true, upsideDown: false });
+    expect(anomaly('R', () => 0.5)).toEqual({ extraBite: false, upsideDown: false });
+  });
+  it('asks for one bite more than a normal wafer can take', () => {
+    let max = 0;
+    let s = 1;
+    for (let i = 0; i < 500; i++) max = Math.max(max, bitesToFinish(() => ((s = (s * 9301 + 49297) % 233280) / 233280)));
+    expect(EXTRA_BITES).toBe(max + 1);
   });
 });
 

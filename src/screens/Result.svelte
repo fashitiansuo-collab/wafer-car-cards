@@ -8,9 +8,14 @@
   import { isGlobalKey } from '../lib/keys';
 
   let { game, cards }: { game: Game; cards: Card[] } = $props();
+  // RSEC cards are hidden extras, outside the numbered set.
+  const total = $derived(cards.filter((c) => c.rarity !== 'RSEC').length);
 
   const card = $derived(game.current!);
   const count = $derived(game.save.owned[card.id] ?? 1);
+  // RSEC: a common until its corner is peeled; then the name and rarity change with it.
+  const peeled = $derived(card.rarity !== 'RSEC' || game.isPeeled(card.id));
+  const shown = $derived(peeled ? { model: card.model, rarity: card.rarity } : { model: card.stock?.model ?? card.model, rarity: 'C' as const });
   const owned = $derived(game.ownedCount(game.series));
   const empty = $derived(game.save.stock <= 0);
 
@@ -33,17 +38,17 @@
 
 <div class="stage">
   <div class="slot">
-    <CardView {card} total={cards.length} firstPulledAt={game.save.firstPulledAt[card.id]} moment />
+    <CardView {card} total={total} firstPulledAt={game.save.firstPulledAt[card.id]} moment peeled={game.isPeeled(card.id)} canPeel onPeel={() => game.peel(card.id)} />
   </div>
   <div class="lockup">
-    <TitleLockup maker={card.maker} model={card.model} year={card.year} rarity={card.rarity} />
+    <TitleLockup maker={card.maker} model={shown.model} year={card.year} rarity={shown.rarity} />
     <span class="tag" class:new={game.isNew}>{game.isNew ? 'NEW' : `×${count}`}</span>
   </div>
 </div>
 
 <BottomStrip
   cells={[
-    { title: `図鑑 ${owned} / ${cards.length}`, value: `${Math.round((owned / cards.length) * 100)}%`, progress: owned / cards.length },
+    { title: `図鑑 ${owned} / ${total}`, value: `${Math.round((owned / total) * 100)}%`, progress: owned / total },
     { title: '食べた数', value: String(game.save.eaten) },
   ]}
 />

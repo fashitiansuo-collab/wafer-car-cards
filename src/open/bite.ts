@@ -11,6 +11,24 @@ export function bitesToFinish(rng: () => number): number {
   return 4 + Math.floor(rng() * 3);
 }
 
+/**
+ * Small wrongnesses that hint at a high rare, like the late fireworks of a slot machine:
+ * one bite more than a wafer ever takes, or the wafer lying upside down (cut face at the top).
+ * Mostly on UR / SEC / RSEC; now and then on an R as a false alarm, so they never quite prove it.
+ */
+export interface Anomaly {
+  extraBite: boolean;
+  upsideDown: boolean;
+}
+const HIGH = new Set<string>(['UR', 'SEC', 'RSEC']);
+export function anomaly(rarity: Rarity, rng: () => number): Anomaly {
+  const high = HIGH.has(rarity);
+  const p = high ? [0.3, 0.2] : rarity === 'R' ? [0.04, 0.03] : [0, 0];
+  return { extraBite: rng() < p[0], upsideDown: rng() < p[1] };
+}
+/** With an extra bite the wafer needs 7: one more than it can otherwise take. */
+export const EXTRA_BITES = 7;
+
 /** A crumb sparkles on the last bite: only for UR / SEC, and only half the time. */
 export function omen(rarity: Rarity, rng: () => number): boolean {
   return (rarity === 'UR' || rarity === 'SEC') && rng() < 0.5;

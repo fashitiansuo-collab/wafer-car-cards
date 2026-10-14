@@ -211,7 +211,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('files', nargs='*')
     ap.add_argument('--cards', action='store_true', help='check every card image in src/data/cards.json')
-    ap.add_argument('--series', type=int, default=1, help='series to use (2 reads src/data/cards-s2.json)')
+    ap.add_argument('--series', type=int, default=1, help='series to use (2 reads src/data/cards-s2.json, 3 reads src/data/cards-s3.json)')
     ap.add_argument('--json', help='also write the full results to this file')
     ap.add_argument('--boxes', help='write copies with the detected car / lights drawn into this folder')
     ap.add_argument('--fit', action='store_true',
@@ -286,7 +286,7 @@ def fit_cards(root, proc, model, torch, a):
             Path(a.boxes).mkdir(parents=True, exist_ok=True)
             im.save(Path(a.boxes) / f"{c['id']}.jpg")
     cards_path.write_text(json.dumps(cards, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    order = {'C': 0, 'UC': 1, 'R': 2, 'UR': 3, 'SEC': 4}
+    order = {'C': 0, 'UC': 1, 'R': 2, 'UR': 3, 'SEC': 4, 'RSEC': 5}
     ranked = sorted(range(len(lineup)), key=lambda i: (order[lineup[i]['rarity']], i))
     for c, i in zip(cards, ranked):
         lineup[i]['focus'] = c['focus']

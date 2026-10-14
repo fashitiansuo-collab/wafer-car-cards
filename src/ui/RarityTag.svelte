@@ -20,4 +20,5 @@
     border-image: var(--rainbow-v) 1;
   }
   .tag[data-rarity='SEC'] { border-color: var(--yellow); }
+  .tag[data-rarity='RSEC'] { border-color: #d4002a; }
 </style>

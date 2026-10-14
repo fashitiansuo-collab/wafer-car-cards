@@ -1,6 +1,7 @@
 <script lang="ts">
   import cardsJson from './data/cards.json';
   import cardsS2Json from './data/cards-s2.json';
+  import cardsS3Json from './data/cards-s3.json';
   import type { Card } from './lib/types';
   import { createGame } from './state/game.svelte';
   import { cardsOf } from './lib/series';
@@ -19,8 +20,9 @@
 
   const cards1 = cardsJson as Card[];
   const cards2 = cardsS2Json as Card[];
+  const cards3 = cardsS3Json as Card[];
   // Series-1 cards carry no `series` field; a missing series means the first set.
-  const cards = [...cards1, ...cards2];
+  const cards = [...cards1, ...cards2, ...cards3];
   const debug = new URLSearchParams(location.search).has('debug');
 
   function storage(): Storage | null {
@@ -36,6 +38,8 @@
   const game = createGame({ cards, storage: storage(), now: () => Date.now(), rng: Math.random });
   // Every screen works on the series whose bag is selected.
   const set = $derived(cardsOf(cards, game.series));
+  // The numbered set: RSEC cards are hidden extras, outside the count.
+  const numbered = $derived(set.filter((c) => c.rarity !== 'RSEC').length);
   let now = $state(Date.now());
   // ?force=SEC fixes the rarity of the next draws (same switch as on the records screen).
   const force = new URLSearchParams(location.search).get('force');
@@ -98,7 +102,7 @@
         <Home {game} cards={set} {now} />
       {:else if game.screen === 'opening' && game.current}
         {#key game.save.eaten}
-          <OpenSequence {game} total={set.length} />
+          <OpenSequence {game} total={numbered} />
         {/key}
       {:else if game.screen === 'result' && game.current}
         <Result {game} cards={set} />

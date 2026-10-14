@@ -94,10 +94,10 @@
 .back {
   position: absolute;
   inset: 0;
-  padding: 7cqw;
+  padding: 6cqw;
   display: flex;
   flex-direction: column;
-  gap: 6cqw;
+  gap: 4.5cqw;
   font: 400 3.4cqw/1.5 var(--latin), var(--jp);
   color: var(--paper);
 }
@@ -128,6 +128,21 @@
 .back dd {
   margin: 0;
   overflow-wrap: anywhere;
+}
+.back__flavor {
+  margin: 0;
+  padding-left: 3cqw;
+  border-left: .4cqw solid var(--face-line);
+  font-size: 3.1cqw;
+  line-height: 1.55;
+}
+.back__flavor p {
+  margin: 0 0 1.2cqw;
+}
+.back__flavor cite {
+  font-style: normal;
+  font-size: 2.6cqw;
+  color: var(--paper-2);
 }
 .back a {
   color: var(--paper);

@@ -6,6 +6,8 @@
   import RarityTag from '../ui/RarityTag.svelte';
 
   let { game, cards, claim }: { game: Game; cards: Card[]; claim: (code: string) => Promise<boolean> } = $props();
+  // RSEC cards are hidden extras, outside the numbered set.
+  const total = $derived(cards.filter((c) => c.rarity !== 'RSEC').length);
 
   let code = $state('');
   let wrong = $state(false);
@@ -24,7 +26,7 @@
   <section class="block">
     <div class="nums">
       <div><span class="v">{game.save.eaten}</span><span class="l">食べた数</span></div>
-      <div><span class="v">{game.ownedCount(game.series)}<small>/{cards.length}</small></span><span class="l">図鑑</span></div>
+      <div><span class="v">{game.ownedCount(game.series)}<small>/{total}</small></span><span class="l">図鑑</span></div>
     </div>
     <dl class="rows">
       {#each RARITIES as r (r)}
@@ -58,7 +60,7 @@
     <h2>写真のクレジット</h2>
     <p class="note">写真はすべてウィキメディア・コモンズのもので、切り抜きと色調整をしています(改変あり)。</p>
     <ol class="credits">
-      {#each cards as c (c.id)}
+      {#each cards.filter((c) => c.rarity !== 'RSEC' || game.isPeeled(c.id)) as c (c.id)}
         <li>
           <span class="no">{String(c.no).padStart(3, '0')}</span>
           <span class="who">{c.credit.author}</span>

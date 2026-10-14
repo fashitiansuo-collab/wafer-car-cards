@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image
 
 ap = argparse.ArgumentParser(description=__doc__)
-ap.add_argument('--series', type=int, default=1, help='series to read (2 uses src/data/cards-s2.json)')
+ap.add_argument('--series', type=int, default=1, help='series to read (2 uses src/data/cards-s2.json, 3 uses src/data/cards-s3.json)')
 a = ap.parse_args()
 
 root = Path(__file__).resolve().parent.parent

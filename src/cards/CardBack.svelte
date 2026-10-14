@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { Card } from '../lib/types';
 
-  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'> & { rarity?: Card['rarity']; assets?: Card['credit'][] };
+  type BackInfo = Pick<Card, 'year' | 'country' | 'credit'> &
+    Partial<Pick<Card, 'rarity' | 'spec' | 'flavor'>> & { assets?: Card['credit'][] };
   let { card, firstPulledAt = null }: { card: BackInfo | null; firstPulledAt?: number | null } = $props();
 
   const fmt = (ms: number) => {
@@ -21,8 +22,17 @@
     <dl class="back__spec">
       <dt>年式</dt><dd>{card.year}</dd>
       <dt>国</dt><dd>{card.country}</dd>
+      {#if card.spec?.engine}<dt>エンジン</dt><dd>{card.spec.engine}</dd>{/if}
+      {#if card.spec?.power}<dt>出力</dt><dd>{card.spec.power}</dd>{/if}
+      {#if card.spec?.weight}<dt>重量</dt><dd>{card.spec.weight}</dd>{/if}
       {#if firstPulledAt}<dt>初入手</dt><dd>{fmt(firstPulledAt)}</dd>{/if}
     </dl>
+    {#if card.flavor}
+      <blockquote class="back__flavor" lang={card.flavor.lang}>
+        <p>{card.flavor.text}</p>
+        <cite><a href={card.flavor.source} target="_blank" rel="noopener">Wikipedia</a> · {card.flavor.license}</cite>
+      </blockquote>
+    {/if}
     <dl class="back__credit">
       <dt>撮影</dt><dd>{card.credit.author}</dd>
       <dt>ライセンス</dt>
@@ -30,6 +40,7 @@
       <dt>出典</dt>
       <dd><a href={card.credit.sourceUrl} target="_blank" rel="noopener">Wikimedia Commons</a></dd>
       {#if card.credit.modified}<dt>加工</dt><dd>改変あり(切り抜き・色調整)</dd>{/if}
+      {#if card.spec?.source}<dt>諸元</dt><dd><a href={card.spec.source} target="_blank" rel="noopener">Wikipedia</a> · CC BY-SA 4.0</dd>{/if}
       {#each card.assets ?? [] as a (a.sourceUrl)}
         <dt>素材</dt>
         <dd>{a.author} · <a href={a.licenseUrl} target="_blank" rel="noopener">{a.license}</a> · <a href={a.sourceUrl} target="_blank" rel="noopener">出典</a>(改変あり)</dd>

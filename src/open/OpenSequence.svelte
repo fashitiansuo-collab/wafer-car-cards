@@ -6,7 +6,7 @@
   import BottomStrip from '../ui/BottomStrip.svelte';
   import GuideBar, { type Hint } from '../ui/GuideBar.svelte';
   import Wafer from './Wafer.svelte';
-  import { omen } from './bite';
+  import { anomaly, omen } from './bite';
   import { isGlobalKey } from '../lib/keys';
 
   let { game, total }: { game: Game; total: number } = $props();
@@ -14,8 +14,11 @@
   type Stage = 'bag' | 'wafer' | 'black' | 'flip' | 'done';
   // The card is fixed for the life of this sequence.
   const card = untrack(() => game.current!);
-  const rarity = card.rarity;
+  // An RSEC opens exactly like a common; only the wafer's small wrongnesses may give it away.
+  const real = card.rarity;
+  const rarity = real === 'RSEC' ? 'C' : real;
   const sparkle = untrack(() => game.pity) || omen(rarity, Math.random);
+  const odd = anomaly(real, Math.random);
   const FLIP_MS: Record<string, number> = { C: 500, UC: 500, R: 700, UR: 1200, SEC: 1400 };
 
   const tilt = createTilt();
@@ -89,10 +92,10 @@
       <CardView {card} {total} {flipped} {tilt} interactive={false} plainBack />
     </div>
     {#if stage === 'bag'}
-      <div class="bag-out" class:choco={card.series === 2} class:premium={untrack(() => game.pity)} aria-hidden="true"></div>
+      <div class="bag-out" class:choco={card.series === 2} class:matcha={card.series === 3} class:premium={untrack(() => game.pity)} aria-hidden="true"></div>
     {/if}
     {#if stage === 'bag' || stage === 'wafer'}
-      <Wafer bind:this={wafer} flavor={card.series === 2 ? 'choco' : 'vanilla'} {sparkle} onEaten={reveal} />
+      <Wafer bind:this={wafer} flavor={card.series === 3 ? 'matcha' : card.series === 2 ? 'choco' : 'vanilla'} {sparkle} extraBite={odd.extraBite} upsideDown={odd.upsideDown} onEaten={reveal} />
     {/if}
   </div>
   <div class="lockup-space"></div>
@@ -163,6 +166,9 @@
   }
   .bag-out.choco {
     background: linear-gradient(100deg, #6b4430, #d6a77e 40%, #4a2a1a 70%, #9a6a48);
+  }
+  .bag-out.matcha {
+    background: linear-gradient(100deg, #4f6a2a, #c8d79a 40%, #34461a 70%, #8fa65a);
   }
   .bag-out.premium {
     background: linear-gradient(100deg, #8a6516, #fff3c4 40%, #6e4f10 70%, #e9c76a);
