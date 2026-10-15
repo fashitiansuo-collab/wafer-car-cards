@@ -183,25 +183,3 @@
 }
 
 
-/* Grain: a raised relief (scripts/make-emboss.py) that is invisible at rest and shows only in the
-   pool of light around the pointer, like an embossed card turned under a lamp. The two copies are
-   lit from opposite sides, so the ridges flip as the light crosses the card. */
-.card__grain {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  pointer-events: none;
-  border-radius: inherit;
-  background: url('/fx/emboss-l.png') 0 0 / 18cqw;
-  mix-blend-mode: overlay;
-  opacity: calc(var(--card-opacity, 0) * .9);
-  -webkit-mask-image: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), #000 0, rgba(0, 0, 0, .55) 18%, transparent 42%);
-  mask-image: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 50%), #000 0, rgba(0, 0, 0, .55) 18%, transparent 42%);
-}
-.card__grain::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('/fx/emboss-r.png') 0 0 / 18cqw;
-  opacity: var(--pointer-from-left, .5);
-}

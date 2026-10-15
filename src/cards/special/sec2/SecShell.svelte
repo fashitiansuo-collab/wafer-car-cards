@@ -7,6 +7,7 @@
   import CardBack from '../../CardBack.svelte';
   import Signature from '../Signature.svelte';
   import '../../rarity/base.css';
+  import '../../rarity/holo.css';
 
   interface Props {
     card: Card;
@@ -19,8 +20,8 @@
     firstPulledAt?: number | null;
     plainBack?: boolean;
     ink?: string;
-    /** A raised grain that only shows where the light falls (series 3 onwards). */
-    grain?: boolean;
+    /** Holo foil over the whole card (series 3 onwards). */
+    holo?: 'rainbow' | 'secret';
     children: Snippet;
   }
   let {
@@ -33,7 +34,7 @@
     firstPulledAt = null,
     plainBack = false,
     ink = '#f4f1ea',
-    grain = false,
+    holo,
     children,
   }: Props = $props();
 
@@ -55,7 +56,7 @@
   <div class="card__rotator">
     <div class="card__front">
       {@render children()}
-      {#if grain}<div class="card__grain" aria-hidden="true"></div>{/if}
+      {#if holo}<div class="card__holo holo--{holo}" aria-hidden="true"></div>{/if}
       <Signature {no} label="SEC" {ink} />
       <div class="card__glare"></div>
     </div>

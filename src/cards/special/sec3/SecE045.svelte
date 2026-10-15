@@ -22,7 +22,7 @@
   const date = $derived((card.exif?.date ?? '').split('/').reverse());
 </script>
 
-<SecShell {...props} name="e045" ink="#f6f4ea" grain>
+<SecShell {...props} name="e045" ink="#f6f4ea" holo="rainbow">
   <h2 class="title">{card.model}!!!</h2>
   <div class="panel"><img src={card.image} alt="" draggable="false" /></div>
   <p class="sticker" aria-label="Goodwood, {date.join('.')}">

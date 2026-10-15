@@ -1,5 +1,4 @@
-/* Series 3 SEC / RSEC relief now lives in .card__grain (base.css): it shows only under the light. */
-/* RSEC: white frame like UR, etched, with a red label. */
+/* RSEC: white frame like UR with a red label; its foil is .holo--secret (holo.css). */
 .card[data-rarity='RSEC'] {
   --rarity: #d4002a;
 }

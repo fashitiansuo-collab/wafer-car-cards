@@ -20,7 +20,7 @@
   const card = $derived(props.card);
 </script>
 
-<SecShell {...props} name="e043" ink="#f1e9dc" grain>
+<SecShell {...props} name="e043" ink="#f1e9dc" holo="rainbow">
   <div class="photo"><img src={card.image} alt="" draggable="false" /></div>
   <div class="grade"></div>
   <div class="leak" aria-hidden="true"></div>

@@ -22,7 +22,7 @@
   const card = $derived(props.card);
 </script>
 
-<SecShell {...props} name="e044" ink="#1d2233" grain>
+<SecShell {...props} name="e044" ink="#1d2233" holo="secret">
   <div class="panel"><img src={card.image} alt="" draggable="false" /></div>
   <p class="room">Room 1</p>
   <h2 class="title">GT-One<br />Le Mans</h2>

@@ -18,11 +18,11 @@ describe('anomaly', () => {
     expect(anomaly('C', () => 0)).toEqual({ extraBite: false, upsideDown: false });
     expect(anomaly('UC', () => 0)).toEqual({ extraBite: false, upsideDown: false });
   });
-  it('can happen on high rares, and rarely on R as a false alarm', () => {
+  it('happens only on UR and above', () => {
     expect(anomaly('SEC', () => 0.1)).toEqual({ extraBite: true, upsideDown: true });
     expect(anomaly('UR', () => 0.25)).toEqual({ extraBite: true, upsideDown: false });
-    expect(anomaly('R', () => 0.035)).toEqual({ extraBite: true, upsideDown: false });
-    expect(anomaly('R', () => 0.5)).toEqual({ extraBite: false, upsideDown: false });
+    expect(anomaly('R', () => 0)).toEqual({ extraBite: false, upsideDown: false });
+    expect(anomaly('RSEC', () => 0.1)).toEqual({ extraBite: true, upsideDown: true });
   });
   it('asks for one bite more than a normal wafer can take', () => {
     let max = 0;

@@ -14,6 +14,7 @@
   import './rarity/ur.css';
   import './rarity/sec.css';
   import './rarity/etched.css';
+  import './rarity/holo.css';
 
   interface Props {
     card: Card;
@@ -66,7 +67,7 @@
         }
       : null,
   );
-  // Series 3 onwards: the secret cards are etched (a raised relief that catches the light).
+  // Series 3 onwards: secret cards that use the frame (RSEC) carry the gold secret foil.
   const etched = $derived((card.series ?? 1) >= 3 && (card.rarity === 'SEC' || card.rarity === 'RSEC'));
 
   // Series-2 SEC cards have a front of their own instead of a frame.
@@ -116,7 +117,7 @@
       <div class="card__photo"><img src={card.image} alt="" draggable="false" /></div>
       <div class="card__shine"></div>
       <div class="card__shine card__shine--2"></div>
-      {#if etched}<div class="card__grain" aria-hidden="true"></div>{/if}
+      {#if etched}<div class="card__holo holo--secret" aria-hidden="true"></div>{/if}
       <div class="card__glare"></div>
     </div>
     <div class="card__back">
